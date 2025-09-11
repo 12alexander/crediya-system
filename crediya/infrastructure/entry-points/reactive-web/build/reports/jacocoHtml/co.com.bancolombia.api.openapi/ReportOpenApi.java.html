@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ReportOpenApi.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.openapi</a> &gt; <span class="el_source">ReportOpenApi.java</span></div><h1>ReportOpenApi.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.openapi;
+
+import co.com.bancolombia.api.handler.ReportHandler;
+import co.com.bancolombia.api.dto.response.PendingRequestResponseDTO;
+import co.com.bancolombia.api.dto.response.ErrorResponseDTO;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springdoc.core.annotations.RouterOperation;
+import org.springdoc.core.annotations.RouterOperations;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.reactive.function.server.RequestPredicates;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.RouterFunctions;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+@Configuration
+@Tag(name = &quot;Reports&quot;, description = &quot;Loan request reporting and analytics endpoints&quot;)
+<span class="nc" id="L27">public class ReportOpenApi {</span>
+
+    private static final String API_V1_SOLICITUDES_PENDIENTES = &quot;/api/v1/solicitudes-pendientes&quot;;
+
+    @Bean
+    @RouterOperations({
+            @RouterOperation(
+                    path = API_V1_SOLICITUDES_PENDIENTES,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.GET,
+                    beanClass = ReportHandler.class,
+                    beanMethod = &quot;getPendingRequests&quot;,
+                    operation = @Operation(
+                            operationId = &quot;getPendingLoanRequests&quot;,
+                            summary = &quot;Get Pending Loan Requests&quot;,
+                            description = &quot;Retrieves all pending loan requests with user information for administrative reporting&quot;,
+                            tags = {&quot;Reports&quot;},
+                            security = @SecurityRequirement(name = &quot;bearerAuth&quot;),
+                            parameters = @Parameter(
+                                    name = &quot;Authorization&quot;,
+                                    description = &quot;Bearer token in format: Bearer {jwt-token}&quot;,
+                                    required = true,
+                                    in = ParameterIn.HEADER,
+                                    example = &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...&quot;
+                            ),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;200&quot;, description = &quot;Pending requests retrieved successfully&quot;,
+                                            content = @Content(schema = @Schema(implementation = PendingRequestResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;401&quot;, description = &quot;Authentication failed - invalid or missing token&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;403&quot;, description = &quot;Access denied - insufficient privileges for reports&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;500&quot;, description = &quot;Internal server error during report generation&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            )
+    })
+    public RouterFunction&lt;ServerResponse&gt; reportRoutesDoc() {
+<span class="nc" id="L66">        return RouterFunctions.route(</span>
+<span class="nc" id="L67">                RequestPredicates.GET(&quot;/__dummy_report__&quot;),</span>
+<span class="nc" id="L68">                req -&gt; ServerResponse.ok().build()</span>
+        );
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

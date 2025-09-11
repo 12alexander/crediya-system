@@ -1,0 +1,831 @@
+2025-09-10T02:53:44.898-05:00  INFO 116942 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 116942 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T02:53:44.918-05:00  INFO 116942 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T02:53:44.996-05:00  INFO 116942 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T02:53:44.996-05:00  INFO 116942 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T02:53:45.965-05:00  INFO 116942 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T02:53:46.098-05:00  INFO 116942 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T02:53:47.820-05:00  WARN 116942 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-10T02:53:48.145-05:00  WARN 116942 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T02:53:48.396-05:00  INFO 116942 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 95f12d73-bf70-4bf6-9c37-e4993f6a9b69
+
+2025-09-10T02:53:48.971-05:00  INFO 116942 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T02:53:50.087-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T02:53:51.020-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T02:53:51.105-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T02:53:51.108-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T02:53:51.122-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T02:53:51.122-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T02:53:51.122-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T02:53:51.122-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T02:53:51.122-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T02:53:51.122-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T02:53:51.124-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T02:53:51.167-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T02:53:51.170-05:00  INFO 116942 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T02:53:51.761-05:00  INFO 116942 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T02:53:51.779-05:00  INFO 116942 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 7.539 seconds (process running for 9.263)
+2025-09-10T02:54:15.100-05:00 DEBUG 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-10T02:54:15.215-05:00  INFO 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T02:54:25.327-05:00 DEBUG 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor1233', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-10T02:54:25.394-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt failed: Invalid credentials
+2025-09-10T02:54:25.400-05:00  WARN 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.c.b.a.e.GlobalExceptionHandler         : 401 at /api/v1/auth/login -> Authentication failed: Invalid credentials
+2025-09-10T02:54:31.969-05:00 DEBUG 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-10T02:54:32.074-05:00  INFO 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T02:58:27.421-05:00  WARN 116942 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T02:59:11.524-05:00  WARN 116942 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T02:59:31.862-05:00  WARN 116942 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T03:11:53.152-05:00 DEBUG 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-10T03:11:53.229-05:00  INFO 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:12:00.819-05:00  WARN 116942 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T03:12:16.849-05:00 DEBUG 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-10T03:12:16.919-05:00  INFO 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:13:28.827-05:00 DEBUG 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'admin123', Hashed: '$2a$10$/X1Yl2KU/wo83LDuU64CCO.G1tEF4089lJSgC0WEp2NQ8v736ZYH2'
+2025-09-10T03:13:28.909-05:00  INFO 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:13:40.984-05:00  INFO 116942 --- [projectPragma] [parallel-1] c.com.bancolombia.api.user.UserHandler   : Processing user registration request from IP: 0:0:0:0:0:0:0:1
+2025-09-10T03:13:41.008-05:00  INFO 116942 --- [projectPragma] [reactor-http-epoll-1] c.com.bancolombia.api.user.UserHandler   : User registration requested - Email: admin123456@gmail.com, Name: Juan ac11t Pérez actualizado
+2025-09-10T03:13:41.120-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : Error processing user registration: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:509) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:347) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at co.com.bancolombia.r2dbc.user.UserRepositoryAdapter$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+	at co.com.bancolombia.usecase.user.UserUseCase.createUser(UserUseCase.java:84) ~[main/:na]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:237) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:880) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:805) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:163) ~[reactor-core-3.6.10.jar:3.6.10]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:684) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:936) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:810) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:716) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:294) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:403) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:425) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:799) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:501) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:13:41.131-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.c.b.a.e.GlobalExceptionHandler         : 500 at /api/v1/users -> NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ co.com.bancolombia.api.jwt.JwtAuthenticationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ co.com.bancolombia.api.config.SecurityHeadersConfig [DefaultWebFilterChain]
+	*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ JwtAuthenticationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/users" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:509) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:347) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+		at co.com.bancolombia.r2dbc.user.UserRepositoryAdapter$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+		at co.com.bancolombia.usecase.user.UserUseCase.createUser(UserUseCase.java:84) ~[main/:na]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:237) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:880) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:805) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:163) ~[reactor-core-3.6.10.jar:3.6.10]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:684) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:936) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:810) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:716) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:294) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:403) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:425) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:799) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:501) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:14:06.473-05:00  INFO 116942 --- [projectPragma] [parallel-3] c.com.bancolombia.api.user.UserHandler   : Processing user registration request from IP: 0:0:0:0:0:0:0:1
+2025-09-10T03:14:06.475-05:00  INFO 116942 --- [projectPragma] [reactor-http-epoll-1] c.com.bancolombia.api.user.UserHandler   : User registration requested - Email: admin1234156@gmail.com, Name: Juan ac11t Pérez actualizado
+2025-09-10T03:14:06.549-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : Error processing user registration: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:509) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:347) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at co.com.bancolombia.r2dbc.user.UserRepositoryAdapter$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+	at co.com.bancolombia.usecase.user.UserUseCase.createUser(UserUseCase.java:84) ~[main/:na]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:237) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:880) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:805) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:163) ~[reactor-core-3.6.10.jar:3.6.10]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:684) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:936) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:810) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:716) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:294) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:403) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:425) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:799) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:501) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:14:06.555-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.c.b.a.e.GlobalExceptionHandler         : 500 at /api/v1/users -> NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ co.com.bancolombia.api.jwt.JwtAuthenticationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ co.com.bancolombia.api.config.SecurityHeadersConfig [DefaultWebFilterChain]
+	*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ JwtAuthenticationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/users" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:509) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:347) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+		at co.com.bancolombia.r2dbc.user.UserRepositoryAdapter$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+		at co.com.bancolombia.usecase.user.UserUseCase.createUser(UserUseCase.java:84) ~[main/:na]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:237) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:880) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:805) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:163) ~[reactor-core-3.6.10.jar:3.6.10]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:684) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:936) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:810) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:716) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:294) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:403) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:425) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:799) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:501) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:14:16.674-05:00  INFO 116942 --- [projectPragma] [parallel-5] c.com.bancolombia.api.user.UserHandler   : Processing user registration request from IP: 0:0:0:0:0:0:0:1
+2025-09-10T03:14:16.676-05:00  INFO 116942 --- [projectPragma] [reactor-http-epoll-1] c.com.bancolombia.api.user.UserHandler   : User registration requested - Email: admin1234156@gmail.com, Name: Juan ac11t Pérez actualizado
+2025-09-10T03:14:16.763-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : Error processing user registration: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:509) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:347) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+	at co.com.bancolombia.r2dbc.user.UserRepositoryAdapter$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+	at co.com.bancolombia.usecase.user.UserUseCase.createUser(UserUseCase.java:84) ~[main/:na]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:237) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:880) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:805) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:163) ~[reactor-core-3.6.10.jar:3.6.10]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:684) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:936) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:810) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:716) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:294) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:403) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:425) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:799) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:501) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:14:16.770-05:00 ERROR 116942 --- [projectPragma] [reactor-tcp-epoll-4] c.c.b.a.e.GlobalExceptionHandler         : 500 at /api/v1/users -> NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+
+org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'org.springframework.transaction.TransactionManager' available: expected single matching bean but found 2: transactionManager,reactiveTransactionManager
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ co.com.bancolombia.api.jwt.JwtAuthenticationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.web.cors.reactive.CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ co.com.bancolombia.api.config.SecurityHeadersConfig [DefaultWebFilterChain]
+	*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ JwtAuthenticationFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/api/v1/users" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1312) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.determineTransactionManager(TransactionAspectSupport.java:509) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:347) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.13.jar:6.1.13]
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.13.jar:6.1.13]
+		at co.com.bancolombia.r2dbc.user.UserRepositoryAdapter$$SpringCGLIB$$0.createUser(<generated>) ~[main/:na]
+		at co.com.bancolombia.usecase.user.UserUseCase.createUser(UserUseCase.java:84) ~[main/:na]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:132) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:237) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onNext(FluxUsingWhen.java:348) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:880) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:805) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:163) ~[reactor-core-3.6.10.jar:3.6.10]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:684) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:936) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:810) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:716) ~[r2dbc-postgresql-1.0.5.RELEASE.jar:1.0.5.RELEASE]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:294) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:403) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:425) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.1.22.jar:1.1.22]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:455) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290) ~[netty-codec-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868) ~[netty-transport-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:799) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:501) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:399) ~[netty-transport-classes-epoll-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.113.Final.jar:4.1.113.Final]
+		at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+
+2025-09-10T03:17:37.990-05:00  INFO 119444 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 119444 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T03:17:37.993-05:00  INFO 119444 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T03:17:38.062-05:00  INFO 119444 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T03:17:38.062-05:00  INFO 119444 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T03:17:39.017-05:00  INFO 119444 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T03:17:39.136-05:00  INFO 119444 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T03:17:40.901-05:00  WARN 119444 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-10T03:17:41.189-05:00  WARN 119444 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T03:17:41.389-05:00  INFO 119444 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a4ad903c-12d7-4af7-9b4e-4f0d561e1253
+
+2025-09-10T03:17:41.946-05:00  INFO 119444 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T03:17:42.794-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T03:17:43.317-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T03:17:43.375-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T03:17:43.377-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T03:17:43.387-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T03:17:43.387-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T03:17:43.387-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T03:17:43.387-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T03:17:43.388-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T03:17:43.388-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T03:17:43.389-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T03:17:43.415-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T03:17:43.417-05:00  INFO 119444 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T03:17:43.891-05:00  INFO 119444 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T03:17:43.909-05:00  INFO 119444 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 6.634 seconds (process running for 8.723)
+2025-09-10T03:17:49.956-05:00  INFO 119444 --- [projectPragma] [parallel-2] c.com.bancolombia.api.user.UserHandler   : Processing user registration request from IP: 0:0:0:0:0:0:0:1
+2025-09-10T03:17:50.031-05:00  INFO 119444 --- [projectPragma] [reactor-http-epoll-3] c.com.bancolombia.api.user.UserHandler   : User registration requested - Email: admin1234156@gmail.com, Name: Juan ac11t Pérez actualizado
+2025-09-10T03:17:50.461-05:00  INFO 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : User registered successfully
+2025-09-10T03:18:01.860-05:00  WARN 119444 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T03:18:04.565-05:00  WARN 119444 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T03:18:55.896-05:00  WARN 119444 --- [projectPragma] [reactor-http-epoll-4] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-10T03:19:23.609-05:00 DEBUG 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-10T03:19:23.690-05:00  INFO 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:32:42.167-05:00 DEBUG 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'admint123', Hashed: '$2a$10$/X1Yl2KU/wo83LDuU64CCO.G1tEF4089lJSgC0WEp2NQ8v736ZYH2'
+2025-09-10T03:32:42.239-05:00 ERROR 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt failed: Invalid credentials
+2025-09-10T03:32:42.246-05:00  WARN 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.c.b.a.e.GlobalExceptionHandler         : 401 at /api/v1/auth/login -> Authentication failed: Invalid credentials
+2025-09-10T03:32:51.365-05:00 DEBUG 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'admint123', Hashed: '$2a$10$/X1Yl2KU/wo83LDuU64CCO.G1tEF4089lJSgC0WEp2NQ8v736ZYH2'
+2025-09-10T03:32:51.433-05:00 ERROR 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt failed: Invalid credentials
+2025-09-10T03:32:51.434-05:00  WARN 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.c.b.a.e.GlobalExceptionHandler         : 401 at /api/v1/auth/login -> Authentication failed: Invalid credentials
+2025-09-10T03:32:59.279-05:00 DEBUG 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'admin123', Hashed: '$2a$10$/X1Yl2KU/wo83LDuU64CCO.G1tEF4089lJSgC0WEp2NQ8v736ZYH2'
+2025-09-10T03:32:59.353-05:00  INFO 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:33:25.623-05:00 DEBUG 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-10T03:33:25.695-05:00  INFO 119444 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:44:03.744-05:00  INFO 122580 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 122580 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T03:44:03.756-05:00  INFO 122580 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T03:44:03.927-05:00  INFO 122580 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T03:44:03.929-05:00  INFO 122580 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T03:44:05.734-05:00  INFO 122580 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T03:44:05.881-05:00  INFO 122580 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T03:44:08.083-05:00  WARN 122580 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-10T03:44:08.440-05:00  WARN 122580 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T03:44:08.755-05:00  INFO 122580 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b2a6bd89-9786-406f-b2ad-c63eaa0b185b
+
+2025-09-10T03:44:09.608-05:00  INFO 122580 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T03:44:10.630-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T03:44:11.298-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T03:44:11.365-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T03:44:11.367-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T03:44:11.380-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T03:44:11.380-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T03:44:11.380-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T03:44:11.380-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T03:44:11.380-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T03:44:11.380-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T03:44:11.382-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T03:44:11.420-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T03:44:11.423-05:00  INFO 122580 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T03:44:11.895-05:00  INFO 122580 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T03:44:11.910-05:00  INFO 122580 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 9.144 seconds (process running for 12.103)
+2025-09-10T03:44:34.899-05:00  INFO 122580 --- [projectPragma] [parallel-3] c.com.bancolombia.api.user.UserHandler   : Fetching user with email: client@pragma.com
+2025-09-10T03:44:35.341-05:00  INFO 122580 --- [projectPragma] [reactor-tcp-epoll-1] c.com.bancolombia.api.user.UserHandler   : User retrieved successfully by email: client@pragma.com
+2025-09-10T03:44:48.451-05:00  INFO 122580 --- [projectPragma] [parallel-5] c.com.bancolombia.api.user.UserHandler   : Fetching user with email: client@pragma.com
+2025-09-10T03:44:48.465-05:00  INFO 122580 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : User retrieved successfully by email: client@pragma.com
+2025-09-10T03:45:00.269-05:00 DEBUG 122580 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-10T03:45:00.370-05:00  INFO 122580 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:45:16.913-05:00  INFO 122580 --- [projectPragma] [parallel-8] c.com.bancolombia.api.user.UserHandler   : Fetching user with email: client@pragma.com
+2025-09-10T03:45:16.920-05:00  INFO 122580 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : User retrieved successfully by email: client@pragma.com
+2025-09-10T03:45:26.525-05:00  INFO 122580 --- [projectPragma] [parallel-2] c.com.bancolombia.api.user.UserHandler   : Fetching user with email: client@pragma.com
+2025-09-10T03:45:26.537-05:00  INFO 122580 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : User retrieved successfully by email: client@pragma.com
+2025-09-10T03:54:20.832-05:00  INFO 123994 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 123994 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T03:54:20.835-05:00  INFO 123994 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T03:54:20.909-05:00  INFO 123994 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T03:54:20.910-05:00  INFO 123994 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T03:54:21.953-05:00  INFO 123994 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T03:54:22.094-05:00  INFO 123994 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T03:54:23.798-05:00  WARN 123994 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-10T03:54:24.099-05:00  WARN 123994 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T03:54:24.311-05:00  INFO 123994 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 297368f8-f581-4668-a375-dc68d637f123
+
+2025-09-10T03:54:24.863-05:00  INFO 123994 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T03:54:25.676-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T03:54:26.186-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T03:54:26.244-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T03:54:26.247-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T03:54:26.256-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T03:54:26.256-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T03:54:26.257-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T03:54:26.257-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T03:54:26.257-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T03:54:26.257-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T03:54:26.258-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T03:54:26.285-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T03:54:26.288-05:00  INFO 123994 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T03:54:26.659-05:00  INFO 123994 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T03:54:26.673-05:00  INFO 123994 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 6.492 seconds (process running for 8.338)
+2025-09-10T03:54:38.552-05:00  INFO 123994 --- [projectPragma] [parallel-3] c.com.bancolombia.api.user.UserHandler   : Fetching user with email: client@pragma.com
+2025-09-10T03:54:38.876-05:00  INFO 123994 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : User retrieved successfully by email: client@pragma.com
+2025-09-10T03:54:52.277-05:00 DEBUG 123994 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-10T03:54:52.378-05:00  INFO 123994 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-10T03:55:00.577-05:00  INFO 123994 --- [projectPragma] [parallel-6] c.com.bancolombia.api.user.UserHandler   : Fetching user with email: client@pragma.com
+2025-09-10T03:55:00.584-05:00  INFO 123994 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.user.UserHandler   : User retrieved successfully by email: client@pragma.com
+2025-09-10T04:07:09.845-05:00  INFO 126821 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 126821 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T04:07:09.849-05:00  INFO 126821 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T04:07:09.917-05:00  INFO 126821 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T04:07:09.917-05:00  INFO 126821 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T04:07:11.026-05:00  INFO 126821 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T04:07:11.216-05:00  INFO 126821 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 182 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T04:07:12.840-05:00  INFO 126821 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-10T04:07:13.119-05:00  WARN 126821 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T04:07:13.320-05:00  INFO 126821 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3d86bbca-a91a-402f-8c00-d5f724ddf622
+
+2025-09-10T04:07:13.837-05:00  INFO 126821 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T04:07:14.574-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T04:07:15.168-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T04:07:15.232-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T04:07:15.234-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T04:07:15.244-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T04:07:15.244-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T04:07:15.245-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T04:07:15.245-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T04:07:15.245-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T04:07:15.245-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T04:07:15.246-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T04:07:15.280-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T04:07:15.283-05:00  INFO 126821 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T04:07:15.647-05:00  INFO 126821 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T04:07:15.662-05:00  INFO 126821 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 6.495 seconds (process running for 8.656)
+2025-09-10T04:30:24.948-05:00  INFO 140735 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 140735 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T04:30:24.955-05:00  INFO 140735 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T04:30:25.080-05:00  INFO 140735 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T04:30:25.081-05:00  INFO 140735 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T04:30:26.336-05:00  INFO 140735 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T04:30:26.455-05:00  INFO 140735 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T04:30:28.252-05:00  INFO 140735 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-10T04:30:28.564-05:00  WARN 140735 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T04:30:28.789-05:00  INFO 140735 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 71b154ae-1dca-43ce-b97a-738276f96322
+
+2025-09-10T04:30:29.456-05:00  INFO 140735 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T04:30:30.409-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T04:30:30.984-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T04:30:31.050-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T04:30:31.052-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T04:30:31.063-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T04:30:31.063-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T04:30:31.063-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T04:30:31.063-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T04:30:31.064-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T04:30:31.064-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T04:30:31.065-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T04:30:31.101-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T04:30:31.104-05:00  INFO 140735 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T04:30:31.548-05:00  INFO 140735 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T04:30:31.565-05:00  INFO 140735 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 7.31 seconds (process running for 8.986)
+2025-09-10T18:22:07.570-05:00  INFO 7934 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 7934 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T18:22:07.574-05:00  INFO 7934 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T18:22:07.642-05:00  INFO 7934 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T18:22:07.643-05:00  INFO 7934 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T18:22:08.672-05:00  INFO 7934 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T18:22:08.806-05:00  INFO 7934 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T18:22:10.452-05:00  INFO 7934 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-10T18:22:10.742-05:00  WARN 7934 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T18:22:10.946-05:00  INFO 7934 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6c8aa345-edea-4f29-8ead-b95107a49dd7
+
+2025-09-10T18:22:11.481-05:00  INFO 7934 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T18:22:12.259-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T18:22:12.757-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T18:22:12.825-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T18:22:12.827-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T18:22:12.836-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T18:22:12.837-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T18:22:12.837-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T18:22:12.837-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T18:22:12.837-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T18:22:12.837-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T18:22:12.838-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T18:22:12.865-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T18:22:12.868-05:00  INFO 7934 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T18:22:13.232-05:00  INFO 7934 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T18:22:13.247-05:00  INFO 7934 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 6.265 seconds (process running for 7.972)
+2025-09-10T18:30:48.030-05:00  INFO 10421 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 10421 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T18:30:48.034-05:00  INFO 10421 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T18:30:48.110-05:00  INFO 10421 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-10T18:30:48.111-05:00  INFO 10421 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-10T18:30:49.159-05:00  INFO 10421 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T18:30:49.270-05:00  INFO 10421 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T18:30:50.687-05:00  WARN 10421 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-10T18:30:50.981-05:00  WARN 10421 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T18:30:51.188-05:00  INFO 10421 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ff976b95-eb3f-4efb-92d8-76f0f513ebf7
+
+2025-09-10T18:30:51.766-05:00  INFO 10421 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T18:30:52.597-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T18:30:53.119-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T18:30:53.178-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T18:30:53.180-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T18:30:53.190-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T18:30:53.191-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T18:30:53.191-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T18:30:53.191-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T18:30:53.191-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T18:30:53.191-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T18:30:53.192-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T18:30:53.216-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T18:30:53.218-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T18:30:53.704-05:00  INFO 10421 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T18:30:53.732-05:00  INFO 10421 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 6.536 seconds (process running for 8.266)
+2025-09-10T18:43:06.947-05:00  INFO 10421 --- [projectPragma] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2025-09-10T18:43:08.150-05:00  INFO 10421 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 10421 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-10T18:43:08.150-05:00  INFO 10421 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : The following 1 profile is active: "dev"
+2025-09-10T18:43:08.925-05:00  INFO 10421 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-10T18:43:08.943-05:00  INFO 10421 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 3 R2DBC repository interfaces.
+2025-09-10T18:43:09.732-05:00  WARN 10421 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-10T18:43:09.833-05:00  WARN 10421 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-10T18:43:09.946-05:00  INFO 10421 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a7a612d8-ae32-4b46-9374-529622d49b84
+
+2025-09-10T18:43:10.311-05:00  INFO 10421 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-10T18:43:10.618-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-10T18:43:10.849-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T18:43:10.877-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-10T18:43:10.880-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-10T18:43:10.885-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-10T18:43:10.886-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-10T18:43:10.886-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-10T18:43:10.886-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-10T18:43:10.886-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-10T18:43:10.886-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-10T18:43:10.886-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-10T18:43:10.895-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-10T18:43:10.896-05:00  INFO 10421 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-10T18:43:10.979-05:00  INFO 10421 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-10T18:43:10.985-05:00  INFO 10421 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 2.941 seconds (process running for 745.519)
+2025-09-10T18:43:10.989-05:00  INFO 10421 --- [projectPragma] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LoanTypeRepositoryAdapter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">r2dbc-postgresql</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.r2dbc.loantype</a> &gt; <span class="el_source">LoanTypeRepositoryAdapter.java</span></div><h1>LoanTypeRepositoryAdapter.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.r2dbc.loantype;
+
+import co.com.bancolombia.model.loantype.LoanType;
+import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
+import co.com.bancolombia.r2dbc.loantype.mapper.LoanTypeMapper;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Repository;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+<span class="nc" id="L12">@Slf4j</span>
+@Repository
+@RequiredArgsConstructor
+public class LoanTypeRepositoryAdapter implements LoanTypeRepository {
+
+    private final LoanTypeR2dbcRepository repository;
+    private final LoanTypeMapper loanTypeMapper;
+
+    @Override
+    public Mono&lt;LoanType&gt; findById(String id) {
+<span class="nc" id="L22">        log.debug(&quot;Buscando tipo de préstamo con ID: {}&quot;, id);</span>
+<span class="nc" id="L23">        return repository.findById(id)</span>
+<span class="nc" id="L24">                .map(loanTypeMapper::toDomain)</span>
+<span class="nc" id="L25">                .doOnNext(loanType -&gt; log.debug(&quot;Tipo de préstamo encontrado: {} - {}&quot;, loanType.getId(), loanType.getName()));</span>
+    }
+
+    @Override
+    public Flux&lt;LoanType&gt; findAll() {
+<span class="nc" id="L30">        log.debug(&quot;Obteniendo todos los tipos de préstamo&quot;);</span>
+<span class="nc" id="L31">        return repository.findAll()</span>
+<span class="nc" id="L32">                .map(loanTypeMapper::toDomain)</span>
+<span class="nc" id="L33">                .doOnNext(loanType -&gt; log.debug(&quot;Tipo de préstamo: {} - {}&quot;, loanType.getId(), loanType.getName()));</span>
+    }
+
+    @Override
+    public Mono&lt;Boolean&gt; existsById(String id) {
+<span class="nc" id="L38">        log.debug(&quot;Verificando si existe tipo de préstamo con ID: {}&quot;, id);</span>
+<span class="nc" id="L39">        return repository.existsById(id)</span>
+<span class="nc" id="L40">                .doOnNext(exists -&gt; log.debug(&quot;Existe tipo de préstamo con ID {}: {}&quot;, id, exists));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

@@ -1,0 +1,814 @@
+2025-09-08T02:39:14.137-05:00  INFO 53264 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 53264 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T02:39:14.157-05:00  INFO 53264 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T02:39:14.239-05:00  INFO 53264 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-08T02:39:14.240-05:00  INFO 53264 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-08T02:39:15.410-05:00  INFO 53264 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T02:39:15.567-05:00  INFO 53264 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T02:39:17.275-05:00  WARN 53264 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-08T02:39:17.572-05:00  WARN 53264 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T02:39:17.783-05:00  INFO 53264 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c67ece12-7bb9-4e1c-8529-d577ddd6dcb0
+
+2025-09-08T02:39:18.341-05:00  INFO 53264 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T02:39:19.235-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T02:39:19.766-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T02:39:19.816-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.changelog                      : Change failed validation!
+2025-09-08T02:39:19.821-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.command                        : Logging exception.
+2025-09-08T02:39:19.821-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Details
+2025-09-08T02:39:19.821-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Class:  ValidationFailedException
+2025-09-08T02:39:19.821-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Reason:  Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-create-role-table::sistema was: 9:ba00bae316bef6d8f9bd37f375b08899 but is now: 9:2a9ea38e91dfb0ab1d8c047fc2d31c29
+
+2025-09-08T02:39:19.822-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Source:  4.27.0
+2025-09-08T02:39:19.822-05:00  INFO 53264 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T02:39:19.826-05:00  WARN 53264 --- [projectPragma] [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-create-role-table::sistema was: 9:ba00bae316bef6d8f9bd37f375b08899 but is now: 9:2a9ea38e91dfb0ab1d8c047fc2d31c29
+
+2025-09-08T02:39:19.855-05:00  INFO 53264 --- [projectPragma] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-08T02:39:19.881-05:00 ERROR 53264 --- [projectPragma] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-create-role-table::sistema was: 9:ba00bae316bef6d8f9bd37f375b08899 but is now: 9:2a9ea38e91dfb0ab1d8c047fc2d31c29
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at co.com.bancolombia.MainApplication.main(MainApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-create-role-table::sistema was: 9:ba00bae316bef6d8f9bd37f375b08899 but is now: 9:2a9ea38e91dfb0ab1d8c047fc2d31c29
+
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:259) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	... 19 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-create-role-table::sistema was: 9:ba00bae316bef6d8f9bd37f375b08899 but is now: 9:2a9ea38e91dfb0ab1d8c047fc2d31c29
+
+	at liquibase.command.CommandScope.execute(CommandScope.java:257) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	... 22 common frames omitted
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-create-role-table::sistema was: 9:ba00bae316bef6d8f9bd37f375b08899 but is now: 9:2a9ea38e91dfb0ab1d8c047fc2d31c29
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:358) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
+	... 38 common frames omitted
+
+2025-09-08T02:44:19.985-05:00  INFO 54287 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 54287 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T02:44:19.989-05:00  INFO 54287 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T02:44:20.047-05:00  INFO 54287 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-08T02:44:20.047-05:00  INFO 54287 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-08T02:44:20.951-05:00  INFO 54287 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T02:44:21.068-05:00  INFO 54287 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T02:44:22.600-05:00  WARN 54287 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-08T02:44:22.896-05:00  WARN 54287 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T02:44:23.104-05:00  INFO 54287 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 232a1e46-c101-4532-ae34-d0710b05c7c3
+
+2025-09-08T02:44:23.663-05:00  INFO 54287 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T02:44:24.469-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T02:44:24.953-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2025-09-08T02:44:24.994-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T02:44:25.128-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2025-09-08T02:44:25.131-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.command                        : Using deploymentId: 7317465130
+2025-09-08T02:44:25.134-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T02:44:25.167-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-user-table.xml::001-create-user-table::sistema
+2025-09-08T02:44:25.172-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-08T02:44:25.204-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table users created
+2025-09-08T02:44:25.209-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Unique constraint added to users(email_address)
+2025-09-08T02:44:25.213-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_email_address created
+2025-09-08T02:44:25.216-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_creation_date created
+2025-09-08T02:44:25.218-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-user-table.xml::001-create-user-table::sistema ran successfully in 50ms
+2025-09-08T02:44:25.228-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-create-role-table::sistema
+2025-09-08T02:44:25.232-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-08T02:44:25.245-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table roles created
+2025-09-08T02:44:25.248-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_role_nombre created
+2025-09-08T02:44:25.250-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T02:44:25.252-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T02:44:25.254-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T02:44:25.256-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-create-role-table::sistema ran successfully in 26ms
+2025-09-08T02:44:25.260-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema
+2025-09-08T02:44:25.271-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Columns id_rol(VARCHAR(36)) added to users
+2025-09-08T02:44:25.273-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Data updated in users
+2025-09-08T02:44:25.274-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : NOT NULL constraint has been added to users.id_rol
+2025-09-08T02:44:25.278-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Foreign key constraint added to users (id_rol)
+2025-09-08T02:44:25.281-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_user_id_rol created
+2025-09-08T02:44:25.283-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema ran successfully in 23ms
+2025-09-08T02:44:25.289-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema
+2025-09-08T02:44:25.303-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T02:44:25.306-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T02:44:25.308-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema ran successfully in 17ms
+2025-09-08T02:44:25.318-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T02:44:25.318-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          4
+2025-09-08T02:44:25.318-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               0
+2025-09-08T02:44:25.318-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T02:44:25.318-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T02:44:25.318-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T02:44:25.320-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T02:44:25.323-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.command                        : Update command completed successfully.
+2025-09-08T02:44:25.323-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 9
+2025-09-08T02:44:25.327-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T02:44:25.330-05:00  INFO 54287 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T02:44:25.732-05:00  INFO 54287 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T02:44:25.746-05:00  INFO 54287 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 6.29 seconds (process running for 7.511)
+2025-09-08T02:44:42.016-05:00  INFO 54567 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 54567 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T02:44:42.020-05:00  INFO 54567 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T02:44:42.081-05:00  INFO 54567 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-08T02:44:42.082-05:00  INFO 54567 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-08T02:44:42.984-05:00  INFO 54567 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T02:44:43.093-05:00  INFO 54567 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T02:44:44.502-05:00  WARN 54567 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-09-08T02:44:44.785-05:00  WARN 54567 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T02:44:44.979-05:00  INFO 54567 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7ca2cbf8-2c51-4879-9848-99753437d54a
+
+2025-09-08T02:44:45.495-05:00  INFO 54567 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T02:44:46.262-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T02:44:46.773-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T02:44:46.838-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-08T02:44:46.840-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T02:44:46.850-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T02:44:46.851-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-08T02:44:46.851-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-08T02:44:46.851-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T02:44:46.851-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T02:44:46.851-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T02:44:46.852-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T02:44:46.876-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T02:44:46.879-05:00  INFO 54567 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T02:44:47.184-05:00  INFO 54567 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T02:44:47.197-05:00  INFO 54567 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 5.798 seconds (process running for 7.452)
+2025-09-08T02:45:20.223-05:00 DEBUG 54567 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-08T02:45:20.337-05:00  INFO 54567 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T02:46:11.964-05:00 DEBUG 54567 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'admin123', Hashed: '$2a$10$/X1Yl2KU/wo83LDuU64CCO.G1tEF4089lJSgC0WEp2NQ8v736ZYH2'
+2025-09-08T02:46:12.033-05:00  INFO 54567 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T03:17:51.471-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 64657 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:17:51.477-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:17:51.550-05:00  INFO 64657 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-08T03:17:51.550-05:00  INFO 64657 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-08T03:17:52.689-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T03:17:52.841-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T03:17:54.653-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-08T03:17:54.962-05:00  WARN 64657 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T03:17:55.174-05:00  INFO 64657 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ba9fe78a-e802-4cf2-a05f-de27e90609cb
+
+2025-09-08T03:17:55.753-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T03:17:56.629-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T03:17:57.150-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2025-09-08T03:17:57.192-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:17:57.332-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2025-09-08T03:17:57.334-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.command                        : Using deploymentId: 7319477333
+2025-09-08T03:17:57.336-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:17:57.377-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-user-table.xml::001-create-user-table::sistema
+2025-09-08T03:17:57.382-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-08T03:17:57.414-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table users created
+2025-09-08T03:17:57.419-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Unique constraint added to users(email_address)
+2025-09-08T03:17:57.423-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_email_address created
+2025-09-08T03:17:57.426-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_creation_date created
+2025-09-08T03:17:57.428-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-user-table.xml::001-create-user-table::sistema ran successfully in 49ms
+2025-09-08T03:17:57.437-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-create-role-table::sistema
+2025-09-08T03:17:57.440-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-08T03:17:57.452-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table roles created
+2025-09-08T03:17:57.456-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_role_nombre created
+2025-09-08T03:17:57.458-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T03:17:57.460-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T03:17:57.462-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T03:17:57.464-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-create-role-table::sistema ran successfully in 26ms
+2025-09-08T03:17:57.468-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema
+2025-09-08T03:17:57.478-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Columns id_rol(VARCHAR(36)) added to users
+2025-09-08T03:17:57.480-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Data updated in users
+2025-09-08T03:17:57.482-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : NOT NULL constraint has been added to users.id_rol
+2025-09-08T03:17:57.486-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Foreign key constraint added to users (id_rol)
+2025-09-08T03:17:57.489-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_user_id_rol created
+2025-09-08T03:17:57.491-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema ran successfully in 23ms
+2025-09-08T03:17:57.501-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema
+2025-09-08T03:17:57.512-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T03:17:57.515-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T03:17:57.517-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T03:17:57.519-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema ran successfully in 17ms
+2025-09-08T03:17:57.529-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T03:17:57.529-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          4
+2025-09-08T03:17:57.529-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               0
+2025-09-08T03:17:57.529-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T03:17:57.529-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T03:17:57.529-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T03:17:57.531-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T03:17:57.535-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.command                        : Update command completed successfully.
+2025-09-08T03:17:57.535-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
+2025-09-08T03:17:57.539-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T03:17:57.540-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T03:17:57.956-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T03:17:57.972-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 7.193 seconds (process running for 9.782)
+2025-09-08T03:21:14.015-05:00 DEBUG 64657 --- [projectPragma] [reactor-tcp-epoll-1] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'admin123', Hashed: '$2a$10$/X1Yl2KU/wo83LDuU64CCO.G1tEF4089lJSgC0WEp2NQ8v736ZYH2'
+2025-09-08T03:21:14.415-05:00  INFO 64657 --- [projectPragma] [reactor-tcp-epoll-1] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T03:21:46.183-05:00 DEBUG 64657 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$2I8fV7w9qZm3jHtK5LpGKu5X7.NqE8dF1sRwT9VoP2QzYgHhUxMnC'
+2025-09-08T03:21:46.253-05:00 ERROR 64657 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login error: Invalid credentials
+2025-09-08T03:21:46.253-05:00  INFO 64657 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T03:23:29.698-05:00  INFO 64657 --- [projectPragma] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (0 additions, 13 deletions, 0 modifications)
+2025-09-08T03:23:29.847-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 64657 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:23:29.847-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:23:29.901-05:00  WARN 64657 --- [projectPragma] [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [co.com.bancolombia.r2dbc.role.RoleRepositoryAdapter]
+2025-09-08T03:23:29.956-05:00 ERROR 64657 --- [projectPragma] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: I/O failure while processing configuration class [co.com.bancolombia.r2dbc.role.RoleRepositoryAdapter]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:251) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:314) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:197) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:165) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at co.com.bancolombia.MainApplication.main(MainApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.io.FileNotFoundException: class path resource [co/com/bancolombia/model/role/gateways/RoleRepository.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:54) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:86) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:73) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81) ~[spring-core-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:630) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:956) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:396) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:342) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:246) ~[spring-context-6.1.13.jar:6.1.13]
+	... 21 common frames omitted
+
+2025-09-08T03:28:43.598-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 64657 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:28:43.614-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:28:45.752-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T03:28:45.798-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T03:28:46.506-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-08T03:28:46.805-05:00  WARN 64657 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T03:28:46.907-05:00  INFO 64657 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 487e9fb6-0fcf-4072-a4ce-17bd00423966
+
+2025-09-08T03:28:47.135-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T03:28:47.346-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T03:28:47.552-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:28:47.573-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-08T03:28:47.575-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:28:47.578-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T03:28:47.579-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-08T03:28:47.579-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-08T03:28:47.579-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T03:28:47.579-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T03:28:47.579-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T03:28:47.579-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T03:28:47.585-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T03:28:47.586-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T03:28:47.685-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T03:28:47.694-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 4.535 seconds (process running for 659.504)
+2025-09-08T03:28:47.698-05:00  INFO 64657 --- [projectPragma] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-08T03:32:12.853-05:00  INFO 64657 --- [projectPragma] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-09-08T03:32:13.024-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 64657 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:32:13.024-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:32:13.506-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T03:32:13.518-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T03:32:13.929-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-08T03:32:14.039-05:00  WARN 64657 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T03:32:14.135-05:00  INFO 64657 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: da8de004-feea-4852-b09c-69788a3ff794
+
+2025-09-08T03:32:14.406-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T03:32:14.769-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T03:32:15.498-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:32:15.561-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-08T03:32:15.564-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T03:32:15.604-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T03:32:15.614-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T03:32:15.616-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T03:32:16.092-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T03:32:16.106-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 3.13 seconds (process running for 867.916)
+2025-09-08T03:32:16.111-05:00  INFO 64657 --- [projectPragma] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-08T03:34:59.180-05:00  INFO 64657 --- [projectPragma] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-08T03:34:59.941-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 64657 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:34:59.941-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:35:00.716-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T03:35:00.733-05:00  INFO 64657 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T03:35:01.370-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-08T03:35:01.442-05:00  WARN 64657 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T03:35:01.554-05:00  INFO 64657 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 7954f25f-c61a-4c50-b61a-d64c3566e892
+
+2025-09-08T03:35:01.763-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T03:35:01.960-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T03:35:02.099-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:35:02.123-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-09-08T03:35:02.125-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:35:02.129-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T03:35:02.129-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          0
+2025-09-08T03:35:02.129-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               4
+2025-09-08T03:35:02.130-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T03:35:02.130-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T03:35:02.130-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T03:35:02.130-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T03:35:02.137-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T03:35:02.138-05:00  INFO 64657 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T03:35:02.212-05:00  INFO 64657 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T03:35:02.218-05:00  INFO 64657 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 2.535 seconds (process running for 1034.028)
+2025-09-08T03:35:02.221-05:00  INFO 64657 --- [projectPragma] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-08T03:39:43.004-05:00  INFO 70525 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 70525 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:39:43.008-05:00  INFO 70525 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:39:43.090-05:00  INFO 70525 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-08T03:39:43.091-05:00  INFO 70525 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-08T03:39:44.253-05:00  INFO 70525 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T03:39:44.416-05:00  INFO 70525 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T03:39:46.537-05:00  INFO 70525 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-08T03:39:46.911-05:00  WARN 70525 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T03:39:47.157-05:00  INFO 70525 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 890f3807-1b63-4f55-9ff9-3e5e3edf468a
+
+2025-09-08T03:39:47.771-05:00  INFO 70525 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T03:39:48.707-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T03:39:49.286-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:39:49.345-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.changelog                      : Change failed validation!
+2025-09-08T03:39:49.350-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.command                        : Logging exception.
+2025-09-08T03:39:49.351-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Details
+2025-09-08T03:39:49.352-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Class:  ValidationFailedException
+2025-09-08T03:39:49.352-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Reason:  Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema was: 9:30ec3c60d01b5828aa0f3df69f3c7426 but is now: 9:680d654618d3cbc2dd96ec778af20a3c
+
+2025-09-08T03:39:49.352-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Source:  4.27.0
+2025-09-08T03:39:49.353-05:00  INFO 70525 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T03:39:49.357-05:00  WARN 70525 --- [projectPragma] [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema was: 9:30ec3c60d01b5828aa0f3df69f3c7426 but is now: 9:680d654618d3cbc2dd96ec778af20a3c
+
+2025-09-08T03:39:49.388-05:00  INFO 70525 --- [projectPragma] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-08T03:39:49.419-05:00 ERROR 70525 --- [projectPragma] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema was: 9:30ec3c60d01b5828aa0f3df69f3c7426 but is now: 9:680d654618d3cbc2dd96ec778af20a3c
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at co.com.bancolombia.MainApplication.main(MainApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema was: 9:30ec3c60d01b5828aa0f3df69f3c7426 but is now: 9:680d654618d3cbc2dd96ec778af20a3c
+
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:259) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	... 19 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema was: 9:30ec3c60d01b5828aa0f3df69f3c7426 but is now: 9:680d654618d3cbc2dd96ec778af20a3c
+
+	at liquibase.command.CommandScope.execute(CommandScope.java:257) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	... 22 common frames omitted
+Caused by: liquibase.exception.ValidationFailedException: Validation Failed:
+     1 changesets check sum
+          db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema was: 9:30ec3c60d01b5828aa0f3df69f3c7426 but is now: 9:680d654618d3cbc2dd96ec778af20a3c
+
+	at liquibase.changelog.DatabaseChangeLog.validate(DatabaseChangeLog.java:358) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:92) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
+	... 38 common frames omitted
+
+2025-09-08T03:42:17.347-05:00  INFO 70932 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 70932 (/home/alex/Documentos/pragma/applications/app-service/build/classes/java/main started by alex in /home/alex/Documentos/pragma)
+2025-09-08T03:42:17.351-05:00  INFO 70932 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-08T03:42:17.419-05:00  INFO 70932 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-08T03:42:17.419-05:00  INFO 70932 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-08T03:42:18.489-05:00  INFO 70932 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-08T03:42:18.615-05:00  INFO 70932 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 3 R2DBC repository interfaces.
+2025-09-08T03:42:20.485-05:00  INFO 70932 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-08T03:42:20.820-05:00  WARN 70932 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-08T03:42:21.024-05:00  INFO 70932 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f9d0a6ac-d4df-43f0-94d5-c7a37a9cac0e
+
+2025-09-08T03:42:21.584-05:00  INFO 70932 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-08T03:42:22.443-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-08T03:42:22.974-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2025-09-08T03:42:23.017-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:42:23.146-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2025-09-08T03:42:23.147-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.command                        : Using deploymentId: 7320943147
+2025-09-08T03:42:23.150-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-08T03:42:23.192-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-user-table.xml::001-create-user-table::sistema
+2025-09-08T03:42:23.200-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-08T03:42:23.238-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table users created
+2025-09-08T03:42:23.243-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Unique constraint added to users(email_address)
+2025-09-08T03:42:23.247-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_email_address created
+2025-09-08T03:42:23.250-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_creation_date created
+2025-09-08T03:42:23.251-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-user-table.xml::001-create-user-table::sistema ran successfully in 56ms
+2025-09-08T03:42:23.260-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-create-role-table::sistema
+2025-09-08T03:42:23.263-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-08T03:42:23.276-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table roles created
+2025-09-08T03:42:23.279-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_role_nombre created
+2025-09-08T03:42:23.283-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T03:42:23.285-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T03:42:23.287-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-08T03:42:23.289-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-create-role-table::sistema ran successfully in 29ms
+2025-09-08T03:42:23.293-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema
+2025-09-08T03:42:23.305-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Columns id_rol(VARCHAR(36)) added to users
+2025-09-08T03:42:23.308-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Data updated in users
+2025-09-08T03:42:23.310-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : NOT NULL constraint has been added to users.id_rol
+2025-09-08T03:42:23.315-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Foreign key constraint added to users (id_rol)
+2025-09-08T03:42:23.320-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_user_id_rol created
+2025-09-08T03:42:23.321-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema ran successfully in 27ms
+2025-09-08T03:42:23.333-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema
+2025-09-08T03:42:23.347-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T03:42:23.350-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T03:42:23.352-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-08T03:42:23.353-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema ran successfully in 19ms
+2025-09-08T03:42:23.363-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-08T03:42:23.363-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          4
+2025-09-08T03:42:23.364-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               0
+2025-09-08T03:42:23.364-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-08T03:42:23.364-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-08T03:42:23.364-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-08T03:42:23.365-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-08T03:42:23.369-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.command                        : Update command completed successfully.
+2025-09-08T03:42:23.369-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 10
+2025-09-08T03:42:23.373-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-08T03:42:23.376-05:00  INFO 70932 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-08T03:42:23.777-05:00  INFO 70932 --- [projectPragma] [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8090 (http)
+2025-09-08T03:42:23.791-05:00  INFO 70932 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Started MainApplication in 7.125 seconds (process running for 8.856)
+2025-09-08T03:42:51.425-05:00 DEBUG 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-08T03:42:51.542-05:00  INFO 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T03:51:35.317-05:00  WARN 70932 --- [projectPragma] [reactor-http-epoll-5] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-08T03:51:37.231-05:00  WARN 70932 --- [projectPragma] [reactor-http-epoll-5] c.c.b.api.jwt.JwtAuthenticationFilter    : [JWT Filter] Token expired or invalid for request: /api/v1/auth/validate
+2025-09-08T03:58:26.812-05:00 DEBUG 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-08T03:58:26.899-05:00  INFO 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T03:58:31.746-05:00 DEBUG 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'client123', Hashed: '$2a$10$hCjqnUfEYtOPUg5VIkDmBOHjWPBAuE./SOScQpZBlr2urSUcZNMRW'
+2025-09-08T03:58:31.816-05:00  INFO 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T04:04:40.921-05:00 DEBUG 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Comparing password - Raw: 'assessor123', Hashed: '$2a$10$vSKXmSS7A1YM6Nd4twxxleFku2Q0BqPePJ6Y0pMXGo0MyJX5PREQK'
+2025-09-08T04:04:41.008-05:00  INFO 70932 --- [projectPragma] [reactor-tcp-epoll-4] c.com.bancolombia.api.auth.AuthHandler   : [AUTH] Login attempt processed successfully
+2025-09-08T04:04:52.306-05:00 ERROR 70932 --- [projectPragma] [parallel-2] c.c.b.a.e.GlobalExceptionHandler         : Error interno del servidor
+
+org.springframework.web.reactive.resource.NoResourceFoundException: 404 NOT_FOUND "No static resource api/v1/users/byEmail/alex%40gmail.com."
+	at org.springframework.web.reactive.resource.ResourceWebHandler.lambda$handle$1(ResourceWebHandler.java:431) ~[spring-webflux-6.1.13.jar:6.1.13]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:45) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:189) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onComplete(FluxConcatMapNoPrefetch.java:241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:357) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:117) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:207) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerComplete(FluxConcatMapNoPrefetch.java:275) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onComplete(FluxConcatMap.java:889) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:209) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onComplete(FluxConcatMapNoPrefetch.java:241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:357) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.request(FluxConcatArray.java:256) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.request(FluxPeek.java:138) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:155) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondComplete(MonoFlatMap.java:245) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onNext(MonoFlatMap.java:305) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.request(FluxMap.java:295) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.request(FluxFilterFuseable.java:411) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.request(FluxMapFuseable.java:360) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.request(FluxMapFuseable.java:360) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.request(FluxDefaultIfEmpty.java:98) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onSubscribe(MonoFlatMap.java:291) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.onSubscribe(Operators.java:2051) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onSubscribe(FluxMapFuseable.java:265) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onSubscribe(FluxMapFuseable.java:265) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onSubscribe(FluxFilterFuseable.java:305) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:117) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onSubscribe(FluxFilter.java:85) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onSubscribe(FluxMap.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:118) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2571) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:191) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:117) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:87) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:207) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:335) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerComplete(FluxConcatMapNoPrefetch.java:275) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onComplete(FluxConcatMap.java:889) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:189) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:85) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2573) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:850) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:612) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:592) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.request(FluxFlatMap.java:349) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.request(FluxPeekFuseable.java:783) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2331) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:339) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.request(FluxDefaultIfEmpty.java:98) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.request(FluxPeekFuseable.java:437) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.request(FluxFilter.java:186) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onSubscribe(FluxFilter.java:85) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onSubscribe(FluxPeekFuseable.java:471) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onSubscribe(MonoPeekTerminal.java:152) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.onSubscribe(Operators.java:2051) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onComplete(FluxPeekFuseable.java:940) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:85) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2573) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2367) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2241) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:82) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:102) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:850) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:612) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:592) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onComplete(FluxFlatMap.java:469) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onComplete(FluxPeekFuseable.java:277) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:357) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:294) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:373) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:178) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:76) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onComplete(FluxDefaultIfEmpty.java:134) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onComplete(FluxFilter.java:166) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onComplete(FluxMap.java:275) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1866) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoCacheTime$CoordinatorSubscriber.signalCached(MonoCacheTime.java:337) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoCacheTime$CoordinatorSubscriber.onNext(MonoCacheTime.java:354) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.publisher.MonoPublishOn$PublishOnSubscriber.run(MonoPublishOn.java:181) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.6.10.jar:3.6.10]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.6.10.jar:3.6.10]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1570) ~[na:na]
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-10T07:46:48.916Z" hostname="alex" time="3.404">
+  <properties/>
+  <testcase name="findAll()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="3.227"/>
+  <testcase name="findById()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.126"/>
+  <testcase name="saveAllEntities()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.015"/>
+  <testcase name="findByExample()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.017"/>
+  <testcase name="save()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

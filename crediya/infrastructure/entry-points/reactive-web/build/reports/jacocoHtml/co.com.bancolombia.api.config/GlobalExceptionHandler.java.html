@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GlobalExceptionHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.config</a> &gt; <span class="el_source">GlobalExceptionHandler.java</span></div><h1>GlobalExceptionHandler.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.config;
+
+import co.com.bancolombia.api.dto.response.ErrorResponseDTO;
+import co.com.bancolombia.model.orders.exceptions.OrdersBusinessException;
+import jakarta.validation.ConstraintViolationException;
+import jakarta.validation.UnexpectedTypeException;
+import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
+import org.springframework.core.codec.DecodingException;
+import org.springframework.core.io.buffer.DataBufferFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
+import org.springframework.web.server.NotAcceptableStatusException;
+import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.server.ServerWebInputException;
+import org.springframework.web.server.UnsupportedMediaTypeStatusException;
+import reactor.core.publisher.Mono;
+
+import java.nio.charset.StandardCharsets;
+import java.time.LocalDateTime;
+
+/**
+ * Global exception handler for the Crediya application.
+ * Provides centralized error handling for all reactive web endpoints.
+ * 
+ * @author Crediya Development Team
+ */
+<span class="nc" id="L30">@Slf4j</span>
+@Component
+<span class="nc" id="L32">public class GlobalExceptionHandler implements ErrorWebExceptionHandler {</span>
+
+    /**
+     * Handles all exceptions thrown in the reactive web layer.
+     * 
+     * @param exchange the current server web exchange
+     * @param ex the exception to handle
+     * @return a Mono containing the error response
+     */
+    @Override
+<span class="nc bnc" id="L42" title="All 4 branches missed.">    public @NonNull Mono&lt;Void&gt; handle(@NonNull ServerWebExchange exchange, @NonNull Throwable ex) {</span>
+<span class="nc" id="L43">        String path = exchange.getRequest().getPath().value();</span>
+        HttpStatus status;
+        ErrorResponseDTO errorResponse;
+        
+<span class="nc" id="L47">        log.debug(&quot;Handling exception at {} -&gt; {}: {}&quot;, path, ex.getClass().getName(), ex.getMessage(), ex);</span>
+        
+<span class="nc bnc" id="L49" title="All 2 branches missed.">        if (ex instanceof OrdersBusinessException businessException) {</span>
+<span class="nc" id="L50">            status = mapBusinessExceptionToStatus(businessException);</span>
+<span class="nc" id="L51">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L52">                    .code(businessException.getCode())</span>
+<span class="nc" id="L53">                    .message(businessException.getMessage())</span>
+<span class="nc" id="L54">                    .path(path)</span>
+<span class="nc" id="L55">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L56">                    .build();</span>
+<span class="nc" id="L57">            log.warn(&quot;{} at {} -&gt; {}&quot;, status.value(), path, businessException.getMessage());</span>
+            
+<span class="nc bnc" id="L59" title="All 2 branches missed.">        } else if (ex instanceof IllegalArgumentException iae) {</span>
+<span class="nc" id="L60">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L61">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L62">                    .code(&quot;INVALID_ARGUMENT&quot;)</span>
+<span class="nc" id="L63">                    .message(iae.getMessage())</span>
+<span class="nc" id="L64">                    .path(path)</span>
+<span class="nc" id="L65">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L66">                    .build();</span>
+<span class="nc" id="L67">            log.warn(&quot;400 at {} -&gt; {}&quot;, path, iae.getMessage());</span>
+            
+<span class="nc bnc" id="L69" title="All 2 branches missed.">        } else if (ex instanceof ConstraintViolationException cve) {</span>
+<span class="nc" id="L70">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L71">            String validationMessage = cve.getConstraintViolations().stream()</span>
+<span class="nc bnc" id="L72" title="All 2 branches missed.">                    .map(v -&gt; (v.getPropertyPath() != null ? v.getPropertyPath().toString() + &quot;: &quot; : &quot;&quot;) + v.getMessage())</span>
+<span class="nc" id="L73">                    .reduce((a, b) -&gt; a + &quot;; &quot; + b)</span>
+<span class="nc" id="L74">                    .orElse(&quot;Errores de validación en la solicitud&quot;);</span>
+            
+<span class="nc" id="L76">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L77">                    .code(&quot;VALIDATION_ERROR&quot;)</span>
+<span class="nc" id="L78">                    .message(validationMessage)</span>
+<span class="nc" id="L79">                    .path(path)</span>
+<span class="nc" id="L80">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L81">                    .build();</span>
+<span class="nc" id="L82">            log.warn(&quot;400 (validation) at {} -&gt; {}&quot;, path, validationMessage);</span>
+            
+<span class="nc bnc" id="L84" title="All 2 branches missed.">        } else if (ex instanceof UnexpectedTypeException ute) {</span>
+<span class="nc" id="L85">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L86">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L87">                    .code(&quot;VALIDATION_TYPE_ERROR&quot;)</span>
+<span class="nc" id="L88">                    .message(&quot;Tipo de validación inválida: &quot; + ute.getMessage())</span>
+<span class="nc" id="L89">                    .path(path)</span>
+<span class="nc" id="L90">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L91">                    .build();</span>
+<span class="nc" id="L92">            log.warn(&quot;400 (unexpected type) at {} -&gt; {}&quot;, path, ute.getMessage());</span>
+            
+<span class="nc bnc" id="L94" title="All 2 branches missed.">        } else if (ex instanceof ServerWebInputException swe) {</span>
+<span class="nc" id="L95">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L96">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L97">                    .code(&quot;INVALID_REQUEST_BODY&quot;)</span>
+<span class="nc" id="L98">                    .message(&quot;Cuerpo de solicitud inválido: &quot; + swe.getReason())</span>
+<span class="nc" id="L99">                    .path(path)</span>
+<span class="nc" id="L100">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L101">                    .build();</span>
+<span class="nc" id="L102">            log.warn(&quot;400 (input) at {} -&gt; {}&quot;, path, swe.getReason());</span>
+            
+<span class="nc bnc" id="L104" title="All 2 branches missed.">        } else if (ex instanceof DecodingException) {</span>
+<span class="nc" id="L105">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L106">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L107">                    .code(&quot;JSON_DECODE_ERROR&quot;)</span>
+<span class="nc" id="L108">                    .message(&quot;No se pudo procesar el JSON. Verifique el formato y los tipos de datos.&quot;)</span>
+<span class="nc" id="L109">                    .path(path)</span>
+<span class="nc" id="L110">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L111">                    .build();</span>
+<span class="nc" id="L112">            log.warn(&quot;400 (decode) at {} -&gt; JSON decode error&quot;, path);</span>
+            
+<span class="nc bnc" id="L114" title="All 2 branches missed.">        } else if (ex instanceof UnsupportedMediaTypeStatusException) {</span>
+<span class="nc" id="L115">            status = HttpStatus.UNSUPPORTED_MEDIA_TYPE;</span>
+<span class="nc" id="L116">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L117">                    .code(&quot;UNSUPPORTED_MEDIA_TYPE&quot;)</span>
+<span class="nc" id="L118">                    .message(&quot;Content-Type no soportado. Use application/json.&quot;)</span>
+<span class="nc" id="L119">                    .path(path)</span>
+<span class="nc" id="L120">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L121">                    .build();</span>
+<span class="nc" id="L122">            log.warn(&quot;415 at {} -&gt; Unsupported media type&quot;, path);</span>
+            
+<span class="nc bnc" id="L124" title="All 2 branches missed.">        } else if (ex instanceof NotAcceptableStatusException) {</span>
+<span class="nc" id="L125">            status = HttpStatus.NOT_ACCEPTABLE;</span>
+<span class="nc" id="L126">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L127">                    .code(&quot;NOT_ACCEPTABLE&quot;)</span>
+<span class="nc" id="L128">                    .message(&quot;Accept header no soportado por el servidor.&quot;)</span>
+<span class="nc" id="L129">                    .path(path)</span>
+<span class="nc" id="L130">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L131">                    .build();</span>
+<span class="nc" id="L132">            log.warn(&quot;406 at {} -&gt; Not acceptable&quot;, path);</span>
+            
+        } else {
+<span class="nc" id="L135">            status = HttpStatus.INTERNAL_SERVER_ERROR;</span>
+<span class="nc" id="L136">            errorResponse = ErrorResponseDTO.builder()</span>
+<span class="nc" id="L137">                    .code(&quot;INTERNAL_ERROR&quot;)</span>
+<span class="nc" id="L138">                    .message(&quot;Error interno del servidor. Por favor contacte al administrador.&quot;)</span>
+<span class="nc" id="L139">                    .path(path)</span>
+<span class="nc" id="L140">                    .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L141">                    .build();</span>
+<span class="nc" id="L142">            log.error(&quot;500 at {} -&gt; {}: {}&quot;, path, ex.getClass().getName(), ex.getMessage(), ex);</span>
+        }
+        
+<span class="nc" id="L145">        var response = exchange.getResponse();</span>
+<span class="nc bnc" id="L146" title="All 2 branches missed.">        if (response.isCommitted()) {</span>
+<span class="nc" id="L147">            log.warn(&quot;Response already committed for path {}. Cannot write error response.&quot;, path);</span>
+<span class="nc" id="L148">            return Mono.error(ex);</span>
+        }
+        
+<span class="nc" id="L151">        response.setStatusCode(status);</span>
+<span class="nc" id="L152">        response.getHeaders().setContentType(MediaType.APPLICATION_JSON);</span>
+        
+<span class="nc" id="L154">        String jsonResponse = buildJsonResponse(errorResponse);</span>
+<span class="nc" id="L155">        DataBufferFactory bufferFactory = response.bufferFactory();</span>
+<span class="nc" id="L156">        var buffer = bufferFactory.wrap(jsonResponse.getBytes(StandardCharsets.UTF_8));</span>
+        
+<span class="nc" id="L158">        return response.writeWith(Mono.just(buffer));</span>
+    }
+    
+    /**
+     * Maps business exceptions to appropriate HTTP status codes.
+     * 
+     * @param exception the business exception
+     * @return the corresponding HTTP status
+     */
+    private HttpStatus mapBusinessExceptionToStatus(OrdersBusinessException exception) {
+<span class="nc bnc" id="L168" title="All 5 branches missed.">        return switch (exception.getCode()) {</span>
+<span class="nc" id="L169">            case &quot;LOAN_TYPE_NOT_FOUND&quot;, &quot;ORDER_NOT_FOUND&quot; -&gt; HttpStatus.NOT_FOUND;</span>
+<span class="nc" id="L170">            case &quot;INVALID_LOAN_AMOUNT&quot;, &quot;VALIDATION_ERROR&quot; -&gt; HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L171">            case &quot;UNAUTHORIZED&quot; -&gt; HttpStatus.UNAUTHORIZED;</span>
+<span class="nc" id="L172">            case &quot;PENDING_STATUS_NOT_FOUND&quot; -&gt; HttpStatus.INTERNAL_SERVER_ERROR;</span>
+<span class="nc" id="L173">            default -&gt; HttpStatus.INTERNAL_SERVER_ERROR;</span>
+        };
+    }
+    
+    /**
+     * Builds a JSON response from the error response DTO.
+     * 
+     * @param errorResponse the error response DTO
+     * @return the JSON string
+     */
+    private String buildJsonResponse(ErrorResponseDTO errorResponse) {
+<span class="nc" id="L184">        return String.format(&quot;&quot;&quot;</span>
+                {
+                  &quot;code&quot;: &quot;%s&quot;,
+                  &quot;message&quot;: &quot;%s&quot;,
+                  &quot;path&quot;: &quot;%s&quot;,
+                  &quot;timestamp&quot;: &quot;%s&quot;
+                }
+                &quot;&quot;&quot;, 
+<span class="nc" id="L192">                escapeJson(errorResponse.getCode()),</span>
+<span class="nc" id="L193">                escapeJson(errorResponse.getMessage()),</span>
+<span class="nc" id="L194">                escapeJson(errorResponse.getPath()),</span>
+<span class="nc" id="L195">                errorResponse.getTimestamp().toString()</span>
+        );
+    }
+    
+    /**
+     * Escapes special characters in JSON strings.
+     * 
+     * @param str the string to escape
+     * @return the escaped string
+     */
+    private String escapeJson(String str) {
+<span class="nc bnc" id="L206" title="All 2 branches missed.">        return str == null ? &quot;&quot; : str.replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;\\r&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

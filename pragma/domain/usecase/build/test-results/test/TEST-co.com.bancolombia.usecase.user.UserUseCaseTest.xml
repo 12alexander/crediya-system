@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.bancolombia.usecase.user.UserUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:27:37.451Z" hostname="alex" time="5.504">
+  <properties/>
+  <testcase name="saveUser_WithValidData_ShouldWork()" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="5.422"/>
+  <testcase name="getAllUsers_ShouldWork()" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.031"/>
+  <testcase name="saveUser_WithDuplicateEmail_ShouldFail()" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

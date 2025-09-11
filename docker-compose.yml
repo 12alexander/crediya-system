@@ -1,0 +1,102 @@
+version: '3.8'
+
+services:
+  # PostgreSQL para Authentication
+  postgres-auth:
+    image: postgres:16-alpine
+    container_name: crediya-postgres-auth
+    environment:
+      POSTGRES_DB: authorization
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    ports:
+      - "5433:5432"
+    volumes:
+      - auth_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d authorization"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  # PostgreSQL para Orders  
+  postgres-orders:
+    image: postgres:16-alpine
+    container_name: crediya-postgres-orders
+    environment:
+      POSTGRES_DB: crediya
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    ports:
+      - "5434:5432"
+    volumes:
+      - orders_db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d crediya"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+
+  # Authentication Service (Pragma)
+  pragma:
+    build:
+      context: ./pragma
+      dockerfile: Dockerfile
+    container_name: crediya-pragma
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      DB_HOST: postgres-auth
+      DB_PORT: 5432
+      DB_NAME: authorization
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      DB_SCHEMA: public
+      CORS_ALLOWED_ORIGINS: "http://localhost:4200,http://crediya:8091"
+      JWT_SECRET: "mySecretKeyForJWTTokenGenerationShouldBeAtLeast32Characters"
+      JWT_EXPIRATION: 3600000
+      LOG_FILE_PATH: "logs/pragma.log"
+    ports:
+      - "8090:8090"
+    depends_on:
+      postgres-auth:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # Orders Service (CrediYa)
+  crediya:
+    build:
+      context: ./crediya
+      dockerfile: Dockerfile
+    container_name: crediya-orders
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      DB_HOST: postgres-orders
+      DB_PORT: 5432
+      DB_NAME: crediya
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      DB_SCHEMA: public
+      AUTH_SERVICE_URL: "http://pragma:8090"
+      AUTH_TIMEOUT: 30
+      AUTH_MAX_RETRIES: 3
+      CORS_ALLOWED_ORIGINS: "http://localhost:4200,http://pragma:8090"
+      LOG_LEVEL: INFO
+      LOG_FILE_PATH: "logs/crediya.log"
+    ports:
+      - "8091:8091"
+    depends_on:
+      postgres-orders:
+        condition: service_healthy
+      pragma:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  auth_db_data:
+  orders_db_data:

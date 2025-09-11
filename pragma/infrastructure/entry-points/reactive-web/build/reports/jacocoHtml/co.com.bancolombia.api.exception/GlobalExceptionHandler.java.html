@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>GlobalExceptionHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.exception</a> &gt; <span class="el_source">GlobalExceptionHandler.java</span></div><h1>GlobalExceptionHandler.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.exception;
+
+import co.com.bancolombia.api.dto.ErrorResponseDTO;
+import co.com.bancolombia.model.exception.AuthException;
+import co.com.bancolombia.model.exception.BusinessException;
+import co.com.bancolombia.model.exception.InvalidDataException;
+import co.com.bancolombia.model.exception.UserExistsException;
+import jakarta.validation.ConstraintViolationException;
+import jakarta.validation.UnexpectedTypeException;
+import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
+import org.springframework.core.codec.DecodingException;
+import org.springframework.core.io.buffer.DataBufferFactory;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.support.WebExchangeBindException;
+import org.springframework.web.server.NotAcceptableStatusException;
+import org.springframework.web.server.ServerWebExchange;
+import org.springframework.web.server.ServerWebInputException;
+import org.springframework.web.server.UnsupportedMediaTypeStatusException;
+import reactor.core.publisher.Mono;
+
+import java.nio.charset.StandardCharsets;
+import java.time.Instant;
+
+/**
+ * Global exception handler for the Pragma application.
+ * Provides centralized error handling following SOLID principles and hexagonal architecture.
+ * 
+ * This class is part of the Infrastructure layer (Entry Points) and handles exceptions
+ * from all application layers without coupling to domain logic.
+ * 
+ * @author Pragma Development Team
+ */
+<span class="nc" id="L37">@Slf4j</span>
+@Component
+<span class="nc" id="L39">public class GlobalExceptionHandler implements ErrorWebExceptionHandler {</span>
+
+    /**
+     * Handles all exceptions following the ErrorWebExceptionHandler contract.
+     * Implements low-level reactive error handling for better performance and control.
+     * 
+     * @param exchange the current server web exchange
+     * @param ex the exception to handle
+     * @return a Mono containing the error response
+     */
+    @Override
+<span class="nc bnc" id="L50" title="All 4 branches missed.">    public @NonNull Mono&lt;Void&gt; handle(@NonNull ServerWebExchange exchange, @NonNull Throwable ex) {</span>
+<span class="nc" id="L51">        String path = exchange.getRequest().getPath().value();</span>
+        HttpStatus status;
+        ErrorResponseDTO errorResponse;
+        
+<span class="nc" id="L55">        log.debug(&quot;Processing exception at {} -&gt; {}: {}&quot;, path, ex.getClass().getSimpleName(), ex.getMessage());</span>
+        
+<span class="nc bnc" id="L57" title="All 2 branches missed.">        if (ex instanceof UserExistsException userException) {</span>
+<span class="nc" id="L58">            status = HttpStatus.CONFLICT;</span>
+<span class="nc" id="L59">            errorResponse = buildErrorResponse(userException.getCode(), userException.getMessage(), path);</span>
+<span class="nc" id="L60">            log.warn(&quot;409 at {} -&gt; User conflict: {}&quot;, path, userException.getMessage());</span>
+            
+<span class="nc bnc" id="L62" title="All 2 branches missed.">        } else if (ex instanceof AuthException authException) {</span>
+<span class="nc" id="L63">            status = HttpStatus.UNAUTHORIZED;</span>
+<span class="nc" id="L64">            errorResponse = buildErrorResponse(authException.getCode(), authException.getMessage(), path);</span>
+<span class="nc" id="L65">            log.warn(&quot;401 at {} -&gt; Authentication failed: {}&quot;, path, authException.getMessage());</span>
+            
+<span class="nc bnc" id="L67" title="All 2 branches missed.">        } else if (ex instanceof InvalidDataException dataException) {</span>
+<span class="nc" id="L68">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L69">            errorResponse = buildErrorResponse(dataException.getCode(), dataException.getMessage(), path);</span>
+<span class="nc" id="L70">            log.warn(&quot;400 at {} -&gt; Invalid data: {}&quot;, path, dataException.getMessage());</span>
+            
+<span class="nc bnc" id="L72" title="All 2 branches missed.">        } else if (ex instanceof BusinessException businessException) {</span>
+<span class="nc" id="L73">            status = mapBusinessExceptionToStatus(businessException);</span>
+<span class="nc" id="L74">            errorResponse = buildErrorResponse(businessException.getCode(), businessException.getMessage(), path);</span>
+<span class="nc" id="L75">            log.warn(&quot;{} at {} -&gt; Business error: {}&quot;, status.value(), path, businessException.getMessage());</span>
+            
+<span class="nc bnc" id="L77" title="All 2 branches missed.">        } else if (ex instanceof IllegalArgumentException iae) {</span>
+<span class="nc" id="L78">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L79">            errorResponse = buildErrorResponse(&quot;INVALID_ARGUMENT&quot;, iae.getMessage(), path);</span>
+<span class="nc" id="L80">            log.warn(&quot;400 at {} -&gt; Invalid argument: {}&quot;, path, iae.getMessage());</span>
+            
+<span class="nc bnc" id="L82" title="All 2 branches missed.">        } else if (ex instanceof WebExchangeBindException webe) {</span>
+<span class="nc" id="L83">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L84">            String validationMessage = extractValidationErrors(webe);</span>
+<span class="nc" id="L85">            errorResponse = buildErrorResponse(&quot;VALIDATION_ERROR&quot;, validationMessage, path);</span>
+<span class="nc" id="L86">            log.warn(&quot;400 (validation) at {} -&gt; {}&quot;, path, validationMessage);</span>
+            
+<span class="nc bnc" id="L88" title="All 2 branches missed.">        } else if (ex instanceof ConstraintViolationException cve) {</span>
+<span class="nc" id="L89">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L90">            String constraintMessage = extractConstraintViolations(cve);</span>
+<span class="nc" id="L91">            errorResponse = buildErrorResponse(&quot;CONSTRAINT_VIOLATION&quot;, constraintMessage, path);</span>
+<span class="nc" id="L92">            log.warn(&quot;400 (constraint) at {} -&gt; {}&quot;, path, constraintMessage);</span>
+            
+<span class="nc bnc" id="L94" title="All 2 branches missed.">        } else if (ex instanceof UnexpectedTypeException ute) {</span>
+<span class="nc" id="L95">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L96">            errorResponse = buildErrorResponse(&quot;VALIDATION_TYPE_ERROR&quot;, </span>
+<span class="nc" id="L97">                &quot;Tipo de validación inválida: &quot; + ute.getMessage(), path);</span>
+<span class="nc" id="L98">            log.warn(&quot;400 (unexpected type) at {} -&gt; {}&quot;, path, ute.getMessage());</span>
+            
+<span class="nc bnc" id="L100" title="All 2 branches missed.">        } else if (ex instanceof ServerWebInputException swe) {</span>
+<span class="nc" id="L101">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L102">            errorResponse = buildErrorResponse(&quot;INVALID_REQUEST_BODY&quot;, </span>
+<span class="nc" id="L103">                &quot;Cuerpo de solicitud inválido: &quot; + swe.getReason(), path);</span>
+<span class="nc" id="L104">            log.warn(&quot;400 (input) at {} -&gt; {}&quot;, path, swe.getReason());</span>
+            
+<span class="nc bnc" id="L106" title="All 2 branches missed.">        } else if (ex instanceof DecodingException) {</span>
+<span class="nc" id="L107">            status = HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L108">            errorResponse = buildErrorResponse(&quot;JSON_DECODE_ERROR&quot;, </span>
+                &quot;No se pudo procesar el JSON. Verifique el formato y los tipos de datos.&quot;, path);
+<span class="nc" id="L110">            log.warn(&quot;400 (decode) at {} -&gt; JSON decode error&quot;, path);</span>
+            
+<span class="nc bnc" id="L112" title="All 2 branches missed.">        } else if (ex instanceof UnsupportedMediaTypeStatusException) {</span>
+<span class="nc" id="L113">            status = HttpStatus.UNSUPPORTED_MEDIA_TYPE;</span>
+<span class="nc" id="L114">            errorResponse = buildErrorResponse(&quot;UNSUPPORTED_MEDIA_TYPE&quot;, </span>
+                &quot;Content-Type no soportado. Use application/json.&quot;, path);
+<span class="nc" id="L116">            log.warn(&quot;415 at {} -&gt; Unsupported media type&quot;, path);</span>
+            
+<span class="nc bnc" id="L118" title="All 2 branches missed.">        } else if (ex instanceof NotAcceptableStatusException) {</span>
+<span class="nc" id="L119">            status = HttpStatus.NOT_ACCEPTABLE;</span>
+<span class="nc" id="L120">            errorResponse = buildErrorResponse(&quot;NOT_ACCEPTABLE&quot;, </span>
+                &quot;Accept header no soportado por el servidor.&quot;, path);
+<span class="nc" id="L122">            log.warn(&quot;406 at {} -&gt; Not acceptable&quot;, path);</span>
+            
+        } else {
+<span class="nc" id="L125">            status = HttpStatus.INTERNAL_SERVER_ERROR;</span>
+<span class="nc" id="L126">            errorResponse = buildErrorResponse(&quot;INTERNAL_ERROR&quot;, </span>
+                &quot;Error interno del servidor. Por favor contacte al administrador.&quot;, path);
+<span class="nc" id="L128">            log.error(&quot;500 at {} -&gt; {}: {}&quot;, path, ex.getClass().getSimpleName(), ex.getMessage(), ex);</span>
+        }
+        
+<span class="nc" id="L131">        return writeErrorResponse(exchange, status, errorResponse);</span>
+    }
+    
+    /**
+     * Maps specific business exceptions to HTTP status codes for Pragma domain.
+     * Follows Open/Closed Principle - extensible without modification.
+     * 
+     * @param exception the business exception
+     * @return the corresponding HTTP status
+     */
+    private HttpStatus mapBusinessExceptionToStatus(BusinessException exception) {
+<span class="nc bnc" id="L142" title="All 6 branches missed.">        return switch (exception.getCode()) {</span>
+<span class="nc" id="L143">            case &quot;USER_EXISTS&quot; -&gt; HttpStatus.CONFLICT;</span>
+<span class="nc" id="L144">            case &quot;DATA_INVALID&quot; -&gt; HttpStatus.BAD_REQUEST;</span>
+<span class="nc" id="L145">            case &quot;AUTH_FAILED&quot; -&gt; HttpStatus.UNAUTHORIZED;</span>
+<span class="nc" id="L146">            case &quot;USER_NOT_FOUND&quot;, &quot;ROLE_NOT_FOUND&quot; -&gt; HttpStatus.NOT_FOUND;</span>
+<span class="nc" id="L147">            case &quot;FORBIDDEN_ACCESS&quot; -&gt; HttpStatus.FORBIDDEN;</span>
+<span class="nc" id="L148">            default -&gt; HttpStatus.INTERNAL_SERVER_ERROR;</span>
+        };
+    }
+    
+    /**
+     * Builds standardized error response following Single Responsibility Principle.
+     * 
+     * @param code the error code
+     * @param message the error message  
+     * @param path the request path
+     * @return the error response DTO
+     */
+    private ErrorResponseDTO buildErrorResponse(String code, String message, String path) {
+<span class="nc" id="L161">        return ErrorResponseDTO.builder()</span>
+<span class="nc" id="L162">                .code(code)</span>
+<span class="nc" id="L163">                .message(message)</span>
+<span class="nc" id="L164">                .path(path)</span>
+<span class="nc" id="L165">                .timestamp(Instant.now())</span>
+<span class="nc" id="L166">                .build();</span>
+    }
+    
+    /**
+     * Extracts validation errors from WebExchangeBindException.
+     * 
+     * @param webe the web exchange bind exception
+     * @return formatted validation error message
+     */
+    private String extractValidationErrors(WebExchangeBindException webe) {
+<span class="nc" id="L176">        return webe.getBindingResult()</span>
+<span class="nc" id="L177">                .getFieldErrors()</span>
+<span class="nc" id="L178">                .stream()</span>
+<span class="nc" id="L179">                .map(error -&gt; error.getField() + &quot;: &quot; + error.getDefaultMessage())</span>
+<span class="nc" id="L180">                .reduce((a, b) -&gt; a + &quot;; &quot; + b)</span>
+<span class="nc" id="L181">                .orElse(&quot;Errores de validación en la solicitud&quot;);</span>
+    }
+    
+    /**
+     * Extracts constraint violations from ConstraintViolationException.
+     * 
+     * @param cve the constraint violation exception
+     * @return formatted constraint violation message
+     */
+    private String extractConstraintViolations(ConstraintViolationException cve) {
+<span class="nc" id="L191">        return cve.getConstraintViolations().stream()</span>
+<span class="nc bnc" id="L192" title="All 2 branches missed.">                .map(v -&gt; (v.getPropertyPath() != null ? v.getPropertyPath().toString() + &quot;: &quot; : &quot;&quot;) + v.getMessage())</span>
+<span class="nc" id="L193">                .reduce((a, b) -&gt; a + &quot;; &quot; + b)</span>
+<span class="nc" id="L194">                .orElse(&quot;Errores de restricciones en la solicitud&quot;);</span>
+    }
+    
+    /**
+     * Writes the error response to the exchange following reactive patterns.
+     * Implements proper response handling with committed response check.
+     * 
+     * @param exchange the server web exchange
+     * @param status the HTTP status
+     * @param errorResponse the error response DTO
+     * @return Mono&lt;Void&gt; representing the write operation
+     */
+    private Mono&lt;Void&gt; writeErrorResponse(ServerWebExchange exchange, HttpStatus status, 
+                                         ErrorResponseDTO errorResponse) {
+<span class="nc" id="L208">        var response = exchange.getResponse();</span>
+        
+<span class="nc bnc" id="L210" title="All 2 branches missed.">        if (response.isCommitted()) {</span>
+<span class="nc" id="L211">            log.warn(&quot;Response already committed for path {}. Cannot write error response.&quot;, </span>
+<span class="nc" id="L212">                    errorResponse.getPath());</span>
+<span class="nc" id="L213">            return Mono.error(new RuntimeException(&quot;Response already committed&quot;));</span>
+        }
+        
+<span class="nc" id="L216">        response.setStatusCode(status);</span>
+<span class="nc" id="L217">        response.getHeaders().setContentType(MediaType.APPLICATION_JSON);</span>
+        
+<span class="nc" id="L219">        String jsonResponse = buildJsonResponse(errorResponse);</span>
+<span class="nc" id="L220">        DataBufferFactory bufferFactory = response.bufferFactory();</span>
+<span class="nc" id="L221">        var buffer = bufferFactory.wrap(jsonResponse.getBytes(StandardCharsets.UTF_8));</span>
+        
+<span class="nc" id="L223">        return response.writeWith(Mono.just(buffer));</span>
+    }
+    
+    /**
+     * Builds a JSON response from the error response DTO.
+     * Manual JSON construction for better control and performance.
+     * 
+     * @param errorResponse the error response DTO
+     * @return the JSON string
+     */
+    private String buildJsonResponse(ErrorResponseDTO errorResponse) {
+<span class="nc" id="L234">        return String.format(&quot;&quot;&quot;</span>
+                {
+                  &quot;code&quot;: &quot;%s&quot;,
+                  &quot;message&quot;: &quot;%s&quot;,
+                  &quot;path&quot;: &quot;%s&quot;,
+                  &quot;timestamp&quot;: &quot;%s&quot;
+                }
+                &quot;&quot;&quot;, 
+<span class="nc" id="L242">                escapeJson(errorResponse.getCode()),</span>
+<span class="nc" id="L243">                escapeJson(errorResponse.getMessage()),</span>
+<span class="nc" id="L244">                escapeJson(errorResponse.getPath()),</span>
+<span class="nc" id="L245">                errorResponse.getTimestamp().toString()</span>
+        );
+    }
+    
+    /**
+     * Escapes special characters in JSON strings to prevent injection.
+     * 
+     * @param str the string to escape
+     * @return the escaped string
+     */
+    private String escapeJson(String str) {
+<span class="nc bnc" id="L256" title="All 2 branches missed.">        return str == null ? &quot;&quot; : str.replace(&quot;\&quot;&quot;, &quot;\\\&quot;&quot;).replace(&quot;\n&quot;, &quot;\\n&quot;).replace(&quot;\r&quot;, &quot;\\r&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

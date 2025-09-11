@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrdersRepositoryAdapter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">r2dbc-postgresql</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.r2dbc.orders</a> &gt; <span class="el_source">OrdersRepositoryAdapter.java</span></div><h1>OrdersRepositoryAdapter.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.r2dbc.orders;
+
+import co.com.bancolombia.model.orders.Orders;
+import co.com.bancolombia.model.orders.PendingRequest;
+import co.com.bancolombia.model.orders.gateways.OrdersRepository;
+import co.com.bancolombia.r2dbc.orders.data.OrderPendingData;
+import co.com.bancolombia.r2dbc.orders.data.OrdersData;
+import co.com.bancolombia.r2dbc.orders.mapper.OrdersMapper;
+import lombok.RequiredArgsConstructor;
+import org.springframework.r2dbc.core.DatabaseClient;
+import org.springframework.transaction.reactive.TransactionalOperator;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Repository;
+
+import java.math.BigDecimal;
+import java.util.UUID;
+
+<span class="nc" id="L20">@Slf4j</span>
+@Repository
+@RequiredArgsConstructor
+public class OrdersRepositoryAdapter implements OrdersRepository {
+
+    private final OrdersR2dbcRepository repository;
+    private final TransactionalOperator txOperator;
+    private final DatabaseClient databaseClient;
+    private final OrdersMapper ordersMapper;
+
+    @Override
+    public Mono&lt;Orders&gt; save(Orders orders) {
+<span class="nc" id="L32">        log.debug(&quot;Guardando solicitud con ID: {}&quot;, orders.getId());</span>
+
+<span class="nc" id="L34">        return txOperator.transactional(</span>
+<span class="nc" id="L35">                repository.existsById(orders.getId())</span>
+<span class="nc" id="L36">                        .defaultIfEmpty(false)</span>
+<span class="nc" id="L37">                        .doOnNext(exists -&gt; log.debug(&quot;La solicitud con ID {} {} existe&quot;, </span>
+<span class="nc bnc" id="L38" title="All 2 branches missed.">                                orders.getId(), exists ? &quot;SI&quot; : &quot;NO&quot;))</span>
+<span class="nc" id="L39">                        .flatMap(exists -&gt; {</span>
+<span class="nc" id="L40">                            OrdersData ordersData = ordersMapper.toData(orders);</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">                            if (exists) {</span>
+<span class="nc" id="L42">                                log.debug(&quot;Actualizando solicitud existente con ID: {}&quot;, orders.getId());</span>
+<span class="nc" id="L43">                                return repository.save(ordersData); // UPDATE</span>
+                            } else {
+<span class="nc" id="L45">                                log.debug(&quot;Insertando nueva solicitud con ID: {}&quot;, orders.getId());</span>
+<span class="nc" id="L46">                                return repository.insertOrder(</span>
+<span class="nc" id="L47">                                        ordersData.getId(),</span>
+<span class="nc" id="L48">                                        ordersData.getAmount(),</span>
+<span class="nc" id="L49">                                        ordersData.getDeadline(),</span>
+<span class="nc" id="L50">                                        ordersData.getEmailAddress(),</span>
+<span class="nc" id="L51">                                        ordersData.getCreationDate(),</span>
+<span class="nc" id="L52">                                        ordersData.getUpdateDate(),</span>
+<span class="nc" id="L53">                                        ordersData.getIdStatus(),</span>
+<span class="nc" id="L54">                                        ordersData.getIdLoanType()</span>
+<span class="nc" id="L55">                                ).then(Mono.just(ordersData)); // INSERT directo</span>
+                            }
+                        })
+<span class="nc" id="L58">                        .map(ordersMapper::toDomain)</span>
+<span class="nc" id="L59">                        .doOnSuccess(savedOrder -&gt;</span>
+<span class="nc" id="L60">                                log.debug(&quot;Solicitud guardada exitosamente con ID: {}&quot;, savedOrder.getId())</span>
+                        )
+<span class="nc" id="L62">                        .doOnError(error -&gt;</span>
+<span class="nc" id="L63">                                log.error(&quot;Error al guardar solicitud con ID {}: {}&quot;, orders.getId(), error.getMessage())</span>
+                        )
+        );
+    }
+
+    @Override
+    public Mono&lt;Orders&gt; findById(String id) {
+<span class="nc" id="L70">        log.debug(&quot;Buscando solicitud con ID: {}&quot;, id);</span>
+<span class="nc" id="L71">        return repository.findById(id)</span>
+<span class="nc" id="L72">                .map(ordersMapper::toDomain)</span>
+<span class="nc" id="L73">                .doOnNext(order -&gt; log.debug(&quot;Solicitud encontrada: {}&quot;, order.getId()));</span>
+    }
+
+    @Override
+    public Flux&lt;Orders&gt; findByEmailAddress(String emailAddress) {
+<span class="nc" id="L78">        log.debug(&quot;Buscando solicitudes para email: {}&quot;, emailAddress);</span>
+<span class="nc" id="L79">        return repository.findByEmailAddress(emailAddress)</span>
+<span class="nc" id="L80">                .map(ordersMapper::toDomain)</span>
+<span class="nc" id="L81">                .doOnNext(order -&gt; log.debug(&quot;Solicitud encontrada para email {}: {}&quot;, emailAddress, order.getId()));</span>
+    }
+
+    @Override
+    public Mono&lt;String&gt; findPendingStatusId() {
+<span class="nc" id="L86">        log.debug(&quot;Obteniendo ID del estado PENDING&quot;);</span>
+<span class="nc" id="L87">        return repository.findPendingStatusId()</span>
+<span class="nc" id="L88">                .doOnNext(statusId -&gt; log.debug(&quot;ID del estado PENDING: {}&quot;, statusId));</span>
+    }
+
+    @Override
+    public Flux&lt;PendingRequest&gt; findPendingRequests(UUID statusId, String email, int page, int size) {
+<span class="nc" id="L93">        log.debug(&quot;Buscando solicitudes pendientes - statusId: {}, email: {}, page: {}, size: {}&quot;, </span>
+<span class="nc" id="L94">                  statusId, email, page, size);</span>
+        
+<span class="nc bnc" id="L96" title="All 2 branches missed.">        String statusIdStr = statusId != null ? statusId.toString() : null;</span>
+<span class="nc" id="L97">        int offset = page * size;</span>
+        
+<span class="nc" id="L99">        return repository.findPendingOrdersQuery(statusIdStr, email, offset, size)</span>
+<span class="nc" id="L100">                .map(this::mapToPendingRequest)</span>
+<span class="nc" id="L101">                .doOnNext(dto -&gt; log.debug(&quot;Solicitud pendiente encontrada para email: {}&quot;, dto.getEmailAddress()))</span>
+<span class="nc" id="L102">                .doOnComplete(() -&gt; log.debug(&quot;Consulta de solicitudes pendientes completada&quot;));</span>
+    }
+
+    private PendingRequest mapToPendingRequest(OrderPendingData data) {
+<span class="nc" id="L106">        return PendingRequest.builder()</span>
+<span class="nc" id="L107">                .amount(data.getAmount())</span>
+<span class="nc" id="L108">                .deadline(data.getDeadline())</span>
+<span class="nc" id="L109">                .emailAddress(data.getEmailAddress())</span>
+<span class="nc" id="L110">                .name(&quot;&quot;)</span>
+<span class="nc" id="L111">                .loanType(data.getLoanType())</span>
+<span class="nc" id="L112">                .interestRate(data.getInterestRate())</span>
+<span class="nc" id="L113">                .status(data.getStatusOrder())</span>
+<span class="nc" id="L114">                .baseSalary(BigDecimal.ZERO)</span>
+<span class="nc" id="L115">                .monthlyAmount(data.getTotalMonthlyDebt())</span>
+<span class="nc" id="L116">                .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

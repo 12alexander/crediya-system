@@ -1,0 +1,55 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: "crediya"
+  liquibase:
+    enabled: true
+    change-log: classpath:db/db.changelog-master.xml
+    url: jdbc:postgresql://${DB_HOST:postgres-orders}:${DB_PORT:5432}/${DB_NAME:crediya}
+    user: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+
+external:
+  services:
+    auth:
+      base-url: "${AUTH_SERVICE_URL:http://pragma:8090}"
+      timeout-seconds: ${AUTH_TIMEOUT:30}
+      max-retries: ${AUTH_MAX_RETRIES:3}
+
+adapters:
+  r2dbc:
+    host: ${DB_HOST:postgres-orders}
+    port: ${DB_PORT:5432}
+    database: ${DB_NAME:crediya}
+    schema: ${DB_SCHEMA:public}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+
+cors:
+  allowed-origins: "${CORS_ALLOWED_ORIGINS:http://localhost:4200,http://pragma:8090}"
+
+logging:
+  level:
+    root: ${LOG_LEVEL:INFO}
+  file:
+    name: ${LOG_FILE_PATH:logs/crediya.log}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,prometheus"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html

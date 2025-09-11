@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthRouterRest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api</a> &gt; <span class="el_source">AuthRouterRest.java</span></div><h1>AuthRouterRest.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api;
+
+import co.com.bancolombia.api.auth.AuthHandler;
+import co.com.bancolombia.api.constants.ApiPaths;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+import static org.springframework.web.reactive.function.server.RequestPredicates.accept;
+import static org.springframework.web.reactive.function.server.RouterFunctions.route;
+
+@Configuration
+<span class="nc" id="L15">public class AuthRouterRest {</span>
+    
+    @Bean
+    public RouterFunction&lt;ServerResponse&gt; authRoutes(AuthHandler authHandler) {
+<span class="nc" id="L19">        return route()</span>
+<span class="nc" id="L20">                .POST(ApiPaths.LOGIN, accept(MediaType.APPLICATION_JSON), authHandler::login)</span>
+<span class="nc" id="L21">                .GET(&quot;/api/v1/auth/validate&quot;, authHandler::validateToken)</span>
+<span class="nc" id="L22">                .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

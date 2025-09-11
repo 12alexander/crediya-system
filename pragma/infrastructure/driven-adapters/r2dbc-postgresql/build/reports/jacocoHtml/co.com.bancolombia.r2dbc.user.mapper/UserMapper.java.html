@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserMapper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">r2dbc-postgresql</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.r2dbc.user.mapper</a> &gt; <span class="el_source">UserMapper.java</span></div><h1>UserMapper.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.r2dbc.user.mapper;
+
+import co.com.bancolombia.model.user.User;
+import co.com.bancolombia.r2dbc.role.mapper.RoleMapper;
+import co.com.bancolombia.r2dbc.user.data.UserData;
+
+import java.time.LocalDateTime;
+
+public class UserMapper {
+<span class="nc" id="L10">    private UserMapper(){</span>
+<span class="nc" id="L11">        throw new IllegalStateException(&quot;Utility class&quot;);</span>
+    }
+
+    public static UserData toDataForCreation(User user){
+<span class="nc" id="L15">        LocalDateTime now = LocalDateTime.now();</span>
+<span class="nc" id="L16">        return UserData.builder()</span>
+<span class="nc" id="L17">                .id(user.getId())</span>
+<span class="nc" id="L18">                .name(user.getName())</span>
+<span class="nc" id="L19">                .lastName(user.getLastName())</span>
+<span class="nc" id="L20">                .birthDate(user.getBirthDate())</span>
+<span class="nc" id="L21">                .address(user.getAddress())</span>
+<span class="nc" id="L22">                .phone(user.getPhone())</span>
+<span class="nc" id="L23">                .emailAddress(user.getEmailAddress())</span>
+<span class="nc" id="L24">                .baseSalary(user.getBaseSalary())</span>
+<span class="nc" id="L25">                .idRol(user.getIdRol())</span>
+<span class="nc" id="L26">                .password(user.getPassword())</span>
+<span class="nc" id="L27">                .creationDate(now)</span>
+<span class="nc" id="L28">                .updateDate(now)</span>
+<span class="nc" id="L29">                .build();</span>
+    }
+
+    public static UserData toDataForUpdate(User user){
+<span class="nc" id="L33">        LocalDateTime now = LocalDateTime.now();</span>
+<span class="nc" id="L34">        return UserData.builder()</span>
+<span class="nc" id="L35">                .id(user.getId())</span>
+<span class="nc" id="L36">                .name(user.getName())</span>
+<span class="nc" id="L37">                .lastName(user.getLastName())</span>
+<span class="nc" id="L38">                .birthDate(user.getBirthDate())</span>
+<span class="nc" id="L39">                .address(user.getAddress())</span>
+<span class="nc" id="L40">                .phone(user.getPhone())</span>
+<span class="nc" id="L41">                .emailAddress(user.getEmailAddress())</span>
+<span class="nc" id="L42">                .baseSalary(user.getBaseSalary())</span>
+<span class="nc" id="L43">                .idRol(user.getIdRol())</span>
+<span class="nc" id="L44">                .password(user.getPassword())</span>
+<span class="nc" id="L45">                .updateDate(now)</span>
+<span class="nc" id="L46">                .build();</span>
+    }
+
+    public static User toDomain(UserData userData){
+<span class="fc" id="L50">        return User.builder()</span>
+<span class="fc" id="L51">                .id(userData.getId())</span>
+<span class="fc" id="L52">                .name(userData.getName())</span>
+<span class="fc" id="L53">                .lastName(userData.getLastName())</span>
+<span class="fc" id="L54">                .birthDate(userData.getBirthDate())</span>
+<span class="fc" id="L55">                .address(userData.getAddress())</span>
+<span class="fc" id="L56">                .phone(userData.getPhone())</span>
+<span class="fc" id="L57">                .emailAddress(userData.getEmailAddress())</span>
+<span class="fc" id="L58">                .baseSalary(userData.getBaseSalary())</span>
+<span class="fc" id="L59">                .idRol(userData.getIdRol())</span>
+<span class="fc" id="L60">                .password(userData.getPassword())</span>
+<span class="pc bpc" id="L61" title="1 of 2 branches missed.">                .role(userData.getRole() != null ? RoleMapper.toDomain(userData.getRole()) : null)</span>
+<span class="fc" id="L62">                .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

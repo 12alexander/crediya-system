@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SecurityHeadersConfig.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.config</a> &gt; <span class="el_source">SecurityHeadersConfig.java</span></div><h1>SecurityHeadersConfig.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.server.WebFilter;
+
+@Configuration
+<span class="fc" id="L8">public class SecurityHeadersConfig {</span>
+
+    @Bean
+    public WebFilter securityHeadersWebFilter() {
+<span class="fc" id="L12">        return (exchange, chain) -&gt; {</span>
+<span class="nc" id="L13">            var response = exchange.getResponse();</span>
+<span class="nc" id="L14">            var headers = response.getHeaders();</span>
+            
+<span class="nc" id="L16">            headers.add(&quot;X-Frame-Options&quot;, &quot;DENY&quot;);</span>
+<span class="nc" id="L17">            headers.add(&quot;X-XSS-Protection&quot;, &quot;1; mode=block&quot;);</span>
+<span class="nc" id="L18">            headers.add(&quot;X-Content-Type-Options&quot;, &quot;nosniff&quot;);</span>
+<span class="nc" id="L19">            headers.add(&quot;Referrer-Policy&quot;, &quot;strict-origin-when-cross-origin&quot;);</span>
+            
+<span class="nc" id="L21">            headers.add(&quot;Content-Security-Policy&quot;, </span>
+                &quot;default-src 'self'; &quot; +
+                &quot;script-src 'self' 'unsafe-inline'; &quot; +
+                &quot;style-src 'self' 'unsafe-inline'; &quot; +
+                &quot;img-src 'self' data: https:; &quot; +
+                &quot;font-src 'self'; &quot; +
+                &quot;connect-src 'self'; &quot; +
+                &quot;frame-ancestors 'none';&quot;
+            );
+            
+<span class="nc" id="L31">            headers.add(&quot;Permissions-Policy&quot;, </span>
+                &quot;accelerometer=(), &quot; +
+                &quot;camera=(), &quot; +
+                &quot;geolocation=(), &quot; +
+                &quot;gyroscope=(), &quot; +
+                &quot;magnetometer=(), &quot; +
+                &quot;microphone=(), &quot; +
+                &quot;payment=(), &quot; +
+                &quot;usb=()&quot;
+            );
+            
+<span class="nc" id="L42">            return chain.filter(exchange);</span>
+        };
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RouterRest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api</a> &gt; <span class="el_source">RouterRest.java</span></div><h1>RouterRest.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api;
+
+import co.com.bancolombia.api.user.UserHandler;
+import co.com.bancolombia.api.dto.ErrorResponseDTO;
+import co.com.bancolombia.api.user.dto.UserRequestDTO;
+import co.com.bancolombia.api.user.dto.UserResponseDTO;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import org.springdoc.core.annotations.RouterOperation;
+import org.springdoc.core.annotations.RouterOperations;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+import static org.springframework.web.reactive.function.server.RequestPredicates.*;
+import static org.springframework.web.reactive.function.server.RouterFunctions.route;
+
+@Configuration
+<span class="fc" id="L26">public class RouterRest {</span>
+
+    private static final String API_V1_USERS = &quot;/api/v1/users&quot;;
+/*
+    @Bean(&quot;userRoutes&quot;)
+    @RouterOperations({
+            @RouterOperation(
+                    path = API_V1_USERS,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.POST,
+                    beanClass = UserHandler.class,
+                    beanMethod = &quot;saveUser&quot;,
+                    operation = @Operation(
+                            operationId = &quot;createUser&quot;,
+                            summary = &quot;Create a new user&quot;,
+                            description = &quot;Creates a new user in the system&quot;,
+                            requestBody = @RequestBody(
+                                    required = true,
+                                    description = &quot;User data to create&quot;,
+                                    content = @Content(schema = @Schema(implementation = UserRequestDTO.class))
+                            ),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;201&quot;, description = &quot;User created successfully&quot;,
+                                            content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;400&quot;, description = &quot;Invalid input data&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;409&quot;, description = &quot;User already exists&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            ),
+            @RouterOperation(
+                    path = API_V1_USERS + &quot;/{id}&quot;,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.GET,
+                    beanClass = UserHandler.class,
+                    beanMethod = &quot;getUserById&quot;,
+                    operation = @Operation(
+                            operationId = &quot;getUserById&quot;,
+                            summary = &quot;Get user by ID&quot;,
+                            description = &quot;Retrieves a user by their unique identifier&quot;,
+                            parameters = @Parameter(name = &quot;id&quot;, description = &quot;User ID&quot;, required = true),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;200&quot;, description = &quot;User found&quot;,
+                                            content = @Content(schema = @Schema(implementation = UserResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;404&quot;, description = &quot;User not found&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            ),
+            @RouterOperation(
+                    path = API_V1_USERS,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.GET,
+                    beanClass = UserHandler.class,
+                    beanMethod = &quot;getAllUsers&quot;,
+                    operation = @Operation(
+                            operationId = &quot;getAllUsers&quot;,
+                            summary = &quot;Get all users&quot;,
+                            description = &quot;Retrieves all users from the system&quot;,
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;200&quot;, description = &quot;Users retrieved successfully&quot;,
+                                            content = @Content(schema = @Schema(implementation = UserResponseDTO.class)))
+                            }
+                    )
+            )
+    })*/
+    @Bean
+    public RouterFunction&lt;ServerResponse&gt; userRoutes(UserHandler userHandler) {
+<span class="fc" id="L95">        return route()</span>
+<span class="fc" id="L96">                .POST(API_V1_USERS, accept(MediaType.APPLICATION_JSON), userHandler::saveUser)</span>
+<span class="fc" id="L97">                .GET(API_V1_USERS + &quot;/{id}&quot;, userHandler::getUserById)</span>
+<span class="fc" id="L98">                .GET(API_V1_USERS + &quot;/byEmail/{email}&quot;, userHandler::getUserByEmail)</span>
+<span class="fc" id="L99">                .GET(API_V1_USERS, userHandler::getAllUsers)</span>
+<span class="fc" id="L100">                .build();</span>
+    }
+
+    @Bean
+    public RouterFunction&lt;ServerResponse&gt; healthRoutes() {
+<span class="fc" id="L105">        return route()</span>
+<span class="fc" id="L106">                .GET(&quot;/health&quot;, request -&gt;</span>
+<span class="fc" id="L107">                        ServerResponse.ok()</span>
+<span class="fc" id="L108">                                .contentType(MediaType.APPLICATION_JSON)</span>
+<span class="fc" id="L109">                                .bodyValue(&quot;{\&quot;status\&quot;:\&quot;UP\&quot;,\&quot;service\&quot;:\&quot;projectPragma\&quot;}&quot;))</span>
+<span class="fc" id="L110">                .build();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

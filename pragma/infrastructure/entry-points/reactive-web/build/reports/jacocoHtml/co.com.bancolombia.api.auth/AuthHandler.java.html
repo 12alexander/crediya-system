@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.auth</a> &gt; <span class="el_source">AuthHandler.java</span></div><h1>AuthHandler.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.auth;
+
+import co.com.bancolombia.api.auth.dto.AuthRequestDTO;
+import co.com.bancolombia.api.auth.dto.AuthResponseDTO;
+import co.com.bancolombia.api.jwt.JwtProvider;
+import co.com.bancolombia.model.exception.AuthException;
+import co.com.bancolombia.usecase.auth.AuthUseCase;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
+import org.springframework.web.reactive.function.server.ServerRequest;
+import org.springframework.web.reactive.function.server.ServerResponse;
+import reactor.core.publisher.Mono;
+
+import java.util.UUID;
+
+<span class="nc" id="L20">@Slf4j</span>
+@Component
+@RequiredArgsConstructor
+public class AuthHandler {
+
+    private final AuthUseCase authUseCase;
+    private final JwtProvider jwtProvider;
+    private final PasswordEncoder passwordEncoder;
+
+    public Mono&lt;ServerResponse&gt; login(ServerRequest request) {
+<span class="nc" id="L30">        return request.bodyToMono(AuthRequestDTO.class)</span>
+<span class="nc" id="L31">                .switchIfEmpty(Mono.error(new IllegalArgumentException(&quot;Request body cannot be empty&quot;)))</span>
+<span class="nc" id="L32">                .flatMap(dto -&gt; authUseCase.login(</span>
+<span class="nc" id="L33">                        dto.getEmail(),</span>
+<span class="nc" id="L34">                        dto.getPassword(),</span>
+<span class="nc" id="L35">                        jwtProvider::generateToken,</span>
+                        (password, hashedPassword) -&gt; {
+<span class="nc" id="L37">                            log.debug(&quot;[AUTH] Comparing password - Raw: '{}', Hashed: '{}'&quot;, password, hashedPassword);</span>
+<span class="nc bnc" id="L38" title="All 4 branches missed.">                            if (hashedPassword == null || hashedPassword.trim().isEmpty()) {</span>
+<span class="nc" id="L39">                                log.error(&quot;[AUTH] Hashed password is null or empty&quot;);</span>
+<span class="nc" id="L40">                                return false;</span>
+                            }
+<span class="nc" id="L42">                            return passwordEncoder.matches(password, hashedPassword);</span>
+                        }
+                ))
+<span class="nc" id="L45">                .map(auth -&gt; AuthResponseDTO.builder()</span>
+<span class="nc" id="L46">                        .idUser(auth.getIdUser())</span>
+<span class="nc" id="L47">                        .idRol(auth.getIdRole())</span>
+<span class="nc" id="L48">                        .nameUser(auth.getNameUser())</span>
+<span class="nc" id="L49">                        .token(auth.getToken())</span>
+<span class="nc" id="L50">                        .build())</span>
+<span class="nc" id="L51">                .flatMap(authResponse -&gt; ServerResponse.ok()</span>
+<span class="nc" id="L52">                        .contentType(MediaType.APPLICATION_JSON)</span>
+<span class="nc" id="L53">                        .bodyValue(authResponse))</span>
+<span class="nc" id="L54">                .doOnSuccess(resp -&gt; log.info(&quot;[AUTH] Login attempt processed successfully&quot;))</span>
+<span class="nc" id="L55">                .doOnError(error -&gt; log.error(&quot;[AUTH] Login attempt failed: {}&quot;, error.getMessage()));</span>
+    }
+
+    public Mono&lt;ServerResponse&gt; validateToken(ServerRequest request) {
+<span class="nc" id="L59">        String authHeader = request.headers().firstHeader(&quot;Authorization&quot;);</span>
+
+<span class="nc bnc" id="L61" title="All 4 branches missed.">        if (authHeader == null || !authHeader.startsWith(&quot;Bearer &quot;)) {</span>
+<span class="nc" id="L62">            throw new IllegalArgumentException(&quot;Missing or invalid Authorization header&quot;);</span>
+        }
+
+<span class="nc" id="L65">        String token = authHeader.substring(7);</span>
+
+<span class="nc bnc" id="L67" title="All 2 branches missed.">        if (!jwtProvider.isTokenValid(token)) {</span>
+<span class="nc" id="L68">            throw new co.com.bancolombia.model.exception.AuthException(&quot;Invalid or expired token&quot;);</span>
+        }
+
+<span class="nc" id="L71">        UUID idUser = jwtProvider.extractUserId(token);</span>
+<span class="nc" id="L72">        UUID idRol = jwtProvider.extractRoleId(token);</span>
+
+<span class="nc" id="L74">        AuthResponseDTO response = AuthResponseDTO.builder()</span>
+<span class="nc" id="L75">                .idUser(idUser)</span>
+<span class="nc" id="L76">                .idRol(idRol)</span>
+<span class="nc" id="L77">                .token(token)</span>
+<span class="nc" id="L78">                .build();</span>
+
+<span class="nc" id="L80">        return ServerResponse.ok()</span>
+<span class="nc" id="L81">                .contentType(MediaType.APPLICATION_JSON)</span>
+<span class="nc" id="L82">                .bodyValue(response);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

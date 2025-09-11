@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrderOpenApi.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.openapi</a> &gt; <span class="el_source">OrderOpenApi.java</span></div><h1>OrderOpenApi.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.openapi;
+
+import co.com.bancolombia.api.handler.OrderHandler;
+import co.com.bancolombia.api.dto.request.CreateLoanRequestDTO;
+import co.com.bancolombia.api.dto.response.LoanRequestResponseDTO;
+import co.com.bancolombia.api.dto.response.ErrorResponseDTO;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springdoc.core.annotations.RouterOperation;
+import org.springdoc.core.annotations.RouterOperations;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.reactive.function.server.RequestPredicates;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.RouterFunctions;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+@Configuration
+@Tag(name = &quot;Loan Orders&quot;, description = &quot;Loan request creation and management endpoints&quot;)
+<span class="nc" id="L29">public class OrderOpenApi {</span>
+
+    private static final String API_V1_SOLICITUD = &quot;/api/v1/solicitud&quot;;
+
+    @Bean
+    @RouterOperations({
+            @RouterOperation(
+                    path = API_V1_SOLICITUD,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.POST,
+                    beanClass = OrderHandler.class,
+                    beanMethod = &quot;createLoanRequest&quot;,
+                    operation = @Operation(
+                            operationId = &quot;createLoanRequest&quot;,
+                            summary = &quot;Create Loan Request&quot;,
+                            description = &quot;Creates a new loan request for authenticated clients&quot;,
+                            tags = {&quot;Loan Orders&quot;},
+                            security = @SecurityRequirement(name = &quot;bearerAuth&quot;),
+                            requestBody = @RequestBody(
+                                    required = true,
+                                    description = &quot;Loan request data&quot;,
+                                    content = @Content(schema = @Schema(implementation = CreateLoanRequestDTO.class))
+                            ),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;201&quot;, description = &quot;Loan request created successfully&quot;,
+                                            content = @Content(schema = @Schema(implementation = LoanRequestResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;400&quot;, description = &quot;Invalid request data&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;401&quot;, description = &quot;Authentication failed - invalid or missing token&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;403&quot;, description = &quot;Access denied - insufficient privileges&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            ),
+            @RouterOperation(
+                    path = API_V1_SOLICITUD + &quot;/{id}&quot;,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.GET,
+                    beanClass = OrderHandler.class,
+                    beanMethod = &quot;getLoanRequest&quot;,
+                    operation = @Operation(
+                            operationId = &quot;getLoanRequestById&quot;,
+                            summary = &quot;Get Loan Request by ID&quot;,
+                            description = &quot;Retrieves a loan request by its unique identifier&quot;,
+                            tags = {&quot;Loan Orders&quot;},
+                            security = @SecurityRequirement(name = &quot;bearerAuth&quot;),
+                            parameters = @Parameter(
+                                    name = &quot;id&quot;, 
+                                    description = &quot;Loan request ID&quot;, 
+                                    required = true, 
+                                    in = ParameterIn.PATH,
+                                    example = &quot;123e4567-e89b-12d3-a456-426614174000&quot;
+                            ),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;200&quot;, description = &quot;Loan request found&quot;,
+                                            content = @Content(schema = @Schema(implementation = LoanRequestResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;404&quot;, description = &quot;Loan request not found&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;401&quot;, description = &quot;Authentication failed - invalid or missing token&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            )
+    })
+    public RouterFunction&lt;ServerResponse&gt; orderRoutesDoc() {
+<span class="nc" id="L95">        return RouterFunctions.route(</span>
+<span class="nc" id="L96">                RequestPredicates.GET(&quot;/__dummy_order__&quot;),</span>
+<span class="nc" id="L97">                req -&gt; ServerResponse.ok().build()</span>
+        );
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserRepositoryAdapter.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">r2dbc-postgresql</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.r2dbc.user</a> &gt; <span class="el_source">UserRepositoryAdapter.java</span></div><h1>UserRepositoryAdapter.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.r2dbc.user;
+
+import co.com.bancolombia.model.user.User;
+import co.com.bancolombia.model.user.gateways.UserRepository;
+import co.com.bancolombia.r2dbc.role.RoleR2dbcRepository;
+import co.com.bancolombia.r2dbc.role.mapper.RoleMapper;
+import co.com.bancolombia.r2dbc.user.mapper.UserMapper;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import lombok.extern.slf4j.Slf4j;
+
+import java.time.LocalDateTime;
+
+<span class="fc" id="L17">@Slf4j</span>
+@Repository
+@RequiredArgsConstructor
+public class UserRepositoryAdapter implements UserRepository {
+
+    private final UserR2dbcRepository repository;
+    private final RoleR2dbcRepository roleRepository;
+
+    @Override
+    @Transactional
+    public Mono&lt;User&gt; createUser(User user) {
+<span class="nc" id="L28">        log.debug(&quot;Guardando usuario con ID: {}&quot;, user.getId());</span>
+<span class="nc" id="L29">        return Mono.fromCallable(() -&gt; UserMapper.toDataForCreation(user))</span>
+<span class="nc" id="L30">                .flatMap(data -&gt; repository.createUser(</span>
+<span class="nc" id="L31">                        data.getId(),</span>
+<span class="nc" id="L32">                        data.getName(),</span>
+<span class="nc" id="L33">                        data.getLastName(),</span>
+<span class="nc" id="L34">                        data.getBirthDate(),</span>
+<span class="nc" id="L35">                        data.getAddress(),</span>
+<span class="nc" id="L36">                        data.getPhone(),</span>
+<span class="nc" id="L37">                        data.getEmailAddress(),</span>
+<span class="nc" id="L38">                        data.getBaseSalary(),</span>
+<span class="nc" id="L39">                        data.getIdRol(),</span>
+<span class="nc" id="L40">                        data.getPassword(),</span>
+<span class="nc" id="L41">                        data.getCreationDate(),</span>
+<span class="nc" id="L42">                        data.getUpdateDate()</span>
+                ))
+<span class="nc" id="L44">                .then(repository.findById(user.getId()))</span>
+<span class="nc" id="L45">                .map(UserMapper::toDomain)</span>
+<span class="nc" id="L46">                .doOnSuccess(userCreated -&gt;</span>
+<span class="nc" id="L47">                        log.debug(&quot;Usuario creado exitosamente con ID: {}&quot;, userCreated.getId())</span>
+                )
+<span class="nc" id="L49">                .doOnError(error -&gt;</span>
+<span class="nc" id="L50">                        log.error(&quot;Error al guardar usuario: {}&quot;, error.getMessage())</span>
+                );
+    }
+
+    @Override
+    @Transactional
+    public Mono&lt;User&gt; updateUser(User user) {
+<span class="nc" id="L57">        log.debug(&quot;Actualizar usuario con ID: {}&quot;, user.getId());</span>
+<span class="nc" id="L58">        return Mono.fromCallable(() -&gt; UserMapper.toDataForUpdate(user))</span>
+<span class="nc" id="L59">                .flatMap(repository::save)</span>
+<span class="nc" id="L60">                .map(UserMapper::toDomain)</span>
+<span class="nc" id="L61">                .doOnSuccess(usuarioActualizado -&gt;</span>
+<span class="nc" id="L62">                        log.debug(&quot;Usuario actualizado exitosamente con ID: {}&quot;, usuarioActualizado.getId())</span>
+                )
+<span class="nc" id="L64">                .doOnError(error -&gt;</span>
+<span class="nc" id="L65">                        log.error(&quot;Error al actualizar usuario: {}&quot;, error.getMessage())</span>
+                );
+    }
+
+    @Override
+    public Mono&lt;Boolean&gt; emailAddressExists(String emailAddress) {
+<span class="fc" id="L71">        log.debug(&quot;Verificando existencia de correo: {}&quot;, emailAddress);</span>
+<span class="fc" id="L72">        return repository.existsByEmailAddress(emailAddress)</span>
+<span class="fc" id="L73">                .defaultIfEmpty(false)</span>
+<span class="fc" id="L74">                .doOnNext(existe -&gt; log.debug(&quot;Verificacion correo {}: {}&quot;, emailAddress, existe));</span>
+    }
+
+    @Override
+    public Mono&lt;User&gt; getUserById(String id) {
+<span class="fc" id="L79">        log.debug(&quot;Obteniendo usuario por ID: {}&quot;, id);</span>
+<span class="fc" id="L80">        return repository.findById(id)</span>
+<span class="fc" id="L81">                .flatMap(this::enrichWithRole)</span>
+<span class="fc" id="L82">                .map(UserMapper::toDomain)</span>
+<span class="fc" id="L83">                .doOnSuccess(user -&gt;</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">                        log.debug(&quot;Usuario encontrado: {}&quot;, user != null ? user.getId() : &quot;null&quot;)</span>
+                );
+    }
+
+    @Override
+    public Mono&lt;User&gt; getUserByEmailAddress(String emailAddress) {
+<span class="nc" id="L90">        log.debug(&quot;Obteniendo usuario por correo: {}&quot;, emailAddress);</span>
+<span class="nc" id="L91">        return repository.findByEmailAddress(emailAddress)</span>
+<span class="nc" id="L92">                .map(UserMapper::toDomain)</span>
+<span class="nc" id="L93">                .doOnSuccess(user -&gt;</span>
+<span class="nc bnc" id="L94" title="All 2 branches missed.">                        log.debug(&quot;Usuario encontrado por correo: {}&quot;, user != null ? user.getId() : &quot;null&quot;)</span>
+                );
+    }
+
+    @Override
+    public Flux&lt;User&gt; findAll() {
+<span class="nc" id="L100">        log.debug(&quot;Obteniendo todos los usuarios&quot;);</span>
+<span class="nc" id="L101">        return repository.findAll()</span>
+<span class="nc" id="L102">                .flatMap(this::enrichWithRole)</span>
+<span class="nc" id="L103">                .map(UserMapper::toDomain)</span>
+<span class="nc" id="L104">                .doOnComplete(() -&gt; log.debug(&quot;Consulta de usuarios completada&quot;));</span>
+    }
+
+    @Override
+    public Mono&lt;Void&gt; deleteById(String id) {
+<span class="fc" id="L109">        log.debug(&quot;Eliminando usuario con ID: {}&quot;, id);</span>
+<span class="fc" id="L110">        return repository.deleteById(id)</span>
+<span class="fc" id="L111">                .doOnSuccess(unused -&gt;</span>
+<span class="fc" id="L112">                        log.debug(&quot;Usuario eliminado exitosamente con ID: {}&quot;, id)</span>
+                )
+<span class="fc" id="L114">                .doOnError(error -&gt;</span>
+<span class="nc" id="L115">                        log.error(&quot;Error al eliminar usuario con ID {}: {}&quot;, id, error.getMessage())</span>
+                );
+    }
+
+    private Mono&lt;co.com.bancolombia.r2dbc.user.data.UserData&gt; enrichWithRole(co.com.bancolombia.r2dbc.user.data.UserData userData) {
+<span class="pc bpc" id="L120" title="1 of 2 branches missed.">        if (userData.getIdRol() == null) {</span>
+<span class="nc" id="L121">            return Mono.just(userData);</span>
+        }
+<span class="fc" id="L123">        return roleRepository.findById(userData.getIdRol())</span>
+<span class="pc" id="L124">                .map(roleData -&gt; userData.toBuilder()</span>
+<span class="nc" id="L125">                        .role(roleData)</span>
+<span class="nc" id="L126">                        .build())</span>
+<span class="fc" id="L127">                .switchIfEmpty(Mono.just(userData));</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ApiPaths.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.config</a> &gt; <span class="el_source">ApiPaths.java</span></div><h1>ApiPaths.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.config;
+
+import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+@Configuration
+@Component
+public class ApiPaths {
+    private static final String baseURL = &quot;/api/v1&quot;;
+
+    // External Services Configuration
+    @Value(&quot;${external.services.auth.base-url:http://localhost:8090}&quot;)
+    private String authServiceBaseUrl;
+
+    public static final String VALIDATE = baseURL + &quot;/auth/validate&quot;;
+    public static final String USERSBYEMAIL = baseURL + &quot;/users/byEmail/{email}&quot;;
+    
+    // Static instance to access configured values
+    private static ApiPaths instance;
+    
+<span class="nc" id="L23">    public ApiPaths() {</span>
+<span class="nc" id="L24">        instance = this;</span>
+<span class="nc" id="L25">    }</span>
+    
+    // Method to get configured base URL for auth service
+    public static String getAuthServiceBaseUrl() {
+<span class="nc bnc" id="L29" title="All 4 branches missed.">        return instance != null &amp;&amp; instance.authServiceBaseUrl != null ? </span>
+<span class="nc" id="L30">            instance.authServiceBaseUrl : &quot;http://localhost:8090&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

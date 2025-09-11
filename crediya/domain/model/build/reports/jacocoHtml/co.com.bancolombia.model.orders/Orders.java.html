@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Orders.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">model</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.model.orders</a> &gt; <span class="el_source">Orders.java</span></div><h1>Orders.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.model.orders;
+import lombok.*;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder(toBuilder = true)
+public class Orders {
+    private String id;
+    private BigDecimal amount;
+    private Integer deadline;
+    private String emailAddress;
+    private String idStatus;
+    private String idLoanType;
+    private LocalDateTime creationDate;
+    private LocalDateTime updateDate;
+
+    public static Orders createNew(BigDecimal amount, Integer deadline, 
+                                 String emailAddress, String idLoanType, String pendingStatusId) {
+<span class="fc" id="L24">        LocalDateTime now = LocalDateTime.now();</span>
+<span class="fc" id="L25">        return Orders.builder()</span>
+<span class="fc" id="L26">                .id(UUID.randomUUID().toString())</span>
+<span class="fc" id="L27">                .amount(amount)</span>
+<span class="fc" id="L28">                .deadline(deadline)</span>
+<span class="fc" id="L29">                .emailAddress(emailAddress)</span>
+<span class="fc" id="L30">                .idLoanType(idLoanType)</span>
+<span class="fc" id="L31">                .idStatus(pendingStatusId)</span>
+<span class="fc" id="L32">                .creationDate(now)</span>
+<span class="fc" id="L33">                .updateDate(now)</span>
+<span class="fc" id="L34">                .build();</span>
+    }
+
+    public void validateForCreation() {
+<span class="fc" id="L38">        validateAmount();</span>
+<span class="fc" id="L39">        validateDeadline();</span>
+<span class="fc" id="L40">        validateEmailAddress();</span>
+<span class="fc" id="L41">        validateLoanType();</span>
+<span class="fc" id="L42">    }</span>
+
+    private void validateAmount() {
+<span class="fc bfc" id="L45" title="All 4 branches covered.">        if (amount == null || amount.compareTo(BigDecimal.ZERO) &lt;= 0) {</span>
+<span class="fc" id="L46">            throw new IllegalArgumentException(&quot;El monto debe ser mayor que 0&quot;);</span>
+        }
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if (amount.scale() &gt; 2) {</span>
+<span class="fc" id="L49">            throw new IllegalArgumentException(&quot;El monto no puede tener más de 2 decimales&quot;);</span>
+        }
+<span class="fc" id="L51">    }</span>
+
+    private void validateDeadline() {
+<span class="fc bfc" id="L54" title="All 4 branches covered.">        if (deadline == null || deadline &lt;= 0) {</span>
+<span class="fc" id="L55">            throw new IllegalArgumentException(&quot;El plazo debe ser mayor que 0&quot;);</span>
+        }
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        if (deadline &gt; 360) {</span>
+<span class="fc" id="L58">            throw new IllegalArgumentException(&quot;El plazo no puede ser mayor a 360 meses&quot;);</span>
+        }
+<span class="fc" id="L60">    }</span>
+
+    private void validateEmailAddress() {
+<span class="pc bpc" id="L63" title="1 of 4 branches missed.">        if (emailAddress == null || emailAddress.trim().isEmpty()) {</span>
+<span class="fc" id="L64">            throw new IllegalArgumentException(&quot;El correo electrónico es obligatorio&quot;);</span>
+        }
+<span class="fc" id="L66">        String emailRegex = &quot;^[A-Za-z0-9+_.-]+@([A-Za-z0-9.-]+\\.[A-Za-z]{2,})$&quot;;</span>
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (!emailAddress.matches(emailRegex)) {</span>
+<span class="fc" id="L68">            throw new IllegalArgumentException(&quot;El formato del correo electrónico no es válido&quot;);</span>
+        }
+<span class="fc" id="L70">    }</span>
+
+    private void validateLoanType() {
+<span class="pc bpc" id="L73" title="1 of 4 branches missed.">        if (idLoanType == null || idLoanType.trim().isEmpty()) {</span>
+<span class="fc" id="L74">            throw new IllegalArgumentException(&quot;El tipo de préstamo es obligatorio&quot;);</span>
+        }
+<span class="fc" id="L76">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

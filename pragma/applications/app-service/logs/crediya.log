@@ -1,0 +1,263 @@
+2025-09-03T04:26:56.381-05:00  INFO 14392 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : Starting MainApplication using Java 22.0.2 with PID 14392 (C:\Users\maria\Documents\pragma\applications\app-service\build\classes\java\main started by Irma in C:\Users\maria\Documents\pragma\applications\app-service)
+2025-09-03T04:26:56.407-05:00  INFO 14392 --- [projectPragma] [restartedMain] co.com.bancolombia.MainApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-03T04:26:56.501-05:00  INFO 14392 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-03T04:26:56.502-05:00  INFO 14392 --- [projectPragma] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-03T04:26:57.704-05:00  INFO 14392 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2025-09-03T04:26:57.920-05:00  INFO 14392 --- [projectPragma] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207 ms. Found 3 R2DBC repository interfaces.
+2025-09-03T04:26:59.685-05:00  INFO 14392 --- [projectPragma] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-03T04:27:00.059-05:00  WARN 14392 --- [projectPragma] [restartedMain] jakarta.persistence.spi                  : jakarta.persistence.spi::No valid providers found.
+2025-09-03T04:27:00.316-05:00  INFO 14392 --- [projectPragma] [restartedMain] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ce6d89da-de82-42d1-b40d-1b0df526aa44
+
+2025-09-03T04:27:00.886-05:00  INFO 14392 --- [projectPragma] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-09-03T04:27:01.864-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.database                       : Set default schema name to public
+2025-09-03T04:27:02.453-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Creating database history table with name: public.databasechangelog
+2025-09-03T04:27:02.519-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-03T04:27:02.662-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully acquired change log lock
+2025-09-03T04:27:02.664-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.command                        : Using deploymentId: 6891622663
+2025-09-03T04:27:02.666-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2025-09-03T04:27:02.703-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-user-table.xml::001-create-user-table::sistema
+2025-09-03T04:27:02.707-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-03T04:27:02.751-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table users created
+2025-09-03T04:27:02.757-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Unique constraint added to users(email_address)
+2025-09-03T04:27:02.762-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_email_address created
+2025-09-03T04:27:02.765-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_users_creation_date created
+2025-09-03T04:27:02.768-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-user-table.xml::001-create-user-table::sistema ran successfully in 64ms
+2025-09-03T04:27:02.776-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/001-create-user-table.xml::001-insert-sample-users::sistema
+2025-09-03T04:27:02.787-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-03T04:27:02.789-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into users
+2025-09-03T04:27:02.791-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/001-create-user-table.xml::001-insert-sample-users::sistema ran successfully in 15ms
+2025-09-03T04:27:02.794-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-create-role-table::sistema
+2025-09-03T04:27:02.797-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.snapshot                       : Creating snapshot
+2025-09-03T04:27:02.811-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Table roles created
+2025-09-03T04:27:02.813-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_role_nombre created
+2025-09-03T04:27:02.818-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-03T04:27:02.821-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-03T04:27:02.823-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : New row inserted into roles
+2025-09-03T04:27:02.824-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-create-role-table::sistema ran successfully in 30ms
+2025-09-03T04:27:02.830-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema
+2025-09-03T04:27:02.848-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Columns id_rol(VARCHAR(36)) added to users
+2025-09-03T04:27:02.851-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Data updated in users
+2025-09-03T04:27:02.853-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : NOT NULL constraint has been added to users.id_rol
+2025-09-03T04:27:02.866-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Foreign key constraint added to users (id_rol)
+2025-09-03T04:27:02.870-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : Index idx_user_id_rol created
+2025-09-03T04:27:02.872-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-add-role-column-to-users::sistema ran successfully in 40ms
+2025-09-03T04:27:02.879-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : Running Changeset: db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema
+2025-09-03T04:27:02.893-05:00 ERROR 14392 --- [projectPragma] [restartedMain] liquibase.changelog                      : ChangeSet db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema encountered an exception.
+
+liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:473) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:80) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:182) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1176) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:764) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:133) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:122) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:260) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:112) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:110) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at co.com.bancolombia.MainApplication.main(MainApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.4.jar:42.7.4]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
+	... 66 common frames omitted
+
+2025-09-03T04:27:02.910-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2025-09-03T04:27:02.910-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : Run:                          4
+2025-09-03T04:27:02.910-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : Previously run:               0
+2025-09-03T04:27:02.910-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : Filtered out:                 0
+2025-09-03T04:27:02.910-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : -------------------------------
+2025-09-03T04:27:02.910-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : Total change sets:            4
+2025-09-03T04:27:02.911-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.util                           : Update summary generated
+2025-09-03T04:27:02.915-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.command                        : Update command encountered an exception.
+2025-09-03T04:27:02.918-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2025-09-03T04:27:02.920-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.command                        : Logging exception.
+2025-09-03T04:27:02.920-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Details
+2025-09-03T04:27:02.920-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Class:  PSQLException
+2025-09-03T04:27:02.920-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Reason:  ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000).
+2025-09-03T04:27:02.920-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.ui                             : ERROR: Exception Primary Source:  PostgreSQL 17.6
+2025-09-03T04:27:02.921-05:00  INFO 14392 --- [projectPragma] [restartedMain] liquibase.command                        : Command execution complete
+2025-09-03T04:27:02.922-05:00  WARN 14392 --- [projectPragma] [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema:
+     Reason: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+2025-09-03T04:27:02.963-05:00  INFO 14392 --- [projectPragma] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-03T04:27:03.002-05:00 ERROR 14392 --- [projectPragma] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema:
+     Reason: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:66) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at co.com.bancolombia.MainApplication.main(MainApplication.java:11) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: liquibase.exception.UnexpectedLiquibaseException: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema:
+     Reason: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:259) ~[liquibase-core-4.27.0.jar:na]
+	at org.springframework.boot.autoconfigure.liquibase.DataSourceClosingSpringLiquibase.afterPropertiesSet(DataSourceClosingSpringLiquibase.java:46) ~[spring-boot-autoconfigure-3.3.4.jar:3.3.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	... 19 common frames omitted
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema:
+     Reason: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at liquibase.command.CommandScope.execute(CommandScope.java:257) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:245) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1436) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:234) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:212) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:297) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.lambda$afterPropertiesSet$0(SpringLiquibase.java:249) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:242) ~[liquibase-core-4.27.0.jar:na]
+	... 22 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema:
+     Reason: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:151) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:112) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:110) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:105) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:219) ~[liquibase-core-4.27.0.jar:na]
+	... 38 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/002-create-role-table.xml::002-insert-sample-users::sistema:
+     Reason: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:808) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:119) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:133) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:122) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:190) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:199) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:189) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:168) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:256) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.Scope.child(Scope.java:260) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:89) ~[liquibase-core-4.27.0.jar:na]
+	... 46 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000). [Failed SQL: (0) INSERT INTO public.users (id, name, last_name, birth_date, address, phone, email_address, base_salary, id_rol, password, creation_date, update_date) VALUES ('123e4567-e89b-12d3-a456-426614174000', 'Admin', 'User', '1990-01-01', 'Admin Address 123', '1234567890', 'admin@pragma.com', '5000000.00', '80e86d27-20a4-44be-b90d-44eeb378d409', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.', '2024-01-01T00:00:00', '2024-01-01T00:00:00')]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:473) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:80) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:182) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.executor.AbstractExecutor.execute(AbstractExecutor.java:141) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1176) ~[liquibase-core-4.27.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:764) ~[liquibase-core-4.27.0.jar:na]
+	... 61 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: llave duplicada viola restricción de unicidad «users_pkey»
+  Detail: Ya existe la llave (id)=(123e4567-e89b-12d3-a456-426614174000).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317) ~[postgresql-42.7.4.jar:42.7.4]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312) ~[postgresql-42.7.4.jar:42.7.4]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:467) ~[liquibase-core-4.27.0.jar:na]
+	... 66 common frames omitted
+

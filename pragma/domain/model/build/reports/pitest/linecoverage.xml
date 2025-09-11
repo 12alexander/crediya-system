@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='builder()Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='5'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='builder()Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithEmptyName_ShouldFail()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='4'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithEmptyName_ShouldFail()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithEmptyName_ShouldFail$1()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithEmptyName_ShouldFail$1()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithEmptyName_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='4'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithNegativeSalary_ShouldFail()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithNegativeSalary_ShouldFail()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithNegativeSalary_ShouldFail$0()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithNegativeSalary_ShouldFail$0()V' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithNegativeSalary_ShouldFail$0()V' number='4'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithNegativeSalary_ShouldFail$0()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithNegativeSalary_ShouldFail$0()V' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='lambda$createUser_WithNegativeSalary_ShouldFail$0()V' number='5'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithNegativeSalary_ShouldFail()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='9'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='8'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='11'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='10'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='13'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='12'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='5'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='4'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='5'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.UserTest' method='createUser_WithValidData_ShouldWork()V' number='14'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='getName()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/String;Lco/com/bancolombia/model/role/Role;Ljava/lang/String;)V' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='build()Lco/com/bancolombia/model/user/User;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/String;Lco/com/bancolombia/model/role/Role;Ljava/lang/String;)V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='build()Lco/com/bancolombia/model/user/User;' number='1'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='getEmailAddress()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+</coverage>

@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Lco/com/bancolombia/r2dbc/role/data/RoleData;)V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;Ljava/lang/String;Ljava/lang/String;Lco/com/bancolombia/r2dbc/role/data/RoleData;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='build()Lco/com/bancolombia/r2dbc/user/data/UserData;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='build()Lco/com/bancolombia/r2dbc/user/data/UserData;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='builder()Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='builder()Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='id(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='21'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='22'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='19'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='20'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='existsByEmailAddress(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='existsByEmailAddress(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/String;Lco/com/bancolombia/model/role/Role;Ljava/lang/String;)V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='build()Lco/com/bancolombia/model/user/User;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='build()Lco/com/bancolombia/model/user/User;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDate;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/String;Lco/com/bancolombia/model/role/Role;Ljava/lang/String;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='lastName(Ljava/lang/String;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='emailExists()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='name(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='emailAddressExists(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='emailAddressExists(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='emailAddressExists(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='emailAddressExists(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='emailAddressExists(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='emailAddressExists(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='id(Ljava/lang/String;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='19'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='17'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='18'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='18'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='17'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='19'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='16'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='20'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='15'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='13'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='14'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='14'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='13'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='&lt;init&gt;(Lco/com/bancolombia/r2dbc/user/UserR2dbcRepository;Lco/com/bancolombia/r2dbc/role/RoleR2dbcRepository;)V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='15'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='&lt;init&gt;(Lco/com/bancolombia/r2dbc/user/UserR2dbcRepository;Lco/com/bancolombia/r2dbc/role/RoleR2dbcRepository;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='16'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='21'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='22'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='creationDate(Ljava/time/LocalDateTime;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='setUp()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='17'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='18'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='15'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData$UserDataBuilder' method='idRol(Ljava/lang/String;)Lco/com/bancolombia/r2dbc/user/data/UserData$UserDataBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='16'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='13'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='14'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$emailAddressExists$7(Ljava/lang/String;Ljava/lang/Boolean;)V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$emailAddressExists$7(Ljava/lang/String;Ljava/lang/Boolean;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='23'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='22'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='21'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='&lt;clinit&gt;()V' number='20'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='builder()Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='builder()Lco/com/bancolombia/model/user/User$UserBuilder;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:emailExists()]'/>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='deleteUser()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$deleteById$11(Ljava/lang/String;Ljava/lang/Void;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$deleteById$11(Ljava/lang/String;Ljava/lang/Void;)V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='deleteById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:deleteUser()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='getName()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getRole()Lco/com/bancolombia/r2dbc/role/data/RoleData;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.role.RoleR2dbcRepository$MockitoMock$qtq4LmRO' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='enrichWithRole(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lreactor/core/publisher/Mono;' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='birthDate(Ljava/time/LocalDate;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getId()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='14'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='13'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User' method='getId()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='getUserById()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getIdRol()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getName()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getEmailAddress()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getLastName()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='lambda$getUserById$0(Lco/com/bancolombia/model/user/User;)Z' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='lambda$getUserById$0(Lco/com/bancolombia/model/user/User;)Z' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest' method='lambda$getUserById$0(Lco/com/bancolombia/model/user/User;)Z' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getPassword()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='phone(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getPhone()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$getUserById$8(Lco/com/bancolombia/model/user/User;)V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$getUserById$8(Lco/com/bancolombia/model/user/User;)V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$getUserById$8(Lco/com/bancolombia/model/user/User;)V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$getUserById$8(Lco/com/bancolombia/model/user/User;)V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='lambda$getUserById$8(Lco/com/bancolombia/model/user/User;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserR2dbcRepository$MockitoMock$4PZjAmfS' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getBaseSalary()Ljava/math/BigDecimal;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='role(Lco/com/bancolombia/model/role/Role;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='address(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getAddress()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='13'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='19'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='18'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='21'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='20'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='15'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='14'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='17'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='16'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='getUserById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='27'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='getUserById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='26'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='getUserById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='29'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='28'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='getUserById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.mapper.UserMapper' method='toDomain(Lco/com/bancolombia/r2dbc/user/data/UserData;)Lco/com/bancolombia/model/user/User;' number='22'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='getUserById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.UserRepositoryAdapter' method='getUserById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.user.data.UserData' method='getBirthDate()Ljava/time/LocalDate;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.user.UserRepositoryAdapterTest]/[method:getUserById()]'/>
+</tests>
+</block>
+</coverage>

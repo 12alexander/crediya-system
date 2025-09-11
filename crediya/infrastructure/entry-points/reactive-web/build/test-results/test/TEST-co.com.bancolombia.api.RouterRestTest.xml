@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.bancolombia.api.RouterRestTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:30.882Z" hostname="alex" time="9.999">
+  <properties/>
+  <testcase name="POST /api/v1/solicitud - success" classname="co.com.bancolombia.api.RouterRestTest" time="9.669"/>
+  <testcase name="GET /api/v1/solicitud/{id} - success" classname="co.com.bancolombia.api.RouterRestTest" time="0.075"/>
+  <testcase name="RouterRest - basic instantiation" classname="co.com.bancolombia.api.RouterRestTest" time="0.222"/>
+  <system-out><![CDATA[04:25:39.564 [parallel-1] INFO co.com.bancolombia.api.handler.OrderHandler -- [ORDER-1757496339550-37] Iniciando procesamiento de solicitud de préstamo
+04:25:39.990 [parallel-1] INFO co.com.bancolombia.api.handler.OrderHandler -- [ORDER-1757496339550-37] Datos recibidos para usuario: 36431ef7-c198-4174-96ff-e44a51b8ebcd con email: test@example.com
+04:25:39.996 [parallel-1] INFO co.com.bancolombia.api.handler.OrderHandler -- [ORDER-1757496339550-37] Solicitud creada con ID: order-123
+04:25:40.042 [parallel-1] INFO co.com.bancolombia.api.handler.OrderHandler -- [ORDER-1757496339550-37] Solicitud procesada exitosamente
+04:25:40.603 [parallel-2] INFO co.com.bancolombia.api.handler.OrderHandler -- [ORDER-1757496340603-38] Consultando solicitud con ID: order-123
+04:25:40.623 [parallel-2] INFO co.com.bancolombia.api.handler.OrderHandler -- [ORDER-1757496340603-38] Consulta exitosa para ID: order-123
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

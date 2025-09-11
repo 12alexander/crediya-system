@@ -1,0 +1,242 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 123731968 bytes. Error detail: G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3631), pid=23492, tid=21960
+#
+# JRE version:  (22.0.2+9) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (22.0.2+9-70, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dorg.gradle.internal.worker.tmpdir=C:\Users\maria\Documents\crediya\applications\app-service\build\tmp\test\work -XX:+AllowRedefinitionToAddDeleteMethods -javaagent:C:\Users\maria\Documents\crediya\applications\app-service\build\tmp\.cache\expanded\zip_9892ccb804f78c0637616b68610d363f\jacocoagent.jar=destfile=build/jacoco/test.exec,append=true,inclnolocationclasses=false,dumponexit=true,output=file,jmx=false -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=PE -Duser.language=es -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+
+Host: AMD Ryzen 5 7520U with Radeon Graphics         , 8 cores, 7G,  Windows 11 , 64 bit Build 26100 (10.0.26100.4768)
+Time: Thu Sep  4 20:00:29 2025 Hora est. Pacífico, Sudamérica elapsed time: 2.284322 seconds (0d 0h 0m 2s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000026a635f09e0):  JavaThread "Unknown thread" [_thread_in_vm, id=21960, stack(0x0000006dd3600000,0x0000006dd3700000) (1024K)]
+
+Stack: [0x0000006dd3600000,0x0000006dd3700000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6e26e9]  (no source info available)
+V  [jvm.dll+0x875753]  (no source info available)
+V  [jvm.dll+0x877b7e]  (no source info available)
+V  [jvm.dll+0x878253]  (no source info available)
+V  [jvm.dll+0x27fc86]  (no source info available)
+V  [jvm.dll+0x6ded85]  (no source info available)
+V  [jvm.dll+0x6d388a]  (no source info available)
+V  [jvm.dll+0x358b8a]  (no source info available)
+V  [jvm.dll+0x3610b6]  (no source info available)
+V  [jvm.dll+0x3b419e]  (no source info available)
+V  [jvm.dll+0x3b4448]  (no source info available)
+V  [jvm.dll+0x32c5ec]  (no source info available)
+V  [jvm.dll+0x32d258]  (no source info available)
+V  [jvm.dll+0x83d5ac]  (no source info available)
+V  [jvm.dll+0x3c10d1]  (no source info available)
+V  [jvm.dll+0x8264cc]  (no source info available)
+V  [jvm.dll+0x45bd5e]  (no source info available)
+V  [jvm.dll+0x45dbe1]  (no source info available)
+C  [jli.dll+0x52a3]  (no source info available)
+C  [ucrtbase.dll+0x37b0]  (no source info available)
+C  [KERNEL32.DLL+0x2e8d7]  (no source info available)
+C  [ntdll.dll+0x3c34c]  (no source info available)
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffb4a67c1c8, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000026a6361b220 WorkerThread "GC Thread#0"                     [id=4892, stack(0x0000006dd3700000,0x0000006dd3800000) (1024K)]
+  0x0000026a63620210 ConcurrentGCThread "G1 Main Marker"            [id=12144, stack(0x0000006dd3800000,0x0000006dd3900000) (1024K)]
+  0x0000026a63621c40 WorkerThread "G1 Conc#0"                       [id=10848, stack(0x0000006dd3900000,0x0000006dd3a00000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb49dcf517]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffb4a6fcc80] Heap_lock - owner thread: 0x0000026a635f09e0
+
+Heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 5 size 8 Array Of Cards #cards 12 size 40 Howl #buckets 4 coarsen threshold 1843 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 2048
+
+Heap:
+ garbage-first heap   total reserved 524288K, committed 0K, used 0K [0x00000000e0000000, 0x0000000100000000)
+  region size 1024K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffb4a1ce869]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.207 Loaded shared library C:\Program Files\Java\jdk-22\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff756970000 - 0x00007ff756980000 	C:\Program Files\Java\jdk-22\bin\java.exe
+0x00007ffbc4260000 - 0x00007ffbc44c7000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffbc3530000 - 0x00007ffbc35f9000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffbc15b0000 - 0x00007ffbc19a0000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffbc19b0000 - 0x00007ffbc1afb000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffbb19a0000 - 0x00007ffbb19bb000 	C:\Program Files\Java\jdk-22\bin\VCRUNTIME140.dll
+0x00007ffbb0e30000 - 0x00007ffbb0e47000 	C:\Program Files\Java\jdk-22\bin\jli.dll
+0x00007ffbc4000000 - 0x00007ffbc41c5000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffbc1390000 - 0x00007ffbc13b7000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffbc3360000 - 0x00007ffbc338b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffbc1470000 - 0x00007ffbc15a8000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffba9b70000 - 0x00007ffba9e0a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4768_none_3e0c112ce331287c\COMCTL32.dll
+0x00007ffbc13c0000 - 0x00007ffbc1463000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffbc2ae0000 - 0x00007ffbc2b89000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffbc41e0000 - 0x00007ffbc420f000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffbb60e0000 - 0x00007ffbb60ec000 	C:\Program Files\Java\jdk-22\bin\vcruntime140_1.dll
+0x00007ffb97c10000 - 0x00007ffb97c9e000 	C:\Program Files\Java\jdk-22\bin\msvcp140.dll
+0x00007ffb49a90000 - 0x00007ffb4a7d9000 	C:\Program Files\Java\jdk-22\bin\server\jvm.dll
+0x00007ffbc2a20000 - 0x00007ffbc2ad4000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffbc3ca0000 - 0x00007ffbc3d46000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffbc3970000 - 0x00007ffbc3a88000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffbc32e0000 - 0x00007ffbc3354000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffbc11f0000 - 0x00007ffbc124e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffbb6140000 - 0x00007ffbb6175000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffbb14a0000 - 0x00007ffbb14ab000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffbc11d0000 - 0x00007ffbc11e4000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffbc0110000 - 0x00007ffbc012b000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffbb5270000 - 0x00007ffbb527a000 	C:\Program Files\Java\jdk-22\bin\jimage.dll
+0x00007ffbbb680000 - 0x00007ffbbb8c1000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffbc2690000 - 0x00007ffbc2a15000 	C:\WINDOWS\System32\combase.dll
+0x00007ffbc33c0000 - 0x00007ffbc34a0000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffb9c900000 - 0x00007ffb9c943000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffbc1b90000 - 0x00007ffbc1c29000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffbb5240000 - 0x00007ffbb524f000 	C:\Program Files\Java\jdk-22\bin\instrument.dll
+0x00007ffbad170000 - 0x00007ffbad18e000 	C:\Program Files\Java\jdk-22\bin\java.dll
+0x00007ffbc2b90000 - 0x00007ffbc32dd000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffbc1db0000 - 0x00007ffbc1f23000 	C:\WINDOWS\System32\wintypes.dll
+0x00007ffbc3600000 - 0x00007ffbc37a0000 	C:\WINDOWS\System32\ole32.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4768_none_3e0c112ce331287c;C:\Program Files\Java\jdk-22\bin\server
+
+VM Arguments:
+jvm_args: -Dorg.gradle.internal.worker.tmpdir=C:\Users\maria\Documents\crediya\applications\app-service\build\tmp\test\work -XX:+AllowRedefinitionToAddDeleteMethods -javaagent:C:\Users\maria\Documents\crediya\applications\app-service\build\tmp\.cache\expanded\zip_9892ccb804f78c0637616b68610d363f\jacocoagent.jar=destfile=build/jacoco/test.exec,append=true,inclnolocationclasses=false,dumponexit=true,output=file,jmx=false -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=PE -Duser.language=es -Duser.variant -ea 
+java_command: worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2'
+java_class_path (initial): C:\\Users\\maria\\.gradle\\caches\\8.14.3\\workerMain\\gradle-worker.jar;C:\\Users\\maria\\Documents\\crediya\\applications\\app-service\\build\\classes\\java\\test;C:\\Users\\maria\\Documents\\crediya\\applications\\app-service\\build\\classes\\java\\main;C:\\Users\\maria\\Documents\\crediya\\applications\\app-service\\build\\resources\\main;C:\\Users\\maria\\Documents\\crediya\\infrastructure\\entry-points\\reactive-web\\build\\libs\\reactive-web.jar;C:\\Users\\maria\\Documents\\crediya\\infrastructure\\driven-adapters\\r2dbc-postgresql\\build\\libs\\r2dbc-postgresql.jar;C:\\Users\\maria\\Documents\\crediya\\domain\\usecase\\build\\libs\\usecase.jar;C:\\Users\\maria\\Documents\\crediya\\domain\\model\\build\\libs\\model.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor.addons\\reactor-extra\\3.5.2\\163f7babfc93f949738a440ea8cae5079cdb4aaa\\reactor-extra-3.5.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor\\reactor-test\\3.6.10\\db3509e21cd717517f3c85491609231a40a9288c\\reactor-test-3.6.10.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.postgresql\\r2dbc-postgresql\\1.0.5.RELEASE\\8e59b962319c9f4c3723f36a78926e4caa65eaea\\r2dbc-postgresql-1.0.5.RELEASE.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-data-r2dbc\\3.3.4\\76ab049ceb2ce789e7bc03723c414179f50aa548\\spring-boot-starter-data-r2dbc-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.data\\spring-data-r2dbc\\3.3.4\\ca7628b7fd1846d4bdce773f9965379211c797f\\spring-data-r2dbc-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.r2dbc\\r2dbc-pool\\1.0.1.RELEASE\\41ec552a21fc0884dfb85335bd3f4c757a269ab1\\r2dbc-pool-1.0.1.RELEASE.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-webflux\\3.3.4\\c20cd6fecbe7770892ec9110be363a9b12249cf5\\spring-boot-starter-webflux-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springdoc\\springdoc-openapi-starter-webflux-ui\\2.2.0\\980ca96e0585ef948fd979c338a3707a4c576d2a\\springdoc-openapi-starter-webflux-ui-2.2.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springdoc\\springdoc-openapi-starter-webflux-api\\2.2.0\\b2b67b1a4a49a44c02d97af15cb5eed63e5f4852\\springdoc-openapi-starter-webflux-api-2.2.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-webflux\\6.1.13\\2f490a97e87da44fba826ade3dc003aa132caca7\\spring-webflux-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-reactor-netty\\3.3.4\\356a0c609e1ce219edad5b3943bab487bc423a6f\\spring-boot-starter-reactor-netty-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor.netty\\reactor-netty-http\\1.1.22\\2faf64b3822b0512f15d72a325e2826eb8564413\\reactor-netty-http-1.1.22.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor.netty\\reactor-netty-core\\1.1.22\\8356b59b29f86e7142c9daca0434653a64ae64b\\reactor-netty-core-1.1.22.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-r2dbc\\6.1.13\\f25b0b3463cacfd8ac094daa4912d57cff9e03ef\\spring-r2dbc-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor.addons\\reactor-pool\\1.0.8\\96648560a264afca6e33128404e99cb12d06cd76\\reactor-pool-1.0.8.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor\\reactor-core\\3.6.10\\6860a576ae0bd1957c5d4c87e861025248818c01\\reactor-core-3.6.10.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.reactivecommons.utils\\object-mapper\\0.1.0\\2a0b72bb1f9a6e1beae369de8ada960a9380a030\\object-mapper-0.1.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-test\\3.3.4\\5817e13f51a61b15881b71273d3c6d8b4e7175f4\\spring-boot-starter-test-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-actuator\\3.3.4\\9ad9ae9cc5f37ed572f81f426c1481f26aadaf4c\\spring-boot-starter-actuator-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-validation\\3.3.4\\cd5e06f484dc2825a8d9704a2093a72587af2b58\\spring-boot-starter-validation-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-json\\3.3.4\\816ab4ccd364350e3d0b5c1d53c2e5302a49eae6\\spring-boot-starter-json-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter\\3.3.4\\f02312a6816fb439a55d2920b9af8f0f8abf5bac\\spring-boot-starter-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.liquibase\\liquibase-core\\4.27.0\\759da7263b8b282202d8a157a0c47653b92e473e\\liquibase-core-4.27.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.postgresql\\postgresql\\42.7.4\\264310fd7b2cd76738787dc0b9f7ea2e3b11adc1\\postgresql-42.7.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-devtools\\3.3.4\\855b368144ba046f7f8c647691720388cec82cc9\\spring-boot-devtools-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor.tools\\blockhound-junit-platform\\1.0.13.RELEASE\\84426245eb70ecf2c63318a27693587d35f2905c\\blockhound-junit-platform-1.0.13.RELEASE.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.tngtech.archunit\\archunit\\1.4.1\\6ba9a48e48eb3f1fc3223fae073afad29774894e\\archunit-1.4.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-actuator-autoconfigure\\3.3.4\\20d38f1d2d7e58a079031793a283e384cfc1c8bd\\spring-boot-actuator-autoconfigure-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springdoc\\springdoc-openapi-starter-common\\2.2.0\\352343daae911b5d95c718c4a3c461cf94b4707b\\springdoc-openapi-starter-common-2.2.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.swagger.core.v3\\swagger-core-jakarta\\2.2.15\\6c85064b85f895b7f0c0819d950995274c0931a4\\swagger-core-jakarta-2.2.15.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.datatype\\jackson-datatype-jsr310\\2.17.2\\267b85e9ba2892a37be6d80aa9ca1438a0d8c210\\jackson-datatype-jsr310-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.swagger.core.v3\\swagger-models-jakarta\\2.2.15\\664bc63998b703b3e695a00f502f6091b8c7815f\\swagger-models-jakarta-2.2.15.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-annotations\\2.17.2\\147b7b9412ffff24339f8aba080b292448e08698\\jackson-annotations-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.datatype\\jackson-datatype-jdk8\\2.17.2\\efd3dd0e1d0db8bc72abbe71c15e697bb83b4b45\\jackson-datatype-jdk8-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.module\\jackson-module-parameter-names\\2.17.2\\d27b9f95ccce98984c1ba58d61c5a9c072b1ad95\\jackson-module-parameter-names-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.dataformat\\jackson-dataformat-yaml\\2.17.2\\78d2c73dbec62044d7cf3b544b2e0d24a1a093b0\\jackson-dataformat-yaml-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-core\\2.17.2\\969a35cb35c86512acbadcdbbbfb044c877db814\\jackson-core-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml.jackson.core\\jackson-databind\\2.17.2\\e6deb029e5901e027c129341fac39e515066b68c\\jackson-databind-2.17.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-junit-jupiter\\5.11.0\\8e658dd339f40305ed4293db25545b5df98b171b\\mockito-junit-jupiter-5.11.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.mockito\\mockito-core\\5.11.0\\e4069fa4f4ff2c94322cfec5f2e45341c6c70aff\\mockito-core-5.11.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter\\5.10.3\\6686d8fbf251f9bf8ecba413cab57b9e00f9134d\\junit-jupiter-5.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-engine\\5.10.3\\48c14e866bb1a87ca35d24ff068463bb202ada24\\junit-jupiter-engine-5.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-engine\\1.10.3\\365a320c3cfd47f3346625e541e424e35dc75c42\\junit-platform-engine-1.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-params\\5.10.3\\4852f4e4af9074d9214213b199751f99efeab8b9\\junit-jupiter-params-5.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.jupiter\\junit-jupiter-api\\5.10.3\\a22aa91d1d6c69b2020a9aeb6d095ea81132bfa5\\junit-jupiter-api-5.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-commons\\1.10.3\\a353d42a2f13343a7cb80c5228ae66ff64495481\\junit-platform-commons-1.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.junit.platform\\junit-platform-launcher\\1.10.3\\2e07e6389624f3e93fb2e87aec2fdc30cc84b069\\junit-platform-launcher-1.10.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.assertj\\assertj-core\\3.25.3\\792b270e73aa1cfc28fa135be0b95e69ea451432\\assertj-core-3.25.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.xml.bind\\jakarta.xml.bind-api\\4.0.2\\6cd5a999b834b63238005b7144136379dc36cad2\\jakarta.xml.bind-api-4.0.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.activation\\jakarta.activation-api\\2.1.3\\fa165bd70cda600368eee31555222776a46b881f\\jakarta.activation-api-2.1.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-starter-logging\\3.3.4\\c83073c0f5574b2146695ab716bcef3d6baa45e6\\spring-boot-starter-logging-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-to-slf4j\\2.23.1\\425ad1eb8a39904d2830e907a324e956fb456520\\log4j-to-slf4j-2.23.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.logging.log4j\\log4j-api\\2.23.1\\9c15c29c526d9c6783049c0a77722693c66706e1\\log4j-api-2.23.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test-autoconfigure\\3.3.4\\c07efb09dba261d7d48de3e56ddfb17d40fed09d\\spring-boot-test-autoconfigure-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-autoconfigure\\3.3.4\\979234a0f3035fe60d5e505018789f98a7ec7ee3\\spring-boot-autoconfigure-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-test\\3.3.4\\d52240058128264d69d21b8c1609cdafe3ce3794\\spring-boot-test-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot-actuator\\3.3.4\\5d57fafe41c2611b3f7337b4e1bfc7ad8674f41e\\spring-boot-actuator-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.boot\\spring-boot\\3.3.4\\f06c6950aa5766b63328e821641f5c7d71be819d\\spring-boot-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.data\\spring-data-relational\\3.3.4\\c7d3fa4849dc3b227c5ccf258efad75e6fdfa952\\spring-data-relational-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-context\\6.1.13\\d5163ddae069c5d78c841cd3a60c4db25bf16401\\spring-context-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-web\\6.1.13\\e4028dbbc4ae1fb4bfd3257c53302956d7687b66\\spring-web-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-jakarta9\\1.13.4\\c03aeda6af5e8bae53f87e99c0083df8f4982ae1\\micrometer-jakarta9-1.13.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-registry-prometheus\\1.13.4\\8e19d08ff3b493318b50a49e8a3d831a6ccb573d\\micrometer-registry-prometheus-1.13.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-core\\1.13.4\\6a333b0ac647afa33616e142797da950ff295b7b\\micrometer-core-1.13.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-observation\\1.13.4\\2673c9b181ab2512002b23b7ad0f1dd02212696c\\micrometer-observation-1.13.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.micrometer\\micrometer-commons\\1.13.4\\edcf69518a4c382c48e19c7fb7d4aedfb115c0c3\\micrometer-commons-1.13.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns-native-macos\\4.1.113.Final\\3c7ad5582227667c01fb46480bda9e4ea5734494\\netty-resolver-dns-native-macos-4.1.113.Final-osx-x86_64.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns-classes-macos\\4.1.113.Final\\ff3ba7ed178595704d653c83a8315ae61e2a63e2\\netty-resolver-dns-classes-macos-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver-dns\\4.1.113.Final\\41285e5dcaf43ffaa8809cc3f9104778595a77e8\\netty-resolver-dns-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler-proxy\\4.1.113.Final\\68d6c8a37a874b8094f3856b0070b9fc3cb862e\\netty-handler-proxy-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http2\\4.1.113.Final\\e7e86e501158596e13ca3c2acebd832137228455\\netty-codec-http2-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-http\\4.1.113.Final\\4851935f2cf98b34499c46725a51c45e6804c67\\netty-codec-http-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-handler\\4.1.113.Final\\df48be9ca640df01c66c1ee88fc2cd91987c31ab\\netty-handler-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-epoll\\4.1.113.Final\\a26dddb61a54c5d939c2e35197232f618322c1b1\\netty-transport-native-epoll-4.1.113.Final-linux-x86_64.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-classes-epoll\\4.1.113.Final\\314f680c386eddbb944cad1c63a116b9b3b75e42\\netty-transport-classes-epoll-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport-native-unix-common\\4.1.113.Final\\e8d1d4ba444e203fd8af42a9d22e1032d89daa32\\netty-transport-native-unix-common-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-socks\\4.1.113.Final\\39efd7a056ae0ede07e73081db9572c86f252195\\netty-codec-socks-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec-dns\\4.1.113.Final\\af2d096266a680455a6432157b3ce0bc8c5b3257\\netty-codec-dns-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-codec\\4.1.113.Final\\370ab9b7c1b31b32423498331c1f723cda3332cb\\netty-codec-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-transport\\4.1.113.Final\\8ba0a07b6ca61aefd607ca2a91ebd1cce28f5e3d\\netty-transport-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-buffer\\4.1.113.Final\\69462f1f5528fb95477fa3b15a1e755ada0df66\\netty-buffer-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-resolver\\4.1.113.Final\\ffe3172485dd1e433271a60195d4a26fd9398be7\\netty-resolver-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.netty\\netty-common\\4.1.113.Final\\1a7fe68aa349746008e5cff490aa6077728aac5a\\netty-common-4.1.113.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.prometheus\\prometheus-metrics-core\\1.2.1\\362330b5934a128e91e331f1497cd275fec1a81c\\prometheus-metrics-core-1.2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.prometheus\\prometheus-metrics-exposition-formats\\1.2.1\\64190364467197c39bcc296ec80a99f6c979a7dc\\prometheus-metrics-exposition-formats-1.2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.prometheus\\prometheus-metrics-config\\1.2.1\\bcccb14176161671c4cb858b0ca50d680237fdbe\\prometheus-metrics-config-1.2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.prometheus\\prometheus-metrics-model\\1.2.1\\99caac1a3f974de6bc9882fbf6a09ea055733c7b\\prometheus-metrics-model-1.2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.prometheus\\prometheus-metrics-tracer-common\\1.2.1\\74cc4ac3226a3937d6e5c74c06454258e7901cec\\prometheus-metrics-tracer-common-1.2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.prometheus\\prometheus-metrics-shaded-protobuf\\1.2.1\\2b8ace486645dbaba1f3a694bd3a081f4d7a3aa5\\prometheus-metrics-shaded-protobuf-1.2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.r2dbc\\r2dbc-spi\\1.0.0.RELEASE\\e3d15b2d27fdb8fdb76a181b21d5c752adf1d165\\r2dbc-spi-1.0.0.RELEASE.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.reactivestreams\\reactive-streams\\1.0.4\\3864a1320d97d7b045f729a326e1e077661f31b7\\reactive-streams-1.0.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework.data\\spring-data-commons\\3.3.4\\f0f6bca5b0cd7d318666e2d3f02726c615334678\\spring-data-commons-3.3.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-aop\\6.1.13\\ad2c631e1717fdc6d91d56c06d4fd61e0215c19a\\spring-aop-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-jdbc\\6.1.13\\11811219be3452cfd989c57d3de4529f6927352f\\spring-jdbc-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-tx\\6.1.13\\ed041ecf9a5f480e1b11d0b58a06d8034ff8cfea\\spring-tx-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-beans\\6.1.13\\90bbee6278b46b145e64e5ae29316bdd459c6826\\spring-beans-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-test\\6.1.13\\9f0038d672a513ddc201296922da13b1212dd0f7\\spring-test-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-expression\\6.1.13\\be30254712ca0549cbd539ba05c57064917253f3\\spring-expression-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-core\\6.1.13\\ddbd765408d2665f47017c8f05a7682012f91da3\\spring-core-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-jcl\\6.1.13\\37291ff008a66a9dbf2c98e11bd468cfadaa7ebc\\spring-jcl-6.1.13.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.awaitility\\awaitility\\4.2.2\\7336242073ebf83fe034e42b46a403c5501b63c9\\awaitility-4.2.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy\\1.14.19\\4c0c637b8f47dc08f89240e6f59900011752c97b\\byte-buddy-1.14.19.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\net.bytebuddy\\byte-buddy-agent\\1.14.19\\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\\byte-buddy-agent-1.14.19.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.hibernate.validator\\hibernate-validator\\8.0.1.Final\\e49e116b3d3928060599b176b3538bb848718e95\\hibernate-validator-8.0.1.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.fasterxml\\classmate\\1.7.0\\e98374da1f2143ac8e6e0a95036994bb19137a3\\classmate-1.7.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.opencsv\\opencsv\\5.9\\284ea0b60a24b71a530100783185e7d547ab5339\\opencsv-5.9.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-text\\1.11.0\\2bb044b7717ec2eccaf9ea7769c1509054b50e9a\\commons-text-1.11.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-lang3\\3.14.0\\1ed471194b02f2c6cb734a0cd6f6f107c673afae\\commons-lang3-3.14.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.hamcrest\\hamcrest\\2.2\\1820c0968dba3a11a1b30669bb1f01978a91dedc\\hamcrest-2.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.annotation\\jakarta.annotation-api\\2.1.1\\48b9bda22b091b1f48b13af03fe36db3be6e1ae3\\jakarta.annotation-api-2.1.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.persistence\\jakarta.persistence-api\\3.1.0\\66901fa1c373c6aff65c13791cc11da72060a8d6\\jakarta.persistence-api-3.1.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\jakarta.validation\\jakarta.validation-api\\3.0.2\\92b6631659ba35ca09e44874d3eb936edfeee532\\jakarta.validation-api-3.0.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.jboss.logging\\jboss-logging\\3.5.3.Final\\c88fc1d8a96d4c3491f55d4317458ccad53ca663\\jboss-logging-3.5.3.Final.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.jayway.jsonpath\\json-path\\2.9.0\\37fe2217f577b0b68b18e62c4d17a8858ecf9b69\\json-path-2.9.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\json-smart\\2.5.1\\4c11d2808d009132dfbbf947ebf37de6bf266c8e\\json-smart-2.5.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.skyscreamer\\jsonassert\\1.5.3\\aaa43e0823d2a0e106e8754d6a9c4ab24e05e9bc\\jsonassert-1.5.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-classic\\1.5.8\\229bb1ef6b14dfbf74ff443af9097d836dc5f0dd\\logback-classic-1.5.8.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\ch.qos.logback\\logback-core\\1.5.8\\3fce599197de3b6f387cc9bee412ead2b4994a46\\logback-core-1.5.8.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\jul-to-slf4j\\2.0.16\\6d57da3e961daac65bcca0dd3def6cd11e48a24a\\jul-to-slf4j-2.0.16.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\2.0.16\\172931663a09a1fa515567af5fbef00897d3c04\\slf4j-api-2.0.16.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.yaml\\snakeyaml\\2.2\\3af797a25458550a16bf89acc8e4ab2b7f2bfce0\\snakeyaml-2.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-el\\10.1.30\\432b176aa50de87c3bbda99b0fe85523abfd1382\\tomcat-embed-el-10.1.30.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.xmlunit\\xmlunit-core\\2.9.1\\e5833662d9a1279a37da3ef6f62a1da29fcd68c4\\xmlunit-core-2.9.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.modelmapper\\modelmapper\\1.1.3\\9f8d1ddfaa1f9d731d720d785ee7c5583b81ba70\\modelmapper-1.1.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.reactivecommons.utils\\object-mapper-api\\0.1.0\\b78d801168af54b4df68b30015abe1729ad90fb3\\object-mapper-api-0.1.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.apache.commons\\commons-collections4\\4.4\\62ebe7544cb7164d87e0637a2a6a2bdc981395e8\\commons-collections4-4.4.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\javax.xml.bind\\jaxb-api\\2.3.1\\8531ad5ac454cc2deb9d4d32c40c4d7451939b5d\\jaxb-api-2.3.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.checkerframework\\checker-qual\\3.42.0\\638ec33f363a94d41a4f03c3e7d3dcfba64e402d\\checker-qual-3.42.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.projectreactor.tools\\blockhound\\1.0.13.RELEASE\\32f5c8d0819d28186f63236c83a8757c03de9cdf\\blockhound-1.0.13.RELEASE.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.objenesis\\objenesis\\3.3\\1049c09f1de4331e8193e579448d0916d75b7631\\objenesis-3.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.webjars\\swagger-ui\\5.2.0\\c48d665a3f3a5d73afa34982953d3c31acc1d1dd\\swagger-ui-5.2.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.ongres.scram\\client\\2.1\\4ab4f013dce4ce2bdf315e3cfef529bdc2b6a5d1\\client-2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.ongres.scram\\common\\2.1\\43dfdba15afc165a2a5da75f3ef1a2f5f7300f61\\common-2.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\net.minidev\\accessors-smart\\2.5.1\\19b820261eb2e7de7d5bde11d1c06e4501dd7e5f\\accessors-smart-2.5.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.vaadin.external.google\\android-json\\0.0.20131108.vaadin1\\fa26d351fe62a6a17f5cda1287c1c6110dec413f\\android-json-0.0.20131108.vaadin1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.opentest4j\\opentest4j\\1.3.0\\152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e\\opentest4j-1.3.0.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.hdrhistogram\\HdrHistogram\\2.2.2\\7959933ebcc0f05b2eaa5af0a0c8689fa257b15c\\HdrHistogram-2.2.2.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.latencyutils\\LatencyUtils\\2.0.3\\769c0b82cb2421c8256300e907298a9410a2a3d3\\LatencyUtils-2.0.3.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.ongres.stringprep\\saslprep\\1.1\\eaf05b6446126f95de2f183b91751a854c2fc0bc\\saslprep-1.1.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\org.ow2.asm\\asm\\9.6\\aa205cf0a06dbd8e04ece91c0b37c3f5d567546a\\asm-9.6.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\io.swagger.core.v3\\swagger-annotations-jakarta\\2.2.15\\951eda18dbce0397347056aceff38d02710ec866\\swagger-annotations-jakarta-2.2.15.jar;C:\\Users\\maria\\.gradle\\caches\\modules-2\\files-2.1\\com.ongres.stringprep\\stringprep\\1.1\\9149e6d6f97be4c2b641c89ea569cb4fde872972\\stringprep-1.1.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool AllowRedefinitionToAddDeleteMethods      = true                                      {product} {command line}
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+   size_t InitialHeapSize                          = 123731968                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 536870912                                 {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 536870912                              {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\maria\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\dotnet\;C:\Users\maria\AppData\Local\Programs\Python\Python313;C:\Users\maria\AppData\Local\Programs\Python\Python313\Scripts;C:\gradle-8.14.3\bin;C:\Users\maria\AppData\Local\Programs\Python\Launcher\;C:\Users\maria\.console-ninja\.bin;C:\Users\maria\AppData\Local\Microsoft\WindowsApps;C:\Users\maria\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\maria\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\WebStorm 2024.3.1.1\bin;;C:\Users\maria\.bun\bin;C:\Users\maria\AppData\Local\Microsoft\WindowsApps;C:\Users\maria\AppData\Local\Programs\Python\Python313;C:\Users\maria\AppData\Local\Programs\Python\Python313\Scripts;
+USERNAME=Irma
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 160 Stepping 0, AuthenticAMD
+TMP=C:\Users\maria\AppData\Local\Temp
+TEMP=C:\Users\maria\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.4768)
+OS uptime: 5 days 21:02 hours
+Hyper-V role detected
+
+CPU: total 8 (initial active 8) (8 cores per cpu, 2 threads per core) family 23 model 160 stepping 0 microcode 0x8a00006, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, rdpid, f16c
+Processor Information for all 8 processors :
+  Max Mhz: 2801, Current Mhz: 2801, Mhz Limit: 2801
+
+Memory: 4k page, system-wide physical 7455M (261M free)
+TotalPageFile size 29983M (AvailPageFile size 143M)
+current process WorkingSet (physical memory assigned to process): 13M, peak: 13M
+current process commit charge ("private bytes"): 60M, peak: 178M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (22.0.2+9-70) for windows-amd64 JRE (22.0.2+9-70), built on 2024-06-04T16:52:23Z by "mach5one" with MS VC++ 17.6 (VS2022)
+
+END.

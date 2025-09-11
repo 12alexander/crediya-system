@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthOpenApi.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.openApi</a> &gt; <span class="el_source">AuthOpenApi.java</span></div><h1>AuthOpenApi.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.openApi;
+
+import co.com.bancolombia.api.auth.AuthHandler;
+import co.com.bancolombia.api.auth.dto.AuthRequestDTO;
+import co.com.bancolombia.api.auth.dto.AuthResponseDTO;
+import co.com.bancolombia.api.dto.ErrorResponseDTO;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springdoc.core.annotations.RouterOperation;
+import org.springdoc.core.annotations.RouterOperations;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.reactive.function.server.RequestPredicates;
+import org.springframework.web.reactive.function.server.RouterFunction;
+import org.springframework.web.reactive.function.server.RouterFunctions;
+import org.springframework.web.reactive.function.server.ServerResponse;
+
+@Configuration
+@Tag(name = &quot;Authentication&quot;, description = &quot;Authentication and JWT token management endpoints&quot;)
+<span class="nc" id="L29">public class AuthOpenApi {</span>
+
+    private static final String API_V1_AUTH_LOGIN = &quot;/api/v1/auth/login&quot;;
+    private static final String API_V1_AUTH_VALIDATE = &quot;/api/v1/auth/validate&quot;;
+
+    @Bean
+    @RouterOperations({
+            @RouterOperation(
+                    path = API_V1_AUTH_LOGIN,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.POST,
+                    beanClass = AuthHandler.class,
+                    beanMethod = &quot;login&quot;,
+                    operation = @Operation(
+                            operationId = &quot;loginUser&quot;,
+                            summary = &quot;User Authentication&quot;,
+                            description = &quot;Authenticate user with email and password to obtain JWT token&quot;,
+                            tags = {&quot;Authentication&quot;},
+                            requestBody = @RequestBody(
+                                    required = true,
+                                    description = &quot;User login credentials&quot;,
+                                    content = @Content(schema = @Schema(implementation = AuthRequestDTO.class))
+                            ),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;200&quot;, description = &quot;Login successful - JWT token generated&quot;,
+                                            content = @Content(schema = @Schema(implementation = AuthResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;400&quot;, description = &quot;Invalid request - missing or malformed data&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;401&quot;, description = &quot;Authentication failed - invalid credentials&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            ),
+            @RouterOperation(
+                    path = API_V1_AUTH_VALIDATE,
+                    produces = {MediaType.APPLICATION_JSON_VALUE},
+                    method = RequestMethod.POST,
+                    beanClass = AuthHandler.class,
+                    beanMethod = &quot;validateToken&quot;,
+                    operation = @Operation(
+                            operationId = &quot;validateJwtToken&quot;,
+                            summary = &quot;Validate JWT Token&quot;,
+                            description = &quot;Validate JWT token and return user information if valid&quot;,
+                            tags = {&quot;Authentication&quot;},
+                            security = @SecurityRequirement(name = &quot;bearerAuth&quot;),
+                            parameters = @Parameter(
+                                    name = &quot;Authorization&quot;,
+                                    description = &quot;Bearer token in format: Bearer {jwt-token}&quot;,
+                                    required = true,
+                                    in = ParameterIn.HEADER,
+                                    example = &quot;Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...&quot;
+                            ),
+                            responses = {
+                                    @ApiResponse(responseCode = &quot;200&quot;, description = &quot;Token is valid&quot;,
+                                            content = @Content(schema = @Schema(implementation = AuthResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;400&quot;, description = &quot;Missing or invalid Authorization header&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class))),
+                                    @ApiResponse(responseCode = &quot;401&quot;, description = &quot;Token is invalid or expired&quot;,
+                                            content = @Content(schema = @Schema(implementation = ErrorResponseDTO.class)))
+                            }
+                    )
+            )
+    })
+    public RouterFunction&lt;ServerResponse&gt; authRoutesDoc() {
+<span class="nc" id="L93">        return RouterFunctions.route(</span>
+<span class="nc" id="L94">                RequestPredicates.GET(&quot;/__dummy_auth__&quot;),</span>
+<span class="nc" id="L95">                req -&gt; ServerResponse.ok().build()</span>
+        );
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

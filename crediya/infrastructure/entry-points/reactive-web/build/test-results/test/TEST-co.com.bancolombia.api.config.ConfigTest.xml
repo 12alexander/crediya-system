@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.com.bancolombia.api.config.ConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:48.170Z" hostname="alex" time="0.037">
+  <properties/>
+  <testcase name="testContextLoads()" classname="co.com.bancolombia.api.config.ConfigTest" time="0.037"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2025-09-10T04:25:44.724-05:00  INFO 135187 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : Starting ConfigTest using Java 22.0.2 with PID 135187 (started by alex in /home/alex/Documentos/crediya/infrastructure/entry-points/reactive-web)
+2025-09-10T04:25:44.739-05:00  INFO 135187 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : No active profile set, falling back to 1 default profile: "default"
+2025-09-10T04:25:48.098-05:00  INFO 135187 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : Started ConfigTest in 5.616 seconds (process running for 24.255)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

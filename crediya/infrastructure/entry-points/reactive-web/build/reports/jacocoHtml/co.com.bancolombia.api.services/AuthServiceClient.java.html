@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthServiceClient.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.services</a> &gt; <span class="el_source">AuthServiceClient.java</span></div><h1>AuthServiceClient.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.services;
+
+import co.com.bancolombia.api.config.ApiPaths;
+import co.com.bancolombia.api.dto.response.AuthResponseDTO;
+import co.com.bancolombia.api.dto.response.UserReportResponseDTO;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Mono;
+
+<span class="fc" id="L11">@Slf4j</span>
+@Service
+public class AuthServiceClient {
+
+    private final WebClient webClient;
+
+<span class="nc" id="L17">    public AuthServiceClient(WebClient.Builder builder) {</span>
+<span class="nc" id="L18">        this.webClient = builder.baseUrl(ApiPaths.getAuthServiceBaseUrl()).build();</span>
+<span class="nc" id="L19">    }</span>
+
+    public Mono&lt;AuthResponseDTO&gt; validateToken(String token) {
+<span class="nc" id="L22">        return webClient.get()</span>
+<span class="nc" id="L23">                .uri(ApiPaths.VALIDATE)</span>
+<span class="nc" id="L24">                .header(&quot;Authorization&quot;, &quot;Bearer &quot; + token)</span>
+<span class="nc" id="L25">                .retrieve()</span>
+<span class="nc" id="L26">                .bodyToMono(AuthResponseDTO.class);</span>
+    }
+
+    public Mono&lt;UserReportResponseDTO&gt; getUserByEmailAddress(String token, String email) {
+<span class="nc" id="L30">        log.info(&quot;Llamando al servicio de autenticación para obtener usuario por email: {}&quot;, email);</span>
+<span class="nc" id="L31">        log.debug(&quot;URL base del servicio de auth: {}&quot;, ApiPaths.getAuthServiceBaseUrl());</span>
+<span class="nc" id="L32">        log.debug(&quot;Path completo: {}&quot;, ApiPaths.USERSBYEMAIL);</span>
+        
+<span class="nc" id="L34">        return webClient.get()</span>
+<span class="nc" id="L35">                .uri(uriBuilder -&gt; uriBuilder</span>
+<span class="nc" id="L36">                        .path(ApiPaths.USERSBYEMAIL)</span>
+<span class="nc" id="L37">                        .build(email))</span>
+<span class="nc" id="L38">                .header(&quot;Authorization&quot;, &quot;Bearer &quot; + token)</span>
+<span class="nc" id="L39">                .retrieve()</span>
+<span class="nc" id="L40">                .bodyToMono(UserReportResponseDTO.class)</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">                .doOnSuccess(user -&gt; log.info(&quot;Usuario obtenido exitosamente del servicio de auth: {}&quot;, user != null ? user.getEmailAddress() : &quot;null&quot;))</span>
+<span class="nc" id="L42">                .doOnError(error -&gt; log.error(&quot;Error al obtener usuario del servicio de auth para email {}: {}&quot;, email, error.getMessage(), error));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>
