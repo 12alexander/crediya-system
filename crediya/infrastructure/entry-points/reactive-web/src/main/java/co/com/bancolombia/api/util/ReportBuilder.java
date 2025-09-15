@@ -23,6 +23,8 @@ public class ReportBuilder {
                 .loanType(pendingRequest.getLoanType())
                 .interestRate(pendingRequest.getInterestRate())
                 .baseSalary(user.getBaseSalary())
+                .monthlyAmount(pendingRequest.getMonthlyAmount())
+                .status(pendingRequest.getStatus())
                 .build();
     }
 

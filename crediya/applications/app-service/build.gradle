@@ -1,6 +1,10 @@
 apply plugin: 'org.springframework.boot'
 
 dependencies {
+	// TODO: Descomentar cuando AWS esté configurado
+	// implementation project(':sqs-sender')
+	implementation project(':metrics')
+	// implementation 'software.amazon.awssdk:sts'
 	implementation project(':reactive-web')
 	implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
 	implementation project(':r2dbc-postgresql')

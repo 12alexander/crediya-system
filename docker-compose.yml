@@ -1,7 +1,6 @@
 version: '3.8'
 
 services:
-  # PostgreSQL para Authentication
   postgres-auth:
     image: postgres:16-alpine
     container_name: crediya-postgres-auth
@@ -22,7 +21,6 @@ services:
       start_period: 10s
     restart: unless-stopped
 
-  # PostgreSQL para Orders  
   postgres-orders:
     image: postgres:16-alpine
     container_name: crediya-postgres-orders
@@ -43,7 +41,6 @@ services:
       start_period: 10s
     restart: unless-stopped
 
-  # Authentication Service (Pragma)
   pragma:
     build:
       context: ./pragma
@@ -68,7 +65,6 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
-  # Orders Service (CrediYa)
   crediya:
     build:
       context: ./crediya

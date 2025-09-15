@@ -18,4 +18,6 @@ public interface IOrdersUseCase {
     Flux<Orders> findByEmailAddress(String emailAddress);
 
     Flux<co.com.bancolombia.model.orders.PendingRequest> findPendingRequests(UUID statusId, String email, int page, int size);
+
+    Mono<Orders> updateOrderDecision(String orderId, String decision);
 }   

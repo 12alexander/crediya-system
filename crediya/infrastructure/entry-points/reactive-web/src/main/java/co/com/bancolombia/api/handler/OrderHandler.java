@@ -1,6 +1,7 @@
 package co.com.bancolombia.api.handler;
 
 import co.com.bancolombia.api.dto.request.CreateLoanRequestDTO;
+import co.com.bancolombia.api.dto.request.OrderDecisionRequestDTO;
 import co.com.bancolombia.api.dto.response.LoanRequestResponseDTO;
 import co.com.bancolombia.api.dto.response.AuthResponseDTO;
 import co.com.bancolombia.api.enums.RolEnum;
@@ -173,5 +174,23 @@ public class OrderHandler {
                     }
                     return Mono.just(user);
                 });
+    }
+
+    public Mono<ServerResponse> updateOrderDecision(ServerRequest request) {
+        String orderId = request.pathVariable("id");
+        String traceId = generateTraceId();
+        
+        log.info("[{}] Procesando decisión para orden ID: {}", traceId, orderId);
+        
+        return validateUserToken(request, RolEnum.ASSESSOR.getId())
+                .flatMap(authUser -> request.bodyToMono(OrderDecisionRequestDTO.class)
+                        .switchIfEmpty(Mono.error(new IllegalArgumentException("El cuerpo de la solicitud no puede estar vacío")))
+                        .flatMap(dto -> transactionalAdapter.executeInTransaction(
+                                ordersUseCase.updateOrderDecision(orderId, dto.getDecision())
+                        ))
+                        .map(this::mapToResponseDTO)
+                        .flatMap(this::buildSuccessResponse))
+                .doOnSuccess(response -> log.info("[{}] Decisión procesada exitosamente para orden: {}", traceId, orderId))
+                .doOnError(error -> log.error("[{}] Error procesando decisión para orden {}: {}", traceId, orderId, error.getMessage()));
     }
 }

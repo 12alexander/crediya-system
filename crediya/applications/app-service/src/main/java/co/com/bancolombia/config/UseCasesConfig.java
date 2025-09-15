@@ -1,6 +1,7 @@
 package co.com.bancolombia.config;
 
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
+import co.com.bancolombia.model.notification.gateways.NotificationGateway;
 import co.com.bancolombia.model.orders.gateways.OrdersRepository;
 import co.com.bancolombia.usecase.orders.OrdersUseCase;
 import co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase;
@@ -18,7 +19,9 @@ public class UseCasesConfig {
      * @return IOrdersUseCase implementation
      */
     @Bean
-    public IOrdersUseCase ordersUseCase(OrdersRepository ordersRepository, LoanTypeRepository loanTypeRepository) {
-        return new OrdersUseCase(ordersRepository, loanTypeRepository);
+    public IOrdersUseCase ordersUseCase(OrdersRepository ordersRepository, 
+                                       LoanTypeRepository loanTypeRepository) {
+        // TODO: Agregar NotificationGateway cuando AWS esté configurado
+        return new OrdersUseCase(ordersRepository, loanTypeRepository, null);
     }
 }

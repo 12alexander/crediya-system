@@ -11,7 +11,7 @@ public class ApiPaths {
     private static final String baseURL = "/api/v1";
 
     // External Services Configuration
-    @Value("${external.services.auth.base-url:http://localhost:8090}")
+    @Value("${external.services.auth.base-url:http://pragma:8090}")
     private String authServiceBaseUrl;
 
     public static final String VALIDATE = baseURL + "/auth/validate";
@@ -27,6 +27,6 @@ public class ApiPaths {
     // Method to get configured base URL for auth service
     public static String getAuthServiceBaseUrl() {
         return instance != null && instance.authServiceBaseUrl != null ? 
-            instance.authServiceBaseUrl : "http://localhost:8090";
+            instance.authServiceBaseUrl : "http://pragma:8090";
     }
 }

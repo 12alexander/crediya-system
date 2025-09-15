@@ -33,6 +33,9 @@ public class RouterRest {
                 orderHandler::createLoanRequest)
                 .andRoute(GET(SOLICITUD_PATH + "/{id}"), 
                         orderHandler::getLoanRequest)
+                .andRoute(PUT(SOLICITUD_PATH + "/{id}/decision")
+                        .and(accept(MediaType.APPLICATION_JSON)), 
+                        orderHandler::updateOrderDecision)
                 .andRoute(GET(API_V1 + "/solicitudes-pendientes"), 
                         reportHandler::getPendingRequests);
     }

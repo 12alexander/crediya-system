@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/infrastructure/driven-adapters/r2dbc-postgresql/crediya.r2dbc-postgresql.test.iml" filepath="$PROJECT_DIR$/.idea/modules/infrastructure/driven-adapters/r2dbc-postgresql/crediya.r2dbc-postgresql.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/infrastructure/entry-points/reactive-web/crediya.reactive-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infrastructure/entry-points/reactive-web/crediya.reactive-web.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/infrastructure/entry-points/reactive-web/crediya.reactive-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/infrastructure/entry-points/reactive-web/crediya.reactive-web.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/infrastructure/helpers/transaction/crediya.transaction.main.iml" filepath="$PROJECT_DIR$/.idea/modules/infrastructure/helpers/transaction/crediya.transaction.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/usecase/crediya.usecase.main.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/usecase/crediya.usecase.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/usecase/crediya.usecase.test.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/usecase/crediya.usecase.test.iml" />
     </modules>

@@ -30,6 +30,17 @@ adapters:
 cors:
   allowed-origins: "${CORS_ALLOWED_ORIGINS:http://localhost:4200,http://pragma:8090}"
 
+adapter:
+  sqs:
+    region: ${AWS_REGION:us-east-1}
+    queueUrl: ${SQS_QUEUE_URL:https://sqs.us-east-1.amazonaws.com/123456789/crediya-order-notifications}
+    endpoint: ${SQS_ENDPOINT:}
+
+aws:
+  region: ${AWS_REGION:us-east-1}
+  accessKeyId: ${AWS_ACCESS_KEY_ID:}
+  secretAccessKey: ${AWS_SECRET_ACCESS_KEY:}
+
 logging:
   level:
     root: ${LOG_LEVEL:INFO}

@@ -1,7 +1,9 @@
 package co.com.bancolombia.usecase.orders;
 
+import co.com.bancolombia.model.enums.StatusEnum;
 import co.com.bancolombia.model.loantype.LoanType;
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
+import co.com.bancolombia.model.notification.gateways.NotificationGateway;
 import co.com.bancolombia.model.orders.Orders;
 import co.com.bancolombia.model.orders.PendingRequest;
 import co.com.bancolombia.model.orders.exceptions.InvalidLoanAmountException;
@@ -13,6 +15,8 @@ import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDateTime;
+
 import java.math.BigDecimal;
 import java.util.UUID;
 
@@ -21,8 +25,9 @@ public class OrdersUseCase implements IOrdersUseCase {
     
     private final OrdersRepository ordersRepository;
     private final LoanTypeRepository loanTypeRepository;
+    private final NotificationGateway notificationGateway;
 
-    public Mono<Orders> createLoanRequest(String idUser, BigDecimal amount, Integer deadline, 
+        public Mono<Orders> createLoanRequest(String idUser, BigDecimal amount, Integer deadline,
                                         String emailAddress, String loanTypeId) {
         
         return validateLoanType(loanTypeId)
@@ -71,6 +76,12 @@ public class OrdersUseCase implements IOrdersUseCase {
         return ordersRepository.save(order);
     }
 
+    private Mono<Orders> sendDecisionNotification(Orders order) {
+        return notificationGateway.notifyOrderDecision(order)
+                .then(Mono.just(order))
+                .onErrorReturn(order);
+    }
+
     public Mono<Orders> findById(String orderId) {
         return ordersRepository.findById(orderId)
                 .switchIfEmpty(Mono.error(new OrdersBusinessException("ORDER_NOT_FOUND", 
@@ -85,5 +96,42 @@ public class OrdersUseCase implements IOrdersUseCase {
     @Override
     public Flux<PendingRequest> findPendingRequests(UUID statusId, String email, int page, int size) {
         return ordersRepository.findPendingRequests(statusId, email, page, size);
+    }
+
+    @Override
+    public Mono<Orders> updateOrderDecision(String orderId, String decision) {
+        return findById(orderId)
+                .flatMap(order -> validateOrderCanBeUpdated(order))
+                .flatMap(order -> getNewStatusId(decision)
+                        .flatMap(newStatusId -> updateOrderWithNewStatus(order, newStatusId)))
+                .flatMap(this::saveOrder);
+                // TODO: Descomentar cuando AWS esté configurado
+                // .flatMap(this::sendDecisionNotification);
+    }
+
+    private Mono<Orders> validateOrderCanBeUpdated(Orders order) {
+        String pendingStatusId = StatusEnum.PENDING.getId();
+        if (!pendingStatusId.equals(order.getIdStatus())) {
+            return Mono.error(new OrdersBusinessException("ORDER_ALREADY_PROCESSED", 
+                    "La orden ya fue procesada y no puede modificarse"));
+        }
+        return Mono.just(order);
+    }
+
+    private Mono<String> getNewStatusId(String decision) {
+        return Mono.fromCallable(() -> {
+            return switch (decision) {
+                case "APPROVED" -> StatusEnum.APPROVED.getId();
+                case "REJECTED" -> StatusEnum.REJECTED.getId();
+                default -> throw new IllegalArgumentException("Decisión inválida: " + decision);
+            };
+        });
+    }
+
+    private Mono<Orders> updateOrderWithNewStatus(Orders order, String newStatusId) {
+        return Mono.fromCallable(() -> order.toBuilder()
+                .idStatus(newStatusId)
+                .updateDate(LocalDateTime.now())
+                .build());
     }
 }
