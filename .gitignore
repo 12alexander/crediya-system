@@ -58,6 +58,7 @@ application-*.yml
 !application-docker.yaml
 
 # Environment variables
+.env
 .env.local
 .env.*.local
 

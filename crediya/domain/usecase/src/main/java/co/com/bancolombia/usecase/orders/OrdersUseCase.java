@@ -104,9 +104,8 @@ public class OrdersUseCase implements IOrdersUseCase {
                 .flatMap(order -> validateOrderCanBeUpdated(order))
                 .flatMap(order -> getNewStatusId(decision)
                         .flatMap(newStatusId -> updateOrderWithNewStatus(order, newStatusId)))
-                .flatMap(this::saveOrder);
-                // TODO: Descomentar cuando AWS esté configurado
-                // .flatMap(this::sendDecisionNotification);
+                .flatMap(this::saveOrder)
+                .flatMap(this::sendDecisionNotification);
     }
 
     private Mono<Orders> validateOrderCanBeUpdated(Orders order) {

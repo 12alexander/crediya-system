@@ -5,6 +5,7 @@ import co.com.bancolombia.model.notification.gateways.NotificationGateway;
 import co.com.bancolombia.model.orders.gateways.OrdersRepository;
 import co.com.bancolombia.usecase.orders.OrdersUseCase;
 import co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,9 +20,9 @@ public class UseCasesConfig {
      * @return IOrdersUseCase implementation
      */
     @Bean
-    public IOrdersUseCase ordersUseCase(OrdersRepository ordersRepository, 
-                                       LoanTypeRepository loanTypeRepository) {
-        // TODO: Agregar NotificationGateway cuando AWS esté configurado
-        return new OrdersUseCase(ordersRepository, loanTypeRepository, null);
+    public IOrdersUseCase ordersUseCase(OrdersRepository ordersRepository,
+                                       LoanTypeRepository loanTypeRepository,
+                                       @Autowired(required = false) NotificationGateway notificationGateway) {
+        return new OrdersUseCase(ordersRepository, loanTypeRepository, notificationGateway);
     }
 }
