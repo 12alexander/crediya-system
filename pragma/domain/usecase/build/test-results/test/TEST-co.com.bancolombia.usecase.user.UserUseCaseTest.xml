@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.usecase.user.UserUseCaseTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:27:37.451Z" hostname="alex" time="5.504">
+<testsuite name="co.com.bancolombia.usecase.user.UserUseCaseTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:25:39.835Z" hostname="alex" time="0.776">
   <properties/>
-  <testcase name="saveUser_WithValidData_ShouldWork()" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="5.422"/>
-  <testcase name="getAllUsers_ShouldWork()" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.031"/>
-  <testcase name="saveUser_WithDuplicateEmail_ShouldFail()" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.043"/>
+  <testcase name="Get user by ID - should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.471"/>
+  <testcase name="Find by ID - interface method should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.015"/>
+  <testcase name="Save user - valid data should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.079"/>
+  <testcase name="Get user by email - should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.027"/>
+  <testcase name="Delete user - should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.022"/>
+  <testcase name="Delete user - not found should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.008"/>
+  <testcase name="Get all users - should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.012"/>
+  <testcase name="Update user - should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.02"/>
+  <testcase name="Get all users - error should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.013"/>
+  <testcase name="Save user - invalid role should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.008"/>
+  <testcase name="Get user by email - interface method should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.009"/>
+  <testcase name="Update user - not found should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.01"/>
+  <testcase name="Get user by email - not found should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.008"/>
+  <testcase name="Save user - duplicate email should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.012"/>
+  <testcase name="Get user by ID - not found should fail" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.007"/>
+  <testcase name="Find all - interface method should work" classname="co.com.bancolombia.usecase.user.UserUseCaseTest" time="0.01"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

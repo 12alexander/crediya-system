@@ -10,11 +10,15 @@
         <module name="crediya.transaction.test" />
         <module name="crediya.app-service.test" />
         <module name="crediya.r2dbc-postgresql.test" />
-        <module name="crediya.app-service.main" />
+        <module name="crediya.sqs-sender.main" />
         <module name="crediya.usecase.test" />
         <module name="crediya.model.test" />
-        <module name="crediya.usecase.main" />
         <module name="crediya.model.main" />
+        <module name="crediya.metrics.test" />
+        <module name="crediya.app-service.main" />
+        <module name="crediya.usecase.main" />
+        <module name="crediya.metrics.main" />
+        <module name="crediya.sqs-sender.test" />
         <module name="crediya.reactive-web.main" />
         <module name="crediya.transaction.main" />
         <module name="crediya.reactive-web.test" />

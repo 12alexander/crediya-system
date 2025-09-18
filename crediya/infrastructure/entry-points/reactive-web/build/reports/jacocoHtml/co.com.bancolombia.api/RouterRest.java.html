@@ -25,17 +25,17 @@ public class RouterRest {
     private static final String API_V1 = &quot;/api/v1&quot;;
     private static final String SOLICITUD_PATH = API_V1 + &quot;/solicitud&quot;;
 
-    /**
-     * Router function configuration for all API endpoints.
-     * Clean separation from OpenAPI documentation.
-     */
+
     @Bean
     public RouterFunction&lt;ServerResponse&gt; routerFunction() {
-<span class="fc" id="L34">        return route(POST(SOLICITUD_PATH)</span>
-<span class="fc" id="L35">                        .and(accept(MediaType.APPLICATION_JSON)), </span>
-<span class="fc" id="L36">                orderHandler::createLoanRequest)</span>
-<span class="fc" id="L37">                .andRoute(GET(SOLICITUD_PATH + &quot;/{id}&quot;), </span>
-<span class="fc" id="L38">                        orderHandler::getLoanRequest)</span>
+<span class="fc" id="L31">        return route(POST(SOLICITUD_PATH)</span>
+<span class="fc" id="L32">                        .and(accept(MediaType.APPLICATION_JSON)), </span>
+<span class="fc" id="L33">                orderHandler::createLoanRequest)</span>
+<span class="fc" id="L34">                .andRoute(GET(SOLICITUD_PATH + &quot;/{id}&quot;), </span>
+<span class="fc" id="L35">                        orderHandler::getLoanRequest)</span>
+<span class="fc" id="L36">                .andRoute(PUT(SOLICITUD_PATH + &quot;/{id}/decision&quot;)</span>
+<span class="fc" id="L37">                        .and(accept(MediaType.APPLICATION_JSON)), </span>
+<span class="fc" id="L38">                        orderHandler::updateOrderDecision)</span>
 <span class="fc" id="L39">                .andRoute(GET(API_V1 + &quot;/solicitudes-pendientes&quot;), </span>
 <span class="fc" id="L40">                        reportHandler::getPendingRequests);</span>
     }

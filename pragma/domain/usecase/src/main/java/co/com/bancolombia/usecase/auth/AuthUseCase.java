@@ -1,6 +1,7 @@
 package co.com.bancolombia.usecase.auth;
 
 import co.com.bancolombia.model.auth.Auth;
+import co.com.bancolombia.model.constants.ValidationMessages;
 import co.com.bancolombia.model.exception.AuthException;
 import co.com.bancolombia.usecase.user.UserUseCase;
 import lombok.RequiredArgsConstructor;
@@ -18,10 +19,10 @@ public class AuthUseCase {
                             BiFunction<UUID, UUID, String> tokenGenerator,
                             BiFunction<String, String, Boolean> passwordMatches){
         return userUseCase.getUserByEmailAddress(email)
-                .switchIfEmpty(Mono.error(() -> new AuthException("User not found for email: " + email)))
+                .switchIfEmpty(Mono.error(() -> new AuthException(ValidationMessages.USER_NOT_FOUND_LOGIN + email)))
                 .flatMap(user -> {
                     if (!passwordMatches.apply(password, user.getPassword())) {
-                        return Mono.error(() -> new AuthException("Invalid credentials"));
+                        return Mono.error(() -> new AuthException(ValidationMessages.INVALID_CREDENTIALS));
                     }
                     String token = tokenGenerator.apply(UUID.fromString(user.getId()), UUID.fromString(user.getIdRol()));
                     return Mono.just(new Auth(UUID.fromString(user.getId()), UUID.fromString(user.getIdRol()), token, user.getName()));

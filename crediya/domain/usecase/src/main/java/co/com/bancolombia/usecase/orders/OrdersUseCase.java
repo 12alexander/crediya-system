@@ -1,5 +1,6 @@
 package co.com.bancolombia.usecase.orders;
 
+import co.com.bancolombia.model.constants.ValidationMessages;
 import co.com.bancolombia.model.enums.StatusEnum;
 import co.com.bancolombia.model.loantype.LoanType;
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
@@ -59,8 +60,8 @@ public class OrdersUseCase implements IOrdersUseCase {
 
     private Mono<String> getPendingStatusId() {
         return ordersRepository.findPendingStatusId()
-                .switchIfEmpty(Mono.error(new OrdersBusinessException("PENDING_STATUS_NOT_FOUND", 
-                                                                     "No se encontró el estado 'PENDING'")));
+                .switchIfEmpty(Mono.error(new OrdersBusinessException("PENDING_STATUS_NOT_FOUND",
+                                                                     ValidationMessages.PENDING_STATUS_NOT_FOUND)));
     }
 
     private Mono<Orders> createAndValidateOrder(String idUser, BigDecimal amount, Integer deadline,
@@ -84,8 +85,8 @@ public class OrdersUseCase implements IOrdersUseCase {
 
     public Mono<Orders> findById(String orderId) {
         return ordersRepository.findById(orderId)
-                .switchIfEmpty(Mono.error(new OrdersBusinessException("ORDER_NOT_FOUND", 
-                                                                     "No se encontró la solicitud con ID: " + orderId)));
+                .switchIfEmpty(Mono.error(new OrdersBusinessException("ORDER_NOT_FOUND",
+                                                                     ValidationMessages.ORDER_NOT_FOUND + orderId)));
     }
 
     @Override
@@ -111,8 +112,8 @@ public class OrdersUseCase implements IOrdersUseCase {
     private Mono<Orders> validateOrderCanBeUpdated(Orders order) {
         String pendingStatusId = StatusEnum.PENDING.getId();
         if (!pendingStatusId.equals(order.getIdStatus())) {
-            return Mono.error(new OrdersBusinessException("ORDER_ALREADY_PROCESSED", 
-                    "La orden ya fue procesada y no puede modificarse"));
+            return Mono.error(new OrdersBusinessException("ORDER_ALREADY_PROCESSED",
+                    ValidationMessages.ORDER_ALREADY_PROCESSED));
         }
         return Mono.just(order);
     }
@@ -122,7 +123,7 @@ public class OrdersUseCase implements IOrdersUseCase {
             return switch (decision) {
                 case "APPROVED" -> StatusEnum.APPROVED.getId();
                 case "REJECTED" -> StatusEnum.REJECTED.getId();
-                default -> throw new IllegalArgumentException("Decisión inválida: " + decision);
+                default -> throw new IllegalArgumentException(ValidationMessages.INVALID_DECISION + decision);
             };
         });
     }

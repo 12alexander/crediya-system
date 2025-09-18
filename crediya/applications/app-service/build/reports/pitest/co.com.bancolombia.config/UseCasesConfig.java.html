@@ -66,7 +66,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.model.orders.gateways.OrdersRepository;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.notification.gateways.NotificationGateway;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -80,7 +80,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.usecase.orders.OrdersUseCase;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.orders.gateways.OrdersRepository;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -94,7 +94,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.usecase.orders.OrdersUseCase;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -108,7 +108,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import org.springframework.context.annotation.Bean;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -122,7 +122,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import org.springframework.context.annotation.Configuration;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import org.springframework.beans.factory.annotation.Autowired;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -136,7 +136,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>import org.springframework.context.annotation.Bean;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -150,10 +150,10 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>@Configuration</span></pre></td></tr>
+<td class=''><pre><span  class=''>import org.springframework.context.annotation.Configuration;</span></pre></td></tr>
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@771a660_11'/>
 11
 </td>
@@ -164,7 +164,7 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>public class UseCasesConfig {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -178,10 +178,10 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>@Configuration</span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@771a660_13'/>
 13
 </td>
@@ -192,7 +192,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>public class UseCasesConfig {</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -206,7 +206,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>     * Creates the Orders use case bean.</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -220,7 +220,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>     * </span></pre></td></tr>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -234,7 +234,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>     * @param ordersRepository repository for order operations</span></pre></td></tr>
+<td class=''><pre><span  class=''>     * Creates the Orders use case bean.</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -248,7 +248,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>     * @param loanTypeRepository repository for loan type operations</span></pre></td></tr>
+<td class=''><pre><span  class=''>     * </span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -262,7 +262,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>     * @return IOrdersUseCase implementation</span></pre></td></tr>
+<td class=''><pre><span  class=''>     * @param ordersRepository repository for order operations</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -276,7 +276,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+<td class=''><pre><span  class=''>     * @param loanTypeRepository repository for loan type operations</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -290,7 +290,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    @Bean</span></pre></td></tr>
+<td class=''><pre><span  class=''>     * @return IOrdersUseCase implementation</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -304,23 +304,21 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public IOrdersUseCase ordersUseCase(OrdersRepository ordersRepository, LoanTypeRepository loanTypeRepository) {</span></pre></td></tr>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@771a660_22'/>
 22
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@771a660_22'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@771a660_22'></a>
 <span>
-1. ordersUseCase : replaced return value with null for co/com/bancolombia/config/UseCasesConfig::ordersUseCase &rarr; SURVIVED<br/>
-
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>        return new OrdersUseCase(ordersRepository, loanTypeRepository);</span></pre></td></tr>
+<td class=''><pre><span  class=''>    @Bean</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -334,7 +332,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public IOrdersUseCase ordersUseCase(OrdersRepository ordersRepository,</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -348,6 +346,64 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''>                                       LoanTypeRepository loanTypeRepository,</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@771a660_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@771a660_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                                       @Autowired(required = false) NotificationGateway notificationGateway) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@771a660_26'/>
+26
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@771a660_26'>1</a>
+<span>
+1. ordersUseCase : replaced return value with null for co/com/bancolombia/config/UseCasesConfig::ordersUseCase &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return new OrdersUseCase(ordersRepository, loanTypeRepository, notificationGateway);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@771a660_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@771a660_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@771a660_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@771a660_28'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>}</span></pre></td></tr>
 
 
@@ -355,15 +411,15 @@
 <tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@771a660_22'>22</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@771a660_26'>26</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@771a660_22'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@771a660_26'/> 
 
 <p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>ordersUseCase<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/config/UseCasesConfig::ordersUseCase &rarr; SURVIVED</span>
-<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.config.UseCasesConfig,-method=ordersUseCase,-methodDesc=(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;],-indexes=[8],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.config.UseCasesConfig,-method=ordersUseCase,-methodDesc=(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;],-indexes=[8],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
-<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.config.UseCasesConfig,-method=ordersUseCase,-methodDesc=(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;],-indexes=[8],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator]" style="display:none;">Covered by tests:
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.config.UseCasesConfig,-method=ordersUseCase,-methodDesc=(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;],-indexes=[9],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.config.UseCasesConfig,-method=ordersUseCase,-methodDesc=(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;],-indexes=[9],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.config.UseCasesConfig,-method=ordersUseCase,-methodDesc=(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;],-indexes=[9],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.NullReturnValsMutator]" style="display:none;">Covered by tests:
 <ul>
 <li>co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]</li> 
 </ul>
@@ -392,7 +448,7 @@
 
 <h2>Tests examined</h2>
 <ul>
-<li>co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()] (1563 ms)</li>
+<li>co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()] (3095 ms)</li>
 </ul>
 
 <br/>

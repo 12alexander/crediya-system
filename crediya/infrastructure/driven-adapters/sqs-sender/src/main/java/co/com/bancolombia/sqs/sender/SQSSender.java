@@ -41,19 +41,12 @@ public class SQSSender implements NotificationGateway {
 
     @Override
     public Mono<Void> notifyOrderDecision(Orders order) {
-        log.info("Starting SQS notification for order: {} with decision status: {}",
-                order.getId(), order.getIdStatus());
-
         return Mono.fromCallable(() -> buildNotificationMessage(order))
-                .doOnNext(message -> log.info("Built SQS message: {}", message))
                 .flatMap(this::send)
                 .doOnNext(messageId -> log.info("Order decision notification sent for order: {} with messageId: {}",
                         order.getId(), messageId))
                 .then()
-                .onErrorMap(ex -> {
-                    log.error("Failed to send SQS notification for order: {}", order.getId(), ex);
-                    return new RuntimeException("Failed to send order decision notification", ex);
-                });
+                .onErrorMap(ex -> new RuntimeException("Failed to send order decision notification", ex));
     }
 
     private String buildNotificationMessage(Orders order) {
@@ -66,7 +59,7 @@ public class SQSSender implements NotificationGateway {
             message.put("deadline", order.getDeadline());
             message.put("decisionDate", order.getUpdateDate());
             message.put("type", "ORDER_DECISION");
-            
+
             return objectMapper.writeValueAsString(message);
         } catch (JsonProcessingException e) {
             throw new RuntimeException("Failed to serialize notification message", e);

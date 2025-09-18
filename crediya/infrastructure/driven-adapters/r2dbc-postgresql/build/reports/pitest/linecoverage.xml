@@ -4,7 +4,15 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='15'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='14'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
@@ -12,7 +20,19 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='13'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='12'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='19'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
@@ -20,7 +40,23 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='18'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='17'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='16'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='23'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
@@ -28,11 +64,23 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='22'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='9'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='21'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='20'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
@@ -60,6 +108,10 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='26'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='5'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
@@ -72,7 +124,15 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='25'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findAll()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='24'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
@@ -100,31 +160,7 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='findAll()Lreactor/core/publisher/Flux;' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyData' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='findAll()Lreactor/core/publisher/Flux;' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
@@ -164,14 +200,6 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;init&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='setUp()V' number='1'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
@@ -196,10 +224,6 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='toEntity(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyData;)Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyEntity;' number='0'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
@@ -208,24 +232,12 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='toEntity(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyData;)Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyEntity;' number='3'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='5'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='4'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$1' method='&lt;init&gt;(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest;Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='1'><tests>
@@ -244,10 +256,6 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='3'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$1' method='&lt;init&gt;(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest;Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='0'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
@@ -264,68 +272,12 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='2'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='9'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='8'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='7'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='6'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='13'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='12'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='11'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='10'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='17'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='16'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='15'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='14'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='&lt;init&gt;(Lorg/springframework/data/repository/reactive/ReactiveCrudRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='3'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='21'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='&lt;init&gt;(Lorg/springframework/data/repository/reactive/ReactiveCrudRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='2'><tests>
@@ -336,32 +288,12 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='20'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='19'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='&lt;init&gt;(Lorg/springframework/data/repository/reactive/ReactiveCrudRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='4'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='18'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='25'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='24'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='&lt;init&gt;(Lorg/springframework/data/repository/reactive/ReactiveCrudRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='1'><tests>
@@ -372,10 +304,6 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='23'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='&lt;init&gt;(Lorg/springframework/data/repository/reactive/ReactiveCrudRepository;Lorg/reactivecommons/utils/ObjectMapper;Ljava/util/function/Function;)V' number='0'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
@@ -384,20 +312,12 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='22'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='13'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='&lt;clinit&gt;()V' number='26'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V' number='1'><tests>
@@ -409,6 +329,38 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='findAll()Lreactor/core/publisher/Flux;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='findAll()Lreactor/core/publisher/Flux;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
@@ -460,12 +412,20 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='3'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='8'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='5'><tests>
@@ -476,12 +436,24 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='3'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='7'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='&lt;init&gt;()V' number='0'><tests>
@@ -500,12 +472,20 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='2'><tests>
@@ -516,6 +496,14 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='4'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='11'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='0'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
@@ -524,12 +512,16 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='10'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='9'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='&lt;clinit&gt;()V' number='8'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findAll()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='findById(Ljava/lang/Object;)Lreactor/core/publisher/Mono;' number='2'><tests>
@@ -541,6 +533,14 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='findById(Ljava/lang/Object;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
 </tests>
 </block>
@@ -586,6 +586,14 @@
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='findById()V' number='1'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findById()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='saveAll(Lorg/reactivestreams/Publisher;)Lreactor/core/publisher/Flux;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='saveAll(Lorg/reactivestreams/Publisher;)Lreactor/core/publisher/Flux;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='saveAllEntities(Lreactor/core/publisher/Flux;)Lreactor/core/publisher/Flux;' number='2'><tests>
@@ -696,16 +704,16 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='saveAll(Lorg/reactivestreams/Publisher;)Lreactor/core/publisher/Flux;' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='saveAll(Lorg/reactivestreams/Publisher;)Lreactor/core/publisher/Flux;' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyEntity' method='equals(Ljava/lang/Object;)Z' number='12'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:saveAllEntities()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='findAll(Lorg/springframework/data/domain/Example;)Lreactor/core/publisher/Flux;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='findAll(Lorg/springframework/data/domain/Example;)Lreactor/core/publisher/Flux;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='toData(Ljava/lang/Object;)Ljava/lang/Object;' number='0'><tests>
@@ -713,17 +721,9 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='findAll(Lorg/springframework/data/domain/Example;)Lreactor/core/publisher/Flux;' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='toData(Ljava/lang/Object;)Ljava/lang/Object;' number='1'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='findAll(Lorg/springframework/data/domain/Example;)Lreactor/core/publisher/Flux;' number='0'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='findByExample(Ljava/lang/Object;)Lreactor/core/publisher/Flux;' number='1'><tests>
@@ -806,6 +806,14 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:findByExample()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='save(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyData;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$XvkXILSc' method='save(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyData;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperations' method='save(Ljava/lang/Object;)Lreactor/core/publisher/Mono;' number='2'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 </tests>
@@ -870,19 +878,11 @@
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='save(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyData;)Lreactor/core/publisher/Mono;' number='1'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='save()V' number='7'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest' method='save()V' number='6'><tests>
-<test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest$DummyRepository$MockitoMock$Xm4CuJlS' method='save(Lco/com/bancolombia/r2dbc/helper/ReactiveAdapterOperationsTest$DummyData;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest.[engine:junit-jupiter]/[class:co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest]/[method:save()]'/>
 </tests>
 </block>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>AuthUseCase.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">usecase</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.usecase.auth</a> &gt; <span class="el_source">AuthUseCase.java</span></div><h1>AuthUseCase.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.usecase.auth;
 
 import co.com.bancolombia.model.auth.Auth;
+import co.com.bancolombia.model.constants.ValidationMessages;
 import co.com.bancolombia.model.exception.AuthException;
 import co.com.bancolombia.usecase.user.UserUseCase;
 import lombok.RequiredArgsConstructor;
@@ -17,14 +18,14 @@ public class AuthUseCase {
                             String password,
                             BiFunction&lt;UUID, UUID, String&gt; tokenGenerator,
                             BiFunction&lt;String, String, Boolean&gt; passwordMatches){
-<span class="nc" id="L20">        return userUseCase.getUserByEmailAddress(email)</span>
-<span class="nc" id="L21">                .switchIfEmpty(Mono.error(() -&gt; new AuthException(&quot;User not found for email: &quot; + email)))</span>
-<span class="nc" id="L22">                .flatMap(user -&gt; {</span>
-<span class="nc bnc" id="L23" title="All 2 branches missed.">                    if (!passwordMatches.apply(password, user.getPassword())) {</span>
-<span class="nc" id="L24">                        return Mono.error(() -&gt; new AuthException(&quot;Invalid credentials&quot;));</span>
+<span class="fc" id="L21">        return userUseCase.getUserByEmailAddress(email)</span>
+<span class="fc" id="L22">                .switchIfEmpty(Mono.error(() -&gt; new AuthException(ValidationMessages.USER_NOT_FOUND_LOGIN + email)))</span>
+<span class="fc" id="L23">                .flatMap(user -&gt; {</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">                    if (!passwordMatches.apply(password, user.getPassword())) {</span>
+<span class="fc" id="L25">                        return Mono.error(() -&gt; new AuthException(ValidationMessages.INVALID_CREDENTIALS));</span>
                     }
-<span class="nc" id="L26">                    String token = tokenGenerator.apply(UUID.fromString(user.getId()), UUID.fromString(user.getIdRol()));</span>
-<span class="nc" id="L27">                    return Mono.just(new Auth(UUID.fromString(user.getId()), UUID.fromString(user.getIdRol()), token, user.getName()));</span>
+<span class="fc" id="L27">                    String token = tokenGenerator.apply(UUID.fromString(user.getId()), UUID.fromString(user.getIdRol()));</span>
+<span class="fc" id="L28">                    return Mono.just(new Auth(UUID.fromString(user.getId()), UUID.fromString(user.getIdRol()), token, user.getName()));</span>
                 });
     }
 }

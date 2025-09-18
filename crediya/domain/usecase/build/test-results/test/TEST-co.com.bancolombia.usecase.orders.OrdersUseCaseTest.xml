@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:26.235Z" hostname="alex" time="4.153">
+<testsuite name="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:15:39.560Z" hostname="alex" time="8.349">
   <properties/>
-  <testcase name="Find by ID - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="4.001"/>
-  <testcase name="Create loan request - loan type not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.022"/>
-  <testcase name="Create loan request - pending status not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.012"/>
-  <testcase name="Find by email address - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.012"/>
-  <testcase name="Find by email address - empty result" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.008"/>
-  <testcase name="Create loan request - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.018"/>
-  <testcase name="Create loan request - invalid amount (too low)" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.032"/>
-  <testcase name="Find by ID - not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.006"/>
-  <testcase name="Create loan request - invalid amount (too high)" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.007"/>
+  <testcase name="Update order decision - reject success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="7.938"/>
+  <testcase name="Find by ID - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.028"/>
+  <testcase name="Create loan request - loan type not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.037"/>
+  <testcase name="Create loan request - pending status not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.034"/>
+  <testcase name="Update order decision - order not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.014"/>
+  <testcase name="Find by email address - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.037"/>
+  <testcase name="Find by email address - empty result" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.028"/>
+  <testcase name="Create loan request - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.012"/>
+  <testcase name="Create loan request - invalid amount (too low)" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.02"/>
+  <testcase name="Find pending requests - empty result" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.006"/>
+  <testcase name="Update order decision - invalid decision" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.006"/>
+  <testcase name="Update order decision - approve success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.015"/>
+  <testcase name="Find pending requests - success" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.032"/>
+  <testcase name="Update order decision - order already processed" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.016"/>
+  <testcase name="Find by ID - not found" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.017"/>
+  <testcase name="Create loan request - invalid amount (too high)" classname="co.com.bancolombia.usecase.orders.OrdersUseCaseTest" time="0.027"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

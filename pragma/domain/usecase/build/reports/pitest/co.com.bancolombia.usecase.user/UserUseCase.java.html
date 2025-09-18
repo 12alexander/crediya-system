@@ -52,7 +52,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.model.exception.InvalidDataException;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.constants.ValidationMessages;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -66,7 +66,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.model.exception.UserExistsException;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.exception.InvalidDataException;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -80,7 +80,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.model.role.gateways.RoleRepository;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.exception.UserExistsException;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -94,7 +94,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.model.user.User;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.role.gateways.RoleRepository;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -108,7 +108,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.model.user.gateways.UserRepository;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.user.User;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -122,7 +122,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import co.com.bancolombia.usecase.user.interfaces.IUserUseCase;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.model.user.gateways.UserRepository;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -136,7 +136,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import lombok.RequiredArgsConstructor;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import co.com.bancolombia.usecase.user.interfaces.IUserUseCase;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -150,7 +150,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import reactor.core.publisher.Mono;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import lombok.RequiredArgsConstructor;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -164,7 +164,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import reactor.core.publisher.Flux;</span></pre></td></tr>
+<td class=''><pre><span  class=''>import reactor.core.publisher.Mono;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -178,7 +178,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>import reactor.core.publisher.Flux;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -192,7 +192,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>import java.util.UUID;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -206,10 +206,10 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>import java.util.UUID;</span></pre></td></tr>
 
 <tr>
-<td class='covered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_15'/>
 15
 </td>
@@ -220,10 +220,10 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>@RequiredArgsConstructor</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_16'/>
 16
 </td>
@@ -234,7 +234,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>public class UserUseCase implements IUserUseCase {</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>@RequiredArgsConstructor</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -248,7 +248,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>public class UserUseCase implements IUserUseCase {</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -262,7 +262,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    private final UserRepository userRepository;</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -276,7 +276,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    private final RoleRepository roleRepository;</span></pre></td></tr>
+<td class=''><pre><span  class=''>    private final UserRepository userRepository;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -290,7 +290,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    private final RoleRepository roleRepository;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -304,16 +304,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_22'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>    public Mono&#60;User&#62; saveUser(User user) {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_22'/>
-22
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_23'/>
+23
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_22'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_23'>2</a>
 <span>
 1. lambda$saveUser$0 : removed call to co/com/bancolombia/usecase/user/UserUseCase::validateData &rarr; SURVIVED<br/>
 2. saveUser : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::saveUser &rarr; KILLED<br/>
@@ -322,20 +336,6 @@
 </span>
 </td>
 <td class='covered'><pre><span  class='survived'>        return Mono.fromRunnable(() -&#62; validateData(user))</span></pre></td></tr>
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_23'/>
-23
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_23'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>                .then(confirmEmailNotRegistered(user.getEmailAddress()))</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
@@ -349,16 +349,30 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>                .then(confirmRoleExists(user.getIdRol()))</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .then(confirmEmailNotRegistered(user.getEmailAddress()))</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_25'/>
 25
 </td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                .then(confirmRoleExists(user.getIdRol()))</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_26'/>
+26
+</td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_25'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_26'>1</a>
 <span>
 1. lambda$saveUser$1 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$saveUser$1 &rarr; KILLED<br/>
 
@@ -369,20 +383,6 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_26'/>
-26
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_26'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>                .flatMap(this::createUser);</span></pre></td></tr>
-
-<tr>
-<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_27'/>
 27
 </td>
@@ -393,7 +393,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .flatMap(this::createUser);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -407,7 +407,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -421,41 +421,41 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Mono&#60;User&#62; updateUser(String id, User usuario) {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_30'/>
 30
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_30'>2</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_30'></a>
 <span>
-1. updateUser : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::updateUser &rarr; NO_COVERAGE<br/>
-2. lambda$updateUser$2 : removed call to co/com/bancolombia/usecase/user/UserUseCase::validateData &rarr; NO_COVERAGE<br/>
-
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>        return Mono.fromRunnable(() -&#62; validateData(usuario))</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public Mono&#60;User&#62; updateUser(String id, User usuario) {</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_31'/>
 31
 </td>
-<td class=''>
+<td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_31'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_31'>2</a>
 <span>
+1. lambda$updateUser$2 : removed call to co/com/bancolombia/usecase/user/UserUseCase::validateData &rarr; SURVIVED<br/>
+2. updateUser : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::updateUser &rarr; KILLED<br/>
+
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .then(userRepository.getUserById(id))</span></pre></td></tr>
+<td class='covered'><pre><span  class='survived'>        return Mono.fromRunnable(() -&#62; validateData(usuario))</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_32'/>
 32
 </td>
@@ -466,10 +466,10 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(id)))</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .then(userRepository.getUserById(id))</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_33'/>
 33
 </td>
@@ -480,40 +480,40 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .then(confirmRoleExists(usuario.getIdRol()))</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(id)))</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_34'/>
 34
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_34'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_34'></a>
 <span>
-1. lambda$updateUser$3 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$updateUser$3 &rarr; NO_COVERAGE<br/>
-
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                .then(Mono.fromCallable(() -&#62; usuario.toBuilder().id(id).build()))</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .then(confirmRoleExists(usuario.getIdRol()))</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_35'/>
 35
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_35'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_35'>1</a>
 <span>
+1. lambda$updateUser$3 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$updateUser$3 &rarr; KILLED<br/>
+
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .flatMap(userRepository::updateUser);</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>                .then(Mono.fromCallable(() -&#62; usuario.toBuilder().id(id).build()))</span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_36'/>
 36
 </td>
@@ -524,7 +524,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .flatMap(userRepository::updateUser);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -538,7 +538,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -552,7 +552,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    private void validateData(User user) {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -566,16 +566,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''>    private void validateData(User user) {</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_40'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>        try {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_40'/>
-40
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_41'/>
+41
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_40'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_41'>1</a>
 <span>
 1. validateData : removed call to co/com/bancolombia/model/user/User::validateData &rarr; SURVIVED<br/>
 
@@ -583,20 +597,6 @@
 </span>
 </td>
 <td class='covered'><pre><span  class='survived'>            user.validateData();</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_41'/>
-41
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_41'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class=''>        } catch (IllegalArgumentException e) {</span></pre></td></tr>
 
 <tr>
 <td class='uncovered'>
@@ -610,10 +610,10 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>            throw new InvalidDataException(e.getMessage());</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>        } catch (IllegalArgumentException e) {</span></pre></td></tr>
 
 <tr>
-<td class='covered'>
+<td class='uncovered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_43'/>
 43
 </td>
@@ -624,7 +624,7 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+<td class='uncovered'><pre><span  class=''>            throw new InvalidDataException(e.getMessage());</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
@@ -638,10 +638,10 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_45'/>
 45
 </td>
@@ -652,7 +652,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -666,16 +666,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_47'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>    private Mono&#60;Void&#62; confirmEmailNotRegistered(String emailAddress) {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_47'/>
-47
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_48'/>
+48
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_47'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_48'>1</a>
 <span>
 1. confirmEmailNotRegistered : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::confirmEmailNotRegistered &rarr; KILLED<br/>
 
@@ -686,33 +700,17 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_48'/>
-48
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_49'/>
+49
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_48'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_49'></a>
 <span>
 </span>
 </span>
 </td>
 <td class='covered'><pre><span  class=''>                .flatMap(existe -&#62; {</span></pre></td></tr>
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_49'/>
-49
-</td>
-<td class='killed'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_49'>1</a>
-<span>
-1. lambda$confirmEmailNotRegistered$4 : negated conditional &rarr; KILLED<br/>
-
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class='killed'>                    if (existe) {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
@@ -723,6 +721,22 @@
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_50'>1</a>
 <span>
+1. lambda$confirmEmailNotRegistered$4 : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    if (existe) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_51'/>
+51
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_51'>1</a>
+<span>
 1. lambda$confirmEmailNotRegistered$4 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmEmailNotRegistered$4 &rarr; KILLED<br/>
 
 </span>
@@ -732,12 +746,12 @@
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_51'/>
-51
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_52'/>
+52
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_51'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_52'></a>
 <span>
 </span>
 </span>
@@ -746,12 +760,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_52'/>
-52
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_53'/>
+53
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_52'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_53'>1</a>
 <span>
 1. lambda$confirmEmailNotRegistered$4 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmEmailNotRegistered$4 &rarr; KILLED<br/>
 
@@ -759,20 +773,6 @@
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>                    return Mono.empty();</span></pre></td></tr>
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_53'/>
-53
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_53'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -786,7 +786,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -800,7 +800,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -814,40 +814,40 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Mono&#60;User&#62; getUserByEmailAddress(String email_address) {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_57'/>
 57
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_57'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_57'></a>
 <span>
-1. getUserByEmailAddress : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmailAddress &rarr; NO_COVERAGE<br/>
-
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>        return userRepository.getUserByEmailAddress(email_address)</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public Mono&#60;User&#62; getUserByEmailAddress(String email_address) {</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_58'/>
 58
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_58'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_58'>1</a>
 <span>
+1. getUserByEmailAddress : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmailAddress &rarr; KILLED<br/>
+
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(&#34;Usuario no encontrado con Email: &#34; + email_address)))</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>        return userRepository.getUserByEmailAddress(email_address)</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_59'/>
 59
 </td>
@@ -858,48 +858,62 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .onErrorMap(error -&#62; {</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(ValidationMessages.USER_NOT_FOUND_EMAIL + email_address)))</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_60'/>
 60
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_60'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_60'></a>
 <span>
-1. lambda$getUserByEmailAddress$5 : negated conditional &rarr; NO_COVERAGE<br/>
-
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                    if (error instanceof UserExistsException) {</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .onErrorMap(error -&#62; {</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_61'/>
 61
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_61'>1</a>
 <span>
-1. lambda$getUserByEmailAddress$5 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserByEmailAddress$5 &rarr; NO_COVERAGE<br/>
+1. lambda$getUserByEmailAddress$5 : negated conditional &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                        return error;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>                    if (error instanceof UserExistsException) {</span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_62'/>
 62
 </td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_62'>1</a>
+<span>
+1. lambda$getUserByEmailAddress$5 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserByEmailAddress$5 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                        return error;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_63'/>
+63
+</td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_62'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_63'></a>
 <span>
 </span>
 </span>
@@ -908,33 +922,19 @@
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_63'/>
-63
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_64'/>
+64
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_63'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_64'>1</a>
 <span>
 1. lambda$getUserByEmailAddress$5 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserByEmailAddress$5 &rarr; NO_COVERAGE<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                    return new InvalidDataException(&#34;Error interno al obtener usuario&#34;, error);</span></pre></td></tr>
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_64'/>
-64
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_64'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>                });</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>                    return new InvalidDataException(ValidationMessages.ERROR_GETTING_USER, error);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -948,7 +948,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -962,7 +962,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -976,16 +976,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_68'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>    private Mono&#60;Void&#62; confirmRoleExists(String idRol) {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_68'/>
-68
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_69'/>
+69
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_68'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_69'>1</a>
 <span>
 1. confirmRoleExists : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::confirmRoleExists &rarr; KILLED<br/>
 
@@ -996,12 +1010,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_69'/>
-69
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_70'/>
+70
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_69'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_70'></a>
 <span>
 </span>
 </span>
@@ -1010,12 +1024,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_70'/>
-70
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_71'/>
+71
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_70'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_71'>1</a>
 <span>
 1. lambda$confirmRoleExists$6 : negated conditional &rarr; KILLED<br/>
 
@@ -1025,29 +1039,29 @@
 <td class='covered'><pre><span  class='killed'>                    if (!exists) {</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_71'/>
-71
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_71'>1</a>
-<span>
-1. lambda$confirmRoleExists$6 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>                        return Mono.error(new InvalidDataException(&#34;El rol con ID &#34; + idRol + &#34; no existe&#34;));</span></pre></td></tr>
-
-<tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_72'/>
 72
 </td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_72'>1</a>
+<span>
+1. lambda$confirmRoleExists$6 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                        return Mono.error(new InvalidDataException(ValidationMessages.ROLE_NOT_EXISTS + idRol + ValidationMessages.ROLE_NOT_EXISTS_SUFFIX));</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_73'/>
+73
+</td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_72'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_73'></a>
 <span>
 </span>
 </span>
@@ -1056,12 +1070,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_73'/>
-73
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_74'/>
+74
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_73'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_74'>1</a>
 <span>
 1. lambda$confirmRoleExists$6 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; KILLED<br/>
 
@@ -1069,20 +1083,6 @@
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>                    return Mono.empty();</span></pre></td></tr>
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_74'/>
-74
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_74'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1096,7 +1096,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1110,7 +1110,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1124,16 +1124,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_78'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>    private User asignarId(User user) {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_78'/>
-78
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_79'/>
+79
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_78'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_79'>1</a>
 <span>
 1. asignarId : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::asignarId &rarr; KILLED<br/>
 
@@ -1141,20 +1155,6 @@
 </span>
 </td>
 <td class='covered'><pre><span  class='killed'>        return user.toBuilder()</span></pre></td></tr>
-
-<tr>
-<td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_79'/>
-79
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_79'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='covered'><pre><span  class=''>                .id(UUID.randomUUID().toString())</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
@@ -1168,10 +1168,10 @@
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class=''>                .build();</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .id(UUID.randomUUID().toString())</span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_81'/>
 81
 </td>
@@ -1182,7 +1182,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .build();</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1196,7 +1196,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1210,16 +1210,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_84'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>    private Mono&#60;User&#62; createUser(User user) {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_84'/>
-84
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_85'/>
+85
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_84'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_85'>1</a>
 <span>
 1. createUser : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::createUser &rarr; KILLED<br/>
 
@@ -1230,12 +1244,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_85'/>
-85
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_86'/>
+86
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_85'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_86'></a>
 <span>
 </span>
 </span>
@@ -1244,33 +1258,19 @@
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_86'/>
-86
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_87'/>
+87
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_86'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_87'>1</a>
 <span>
 1. lambda$createUser$7 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$createUser$7 &rarr; NO_COVERAGE<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                        new InvalidDataException(&#34;Error interno al guardar usuario&#34;, error)</span></pre></td></tr>
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_87'/>
-87
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_87'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>                );</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>                        new InvalidDataException(ValidationMessages.ERROR_SAVING_USER, error)</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1284,7 +1284,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                );</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1298,7 +1298,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1312,16 +1312,30 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_91'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>    public Flux&#60;User&#62; getAllUsers() {</span></pre></td></tr>
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_91'/>
-91
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_92'/>
+92
 </td>
 <td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_91'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_92'>1</a>
 <span>
 1. getAllUsers : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getAllUsers &rarr; KILLED<br/>
 
@@ -1332,12 +1346,12 @@
 
 <tr>
 <td class='covered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_92'/>
-92
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_93'/>
+93
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_92'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_93'></a>
 <span>
 </span>
 </span>
@@ -1345,34 +1359,20 @@
 <td class='covered'><pre><span  class=''>                .onErrorMap(error -&#62;</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_93'/>
-93
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_93'>1</a>
-<span>
-1. lambda$getAllUsers$8 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getAllUsers$8 &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>                        new InvalidDataException(&#34;Error interno al obtener usuarios&#34;, error)</span></pre></td></tr>
-
-<tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_94'/>
 94
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_94'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_94'>1</a>
 <span>
+1. lambda$getAllUsers$8 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getAllUsers$8 &rarr; KILLED<br/>
+
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                );</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>                        new InvalidDataException(ValidationMessages.ERROR_GETTING_USERS, error)</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1386,7 +1386,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                );</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1400,7 +1400,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1414,40 +1414,40 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Mono&#60;User&#62; getUserById(String id) {</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='na'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_98'/>
 98
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_98'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_98'></a>
 <span>
-1. getUserById : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserById &rarr; NO_COVERAGE<br/>
-
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>        return userRepository.getUserById(id)</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public Mono&#60;User&#62; getUserById(String id) {</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_99'/>
 99
 </td>
-<td class=''>
+<td class='killed'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_99'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_99'>1</a>
 <span>
+1. getUserById : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserById &rarr; KILLED<br/>
+
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(&#34;Usuario no encontrado con ID: &#34; + id)))</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>        return userRepository.getUserById(id)</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_100'/>
 100
 </td>
@@ -1458,48 +1458,62 @@
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class=''>                .onErrorMap(error -&#62; {</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(ValidationMessages.USER_NOT_FOUND_ID + id)))</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_101'/>
 101
 </td>
-<td class='survived'>
+<td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_101'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_101'></a>
 <span>
-1. lambda$getUserById$9 : negated conditional &rarr; NO_COVERAGE<br/>
-
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                    if (error instanceof UserExistsException) {</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .onErrorMap(error -&#62; {</span></pre></td></tr>
 
 <tr>
-<td class='uncovered'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_102'/>
 102
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_102'>1</a>
 <span>
-1. lambda$getUserById$9 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserById$9 &rarr; NO_COVERAGE<br/>
+1. lambda$getUserById$9 : negated conditional &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                        return error;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>                    if (error instanceof UserExistsException) {</span></pre></td></tr>
 
 <tr>
-<td class='na'>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_103'/>
 103
 </td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_103'>1</a>
+<span>
+1. lambda$getUserById$9 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserById$9 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                        return error;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_104'/>
+104
+</td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_103'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_104'></a>
 <span>
 </span>
 </span>
@@ -1508,33 +1522,19 @@
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_104'/>
-104
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_105'/>
+105
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_104'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_105'>1</a>
 <span>
 1. lambda$getUserById$9 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserById$9 &rarr; NO_COVERAGE<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                    return new InvalidDataException(&#34;Error interno al obtener usuario&#34;, error);</span></pre></td></tr>
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_105'/>
-105
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_105'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>                });</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>                    return new InvalidDataException(ValidationMessages.ERROR_GETTING_USER, error);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1548,7 +1548,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1562,7 +1562,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1576,7 +1576,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1590,37 +1590,37 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Mono&#60;User&#62; getUserByEmail(String email) {</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_110'/>
-110
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_110'>1</a>
-<span>
-1. getUserByEmail : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmail &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>        return getUserByEmailAddress(email);</span></pre></td></tr>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_111'/>
-111
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_110'/>
+110
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_111'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_110'></a>
 <span>
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public Mono&#60;User&#62; getUserByEmail(String email) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_111'/>
+111
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_111'>1</a>
+<span>
+1. getUserByEmail : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmail &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return getUserByEmailAddress(email);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1634,7 +1634,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1648,7 +1648,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    /*</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1662,7 +1662,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>        public Mono&#60;Void&#62; deleteUser(String id) {</span></pre></td></tr>
+<td class=''><pre><span  class=''>    /*</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1676,7 +1676,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>            return userRepository.getUserById(id)</span></pre></td></tr>
+<td class=''><pre><span  class=''>        public Mono&#60;Void&#62; deleteUser(String id) {</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1690,7 +1690,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                    .switchIfEmpty(Mono.error(new UserExistsException(&#34;Usuario no encontrado con ID: &#34; + id)))</span></pre></td></tr>
+<td class=''><pre><span  class=''>            return userRepository.getUserById(id)</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1704,7 +1704,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                    .then(userRepository.deleteById(id))</span></pre></td></tr>
+<td class=''><pre><span  class=''>                    .switchIfEmpty(Mono.error(new UserExistsException(&#34;Usuario no encontrado con ID: &#34; + id)))</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1718,7 +1718,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                    .onErrorMap(error -&#62; {</span></pre></td></tr>
+<td class=''><pre><span  class=''>                    .then(userRepository.deleteById(id))</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1732,7 +1732,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                        if (error instanceof UserExistsException) {</span></pre></td></tr>
+<td class=''><pre><span  class=''>                    .onErrorMap(error -&#62; {</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1746,7 +1746,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                            return error;</span></pre></td></tr>
+<td class=''><pre><span  class=''>                        if (error instanceof UserExistsException) {</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1760,7 +1760,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                        }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                            return error;</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1774,7 +1774,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                        return new InvalidDataException(&#34;Error interno al eliminar usuario&#34;, error);</span></pre></td></tr>
+<td class=''><pre><span  class=''>                        }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1788,7 +1788,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                    });</span></pre></td></tr>
+<td class=''><pre><span  class=''>                        return new InvalidDataException(ValidationMessages.ERROR_DELETING_USER, error);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1802,7 +1802,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>        }*/</span></pre></td></tr>
+<td class=''><pre><span  class=''>                    });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1816,40 +1816,40 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Mono&#60;Void&#62; deleteUser(String id) {</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_126'/>
-126
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_126'>1</a>
-<span>
-1. deleteUser : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::deleteUser &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>        return userRepository.getUserById(id)</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_127'/>
-127
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_127'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(&#34;Usuario no encontrado con ID: &#34;</span></pre></td></tr>
+<td class=''><pre><span  class=''>        }*/</span></pre></td></tr>
 
 <tr>
 <td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Mono&#60;Void&#62; deleteUser(String id) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_127'/>
+127
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_127'>1</a>
+<span>
+1. deleteUser : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::deleteUser &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return userRepository.getUserById(id)</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
 <a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_128'/>
 128
 </td>
@@ -1860,78 +1860,92 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>                        + id)))</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_129'/>
-129
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_129'>1</a>
-<span>
-1. lambda$deleteUser$10 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$10 &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>                .flatMap(user -&#62; userRepository.deleteById(id))</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_130'/>
-130
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_130'></a>
-<span>
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class=''>                .onErrorMap(error -&#62; {</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_131'/>
-131
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_131'>1</a>
-<span>
-1. lambda$deleteUser$11 : negated conditional &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>                    if (error instanceof UserExistsException) {</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_132'/>
-132
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_132'>1</a>
-<span>
-1. lambda$deleteUser$11 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$11 &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>                        return error;</span></pre></td></tr>
+<td class='covered'><pre><span  class=''>                .switchIfEmpty(Mono.error(new UserExistsException(ValidationMessages.USER_NOT_FOUND_ID</span></pre></td></tr>
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_133'/>
-133
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_129'/>
+129
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_133'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_129'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        + id)))</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_130'/>
+130
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_130'>1</a>
+<span>
+1. lambda$deleteUser$10 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$10 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                .flatMap(user -&#62; userRepository.deleteById(id))</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_131'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                .onErrorMap(error -&#62; {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_132'/>
+132
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_132'>1</a>
+<span>
+1. lambda$deleteUser$11 : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                    if (error instanceof UserExistsException) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_133'/>
+133
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_133'>1</a>
+<span>
+1. lambda$deleteUser$11 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$11 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                        return error;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_134'></a>
 <span>
 </span>
 </span>
@@ -1940,33 +1954,19 @@
 
 <tr>
 <td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_134'/>
-134
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_135'/>
+135
 </td>
 <td class='survived'>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_134'>1</a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_135'>1</a>
 <span>
 1. lambda$deleteUser$11 : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$11 &rarr; NO_COVERAGE<br/>
 
 </span>
 </span>
 </td>
-<td class='uncovered'><pre><span  class='survived'>                    return new InvalidDataException(&#34;Error interno al eliminar usuario&#34;, error);</span></pre></td></tr>
-
-<tr>
-<td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_135'/>
-135
-</td>
-<td class=''>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_135'></a>
-<span>
-</span>
-</span>
-</td>
-<td class=''><pre><span  class=''>                });</span></pre></td></tr>
+<td class='uncovered'><pre><span  class='survived'>                    return new InvalidDataException(ValidationMessages.ERROR_DELETING_USER, error);</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1980,7 +1980,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>                });</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -1994,7 +1994,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -2008,7 +2008,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -2022,37 +2022,37 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Mono&#60;User&#62; findById(Long id) {</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_140'/>
-140
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_140'>1</a>
-<span>
-1. findById : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findById &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>        return getUserById(String.valueOf(id));</span></pre></td></tr>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_141'/>
-141
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_140'/>
+140
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_141'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_140'></a>
 <span>
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public Mono&#60;User&#62; findById(Long id) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_141'/>
+141
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_141'>1</a>
+<span>
+1. findById : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findById &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return getUserById(String.valueOf(id));</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -2066,7 +2066,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''></span></pre></td></tr>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -2080,7 +2080,7 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+<td class=''><pre><span  class=''></span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -2094,37 +2094,37 @@
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    public Flux&#60;User&#62; findAll() {</span></pre></td></tr>
-
-<tr>
-<td class='uncovered'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_145'/>
-145
-</td>
-<td class='survived'>
-<span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_145'>1</a>
-<span>
-1. findAll : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findAll &rarr; NO_COVERAGE<br/>
-
-</span>
-</span>
-</td>
-<td class='uncovered'><pre><span  class='survived'>        return getAllUsers();</span></pre></td></tr>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
 
 <tr>
 <td class='na'>
-<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_146'/>
-146
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_145'/>
+145
 </td>
 <td class=''>
 <span class='pop'>
-<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_146'></a>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_145'></a>
 <span>
 </span>
 </span>
 </td>
-<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+<td class=''><pre><span  class=''>    public Flux&#60;User&#62; findAll() {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_146'/>
+146
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_146'>1</a>
+<span>
+1. findAll : replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findAll &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return getAllUsers();</span></pre></td></tr>
 
 <tr>
 <td class='na'>
@@ -2138,6 +2138,20 @@
 </span>
 </span>
 </td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@57bc27f5_148'/>
+148
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_148'></a>
+<span>
+</span>
+</span>
+</td>
 <td class=''><pre><span  class=''>}</span></pre></td></tr>
 
 
@@ -2145,91 +2159,85 @@
 <tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
 
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_22'>22</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_23'>23</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_22'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_23'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>saveUser<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::saveUser &rarr; KILLED</span>
 </div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>lambda$saveUser$0<br/><b>Killed by : </b>none</span></span> removed call to co/com/bancolombia/usecase/user/UserUseCase::validateData &rarr; SURVIVED</span>
 <a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=lambda$saveUser$0,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=lambda$saveUser$0,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
 <div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=lambda$saveUser$0,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
 <ul>
-<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</li> 
+<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithInvalidRole_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</li> 
 </ul>
 </div></div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_25'>25</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_26'>26</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_25'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_26'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$saveUser$1<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$saveUser$1 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_30'>30</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_31'>31</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_30'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_31'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>updateUser<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::updateUser &rarr; NO_COVERAGE</span>
-</div> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>lambda$updateUser$2<br/><b>Killed by : </b>none</span></span> removed call to co/com/bancolombia/usecase/user/UserUseCase::validateData &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_34'>34</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_34'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$updateUser$3<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$updateUser$3 &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_40'>40</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_40'/> 
-
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>validateData<br/><b>Killed by : </b>none</span></span> removed call to co/com/bancolombia/model/user/User::validateData &rarr; SURVIVED</span>
-<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=validateData,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[4],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=validateData,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[4],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
-<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=validateData,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[4],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>updateUser<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::updateUser &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>lambda$updateUser$2<br/><b>Killed by : </b>none</span></span> removed call to co/com/bancolombia/usecase/user/UserUseCase::validateData &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=lambda$updateUser$2,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=lambda$updateUser$2,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=lambda$updateUser$2,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
 <ul>
-<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</li> 
+<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_NotFound_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_ShouldWork()]</li> 
 </ul>
 </div></div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_47'>47</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_35'>35</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_47'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_35'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>confirmEmailNotRegistered<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::confirmEmailNotRegistered &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$updateUser$3<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$updateUser$3 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_49'>49</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_41'>41</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_49'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_41'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmEmailNotRegistered$4<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> negated conditional &rarr; KILLED</span>
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>validateData<br/><b>Killed by : </b>none</span></span> removed call to co/com/bancolombia/model/user/User::validateData &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=validateData,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[4],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=validateData,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[4],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=co.com.bancolombia.usecase.user.UserUseCase,-method=validateData,-methodDesc=(Lco/com/bancolombia/model/user/User;)V],-indexes=[4],-mutator=org.pitest.mutationtest.engine.gregor.mutators.VoidMethodCallMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithInvalidRole_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_NotFound_ShouldFail()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_ShouldWork()]</li> <li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>confirmEmailNotRegistered<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::confirmEmailNotRegistered &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -2240,40 +2248,40 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_50'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmEmailNotRegistered$4<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_51'/> 
+
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmEmailNotRegistered$4<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmEmailNotRegistered$4 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_52'>52</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_53'>53</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_52'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_53'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmEmailNotRegistered$4<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmEmailNotRegistered$4 &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmEmailNotRegistered$4<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithInvalidRole_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmEmailNotRegistered$4 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_57'>57</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_58'>58</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_57'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_58'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserByEmailAddress<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmailAddress &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_60'>60</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_60'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserByEmailAddress$5<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserByEmailAddress<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmailAddress_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmailAddress &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -2284,40 +2292,40 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_61'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserByEmailAddress$5<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmailAddress_NotFound_ShouldFail()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_62'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserByEmailAddress$5<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmailAddress_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserByEmailAddress$5 &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_64'/> 
+
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserByEmailAddress$5<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserByEmailAddress$5 &rarr; NO_COVERAGE</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_63'>63</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_69'>69</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_63'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserByEmailAddress$5<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserByEmailAddress$5 &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_68'>68</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_68'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_69'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>confirmRoleExists<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::confirmRoleExists &rarr; KILLED</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_70'>70</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_70'/> 
-
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmRoleExists$6<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</span></span> negated conditional &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -2328,95 +2336,95 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_71'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmRoleExists$6<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmRoleExists$6<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithInvalidRole_ShouldFail()]</span></span> negated conditional &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_73'>73</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_72'>72</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_73'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_72'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmRoleExists$6<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmRoleExists$6<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithInvalidRole_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_78'>78</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_74'>74</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_78'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_74'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$confirmRoleExists$6<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$confirmRoleExists$6 &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_79'>79</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_79'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>asignarId<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::asignarId &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_84'>84</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_85'>85</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_84'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_85'/> 
 
 <p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createUser<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::createUser &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_86'>86</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_87'>87</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_86'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_87'/> 
 
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$createUser$7<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$createUser$7 &rarr; NO_COVERAGE</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_91'>91</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_92'>92</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_91'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_92'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllUsers<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getAllUsers_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getAllUsers &rarr; KILLED</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getAllUsers<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getAllUsers_Error_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getAllUsers &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_93'>93</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_94'>94</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_93'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_94'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getAllUsers$8<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getAllUsers$8 &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getAllUsers$8<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getAllUsers_Error_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getAllUsers$8 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_98'>98</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_99'>99</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_98'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_99'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserById<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserById &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_101'>101</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_101'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserById$9<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserById<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserById_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserById &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -2427,62 +2435,62 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_102'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserById$9<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserById_NotFound_ShouldFail()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_103'>103</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_103'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserById$9<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserById_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserById$9 &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_105'>105</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_105'/> 
+
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserById$9<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserById$9 &rarr; NO_COVERAGE</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_104'>104</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_111'>111</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_104'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_111'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$getUserById$9<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$getUserById$9 &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserByEmail<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmail_InterfaceMethod_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmail &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_110'>110</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_127'>127</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_110'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_127'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getUserByEmail<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::getUserByEmail &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>deleteUser<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:deleteUser_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::deleteUser &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_126'>126</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_130'>130</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_126'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_130'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>deleteUser<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::deleteUser &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_129'>129</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_129'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$10<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$10 &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_131'>131</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_131'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$11<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$10<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:deleteUser_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$10 &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -2493,40 +2501,51 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_132'/> 
 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$11<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:deleteUser_NotFound_ShouldFail()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_133'>133</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_133'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$11<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:deleteUser_NotFound_ShouldFail()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$11 &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_135'>135</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_135'/> 
+
 <p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$11<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$11 &rarr; NO_COVERAGE</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_134'>134</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_141'>141</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_134'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_141'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>lambda$deleteUser$11<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::lambda$deleteUser$11 &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findById<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:findById_InterfaceMethod_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findById &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
 <tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_140'>140</a></td> 
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_146'>146</a></td> 
 <td></td>
 <td>
 
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_140'/> 
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_146'/> 
 
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findById<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findById &rarr; NO_COVERAGE</span>
-</div> 
-</td>
-</tr>
-<tr>
-<td><a href='#org.pitest.mutationtest.report.html.SourceFile@57bc27f5_145'>145</a></td> 
-<td></td>
-<td>
-
-<a name='grouporg.pitest.mutationtest.report.html.SourceFile@57bc27f5_145'/> 
-
-<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findAll<br/><b>Killed by : </b>none</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findAll &rarr; NO_COVERAGE</span>
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findAll<br/><b>Killed by : </b>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:findAll_InterfaceMethod_ShouldWork()]</span></span> replaced return value with null for co/com/bancolombia/usecase/user/UserUseCase::findAll &rarr; KILLED</span>
 </div> 
 </td>
 </tr>
@@ -2552,7 +2571,7 @@
 
 <h2>Tests examined</h2>
 <ul>
-<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()] (2485 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()] (30 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getAllUsers_ShouldWork()] (18 ms)</li>
+<li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_NotFound_ShouldFail()] (21 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:updateUser_ShouldWork()] (31 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmail_InterfaceMethod_ShouldWork()] (14 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithInvalidRole_ShouldFail()] (19 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithValidData_ShouldWork()] (48 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserById_NotFound_ShouldFail()] (18 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:deleteUser_NotFound_ShouldFail()] (15 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:deleteUser_ShouldWork()] (19 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:saveUser_WithDuplicateEmail_ShouldFail()] (19 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:findById_InterfaceMethod_ShouldWork()] (19 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getAllUsers_Error_ShouldFail()] (16 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:findAll_InterfaceMethod_ShouldWork()] (17 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmailAddress_NotFound_ShouldFail()] (14 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserByEmailAddress_ShouldWork()] (16 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getUserById_ShouldWork()] (366 ms)</li><li>co.com.bancolombia.usecase.user.UserUseCaseTest.[engine:junit-jupiter]/[class:co.com.bancolombia.usecase.user.UserUseCaseTest]/[method:getAllUsers_ShouldWork()] (16 ms)</li>
 </ul>
 
 <br/>

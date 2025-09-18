@@ -11,7 +11,7 @@ public class ApiPaths {
     private static final String baseURL = &quot;/api/v1&quot;;
 
     // External Services Configuration
-    @Value(&quot;${external.services.auth.base-url:http://localhost:8090}&quot;)
+    @Value(&quot;${external.services.auth.base-url:http://pragma:8090}&quot;)
     private String authServiceBaseUrl;
 
     public static final String VALIDATE = baseURL + &quot;/auth/validate&quot;;
@@ -27,7 +27,7 @@ public class ApiPaths {
     // Method to get configured base URL for auth service
     public static String getAuthServiceBaseUrl() {
 <span class="nc bnc" id="L29" title="All 4 branches missed.">        return instance != null &amp;&amp; instance.authServiceBaseUrl != null ? </span>
-<span class="nc" id="L30">            instance.authServiceBaseUrl : &quot;http://localhost:8090&quot;;</span>
+<span class="nc" id="L30">            instance.authServiceBaseUrl : &quot;http://pragma:8090&quot;;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

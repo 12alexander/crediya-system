@@ -23,27 +23,29 @@ import org.springframework.stereotype.Component;
 <span class="nc" id="L23">                .loanType(pendingRequest.getLoanType())</span>
 <span class="nc" id="L24">                .interestRate(pendingRequest.getInterestRate())</span>
 <span class="nc" id="L25">                .baseSalary(user.getBaseSalary())</span>
-<span class="nc" id="L26">                .build();</span>
+<span class="nc" id="L26">                .monthlyAmount(pendingRequest.getMonthlyAmount())</span>
+<span class="nc" id="L27">                .status(pendingRequest.getStatus())</span>
+<span class="nc" id="L28">                .build();</span>
     }
 
     private void validateInputs(PendingRequest pendingRequest, UserReportResponseDTO user) {
-<span class="nc bnc" id="L30" title="All 2 branches missed.">        if (pendingRequest == null) {</span>
-<span class="nc" id="L31">            throw new IllegalArgumentException(&quot;PendingRequest cannot be null&quot;);</span>
+<span class="nc bnc" id="L32" title="All 2 branches missed.">        if (pendingRequest == null) {</span>
+<span class="nc" id="L33">            throw new IllegalArgumentException(&quot;PendingRequest cannot be null&quot;);</span>
         }
-<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (user == null) {</span>
-<span class="nc" id="L34">            throw new IllegalArgumentException(&quot;UserReportResponseDTO cannot be null&quot;);</span>
+<span class="nc bnc" id="L35" title="All 2 branches missed.">        if (user == null) {</span>
+<span class="nc" id="L36">            throw new IllegalArgumentException(&quot;UserReportResponseDTO cannot be null&quot;);</span>
         }
-<span class="nc" id="L36">    }</span>
+<span class="nc" id="L38">    }</span>
 
     private String buildFullName(UserReportResponseDTO user) {
-<span class="nc bnc" id="L39" title="All 2 branches missed.">        String name = user.getName() != null ? user.getName().trim() : &quot;&quot;;</span>
-<span class="nc bnc" id="L40" title="All 2 branches missed.">        String lastName = user.getLastName() != null ? user.getLastName().trim() : &quot;&quot;;</span>
+<span class="nc bnc" id="L41" title="All 2 branches missed.">        String name = user.getName() != null ? user.getName().trim() : &quot;&quot;;</span>
+<span class="nc bnc" id="L42" title="All 2 branches missed.">        String lastName = user.getLastName() != null ? user.getLastName().trim() : &quot;&quot;;</span>
         
-<span class="nc bnc" id="L42" title="All 4 branches missed.">        if (name.isEmpty() &amp;&amp; lastName.isEmpty()) {</span>
-<span class="nc" id="L43">            return &quot;N/A&quot;;</span>
+<span class="nc bnc" id="L44" title="All 4 branches missed.">        if (name.isEmpty() &amp;&amp; lastName.isEmpty()) {</span>
+<span class="nc" id="L45">            return &quot;N/A&quot;;</span>
         }
         
-<span class="nc" id="L46">        return (name + &quot; &quot; + lastName).trim();</span>
+<span class="nc" id="L48">        return (name + &quot; &quot; + lastName).trim();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

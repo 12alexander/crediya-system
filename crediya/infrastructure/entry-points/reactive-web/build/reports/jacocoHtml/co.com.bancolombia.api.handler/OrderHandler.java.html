@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrderHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">reactive-web</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.api.handler</a> &gt; <span class="el_source">OrderHandler.java</span></div><h1>OrderHandler.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.api.handler;
 
 import co.com.bancolombia.api.dto.request.CreateLoanRequestDTO;
+import co.com.bancolombia.api.dto.request.OrderDecisionRequestDTO;
 import co.com.bancolombia.api.dto.response.LoanRequestResponseDTO;
 import co.com.bancolombia.api.dto.response.AuthResponseDTO;
 import co.com.bancolombia.api.enums.RolEnum;
@@ -26,7 +27,7 @@ import java.util.UUID;
  * Handler for Order operations following Single Responsibility Principle.
  * Focuses only on loan request creation and retrieval.
  */
-<span class="fc" id="L29">@Slf4j</span>
+<span class="fc" id="L30">@Slf4j</span>
 @Component
 @RequiredArgsConstructor
 public class OrderHandler {
@@ -37,81 +38,83 @@ public class OrderHandler {
     private final TransactionalAdapter transactionalAdapter;
 
     public Mono&lt;ServerResponse&gt; createLoanRequest(ServerRequest request) {
-<span class="fc" id="L40">        String traceId = generateTraceId();</span>
-<span class="fc" id="L41">        log.info(&quot;[{}] Iniciando procesamiento de solicitud de préstamo&quot;, traceId);</span>
+<span class="fc" id="L41">        String traceId = generateTraceId();</span>
+<span class="fc" id="L42">        log.info(&quot;[{}] Iniciando procesamiento de solicitud de préstamo&quot;, traceId);</span>
         
-<span class="fc" id="L43">        return validateUserToken(request, RolEnum.CLIENT.getId())</span>
-<span class="fc" id="L44">                .flatMap(authUser -&gt; this.processLoanCreation(request, authUser, traceId))</span>
-<span class="fc" id="L45">                .flatMap(this::buildSuccessResponse)</span>
-<span class="fc" id="L46">                .doOnSuccess(response -&gt; log.info(&quot;[{}] Solicitud procesada exitosamente&quot;, traceId))</span>
-<span class="pc" id="L47">                .doOnError(error -&gt; log.error(&quot;[{}] Error procesando solicitud: {}&quot;, traceId, error.getMessage()));</span>
+<span class="fc" id="L44">        return validateUserToken(request, RolEnum.CLIENT.getId())</span>
+<span class="fc" id="L45">                .flatMap(authUser -&gt; this.processLoanCreation(request, authUser, traceId))</span>
+<span class="fc" id="L46">                .flatMap(this::buildSuccessResponse)</span>
+<span class="fc" id="L47">                .doOnSuccess(response -&gt; log.info(&quot;[{}] Solicitud procesada exitosamente&quot;, traceId))</span>
+<span class="pc" id="L48">                .doOnError(error -&gt; log.error(&quot;[{}] Error procesando solicitud: {}&quot;, traceId, error.getMessage()));</span>
     }
 
     public Mono&lt;ServerResponse&gt; getLoanRequest(ServerRequest request) {
-<span class="fc" id="L51">        String orderId = request.pathVariable(&quot;id&quot;);</span>
-<span class="fc" id="L52">        String traceId = generateTraceId();</span>
+<span class="fc" id="L52">        String orderId = request.pathVariable(&quot;id&quot;);</span>
+<span class="fc" id="L53">        String traceId = generateTraceId();</span>
         
-<span class="fc" id="L54">        log.info(&quot;[{}] Consultando solicitud con ID: {}&quot;, traceId, orderId);</span>
+<span class="fc" id="L55">        log.info(&quot;[{}] Consultando solicitud con ID: {}&quot;, traceId, orderId);</span>
         
-<span class="fc" id="L56">        return validateUserToken(request, RolEnum.ADMIN.getId())</span>
-<span class="fc" id="L57">                .flatMap(authUser -&gt; ordersUseCase.findById(orderId)</span>
-<span class="fc" id="L58">                        .map(this::mapToResponseDTO)</span>
-<span class="fc" id="L59">                        .flatMap(response -&gt; ServerResponse.ok()</span>
-<span class="fc" id="L60">                                .contentType(MediaType.APPLICATION_JSON)</span>
-<span class="fc" id="L61">                                .bodyValue(response)))</span>
-<span class="fc" id="L62">                .doOnSuccess(response -&gt; log.info(&quot;[{}] Consulta exitosa para ID: {}&quot;, traceId, orderId))</span>
-<span class="pc" id="L63">                .doOnError(error -&gt; log.error(&quot;[{}] Error consultando solicitud {}: {}&quot;, traceId, orderId, error.getMessage()));</span>
+<span class="fc" id="L57">        return validateUserToken(request, RolEnum.ADMIN.getId())</span>
+<span class="fc" id="L58">                .flatMap(authUser -&gt; ordersUseCase.findById(orderId)</span>
+<span class="fc" id="L59">                        .map(this::mapToResponseDTO)</span>
+<span class="fc" id="L60">                        .flatMap(response -&gt; ServerResponse.ok()</span>
+<span class="fc" id="L61">                                .contentType(MediaType.APPLICATION_JSON)</span>
+<span class="fc" id="L62">                                .bodyValue(response)))</span>
+<span class="fc" id="L63">                .doOnSuccess(response -&gt; log.info(&quot;[{}] Consulta exitosa para ID: {}&quot;, traceId, orderId))</span>
+<span class="pc" id="L64">                .doOnError(error -&gt; log.error(&quot;[{}] Error consultando solicitud {}: {}&quot;, traceId, orderId, error.getMessage()));</span>
     }
 
     private Mono&lt;LoanRequestResponseDTO&gt; processLoanCreation(ServerRequest request, AuthResponseDTO authUser, String traceId) {
-<span class="fc" id="L67">        return request.bodyToMono(CreateLoanRequestDTO.class)</span>
-<span class="fc" id="L68">                .switchIfEmpty(Mono.error(new IllegalArgumentException(&quot;El cuerpo de la solicitud no puede estar vacío&quot;)))</span>
-<span class="fc" id="L69">                .doOnNext(dto -&gt; log.info(&quot;[{}] Datos recibidos para usuario: {} con email: {}&quot;, traceId, authUser.getIdUser(), dto.getEmailAddress()))</span>
-<span class="fc" id="L70">                .flatMap(this::validateLoanRequest)</span>
-                //.flatMap(dto -&gt; this.validateClientOwnership(authUser, dto))
-<span class="fc" id="L72">                .flatMap(dto -&gt; processLoanRequest(dto, authUser.getIdUser(), traceId));</span>
+<span class="fc" id="L68">        return request.bodyToMono(CreateLoanRequestDTO.class)</span>
+<span class="fc" id="L69">                .switchIfEmpty(Mono.error(new IllegalArgumentException(&quot;El cuerpo de la solicitud no puede estar vacío&quot;)))</span>
+<span class="fc" id="L70">                .doOnNext(dto -&gt; log.info(&quot;[{}] Datos recibidos para usuario: {} con email: {}&quot;, traceId, authUser.getIdUser(), dto.getEmailAddress()))</span>
+<span class="fc" id="L71">                .flatMap(this::validateLoanRequest)</span>
+<span class="fc" id="L72">                .flatMap(dto -&gt; this.validateClientOwnership(authUser, dto))</span>
+<span class="fc" id="L73">                .flatMap(dto -&gt; processLoanRequest(dto, authUser.getIdUser(), traceId));</span>
     }
 
     private Mono&lt;CreateLoanRequestDTO&gt; validateLoanRequest(CreateLoanRequestDTO dto) {
-<span class="fc" id="L76">        Set&lt;ConstraintViolation&lt;CreateLoanRequestDTO&gt;&gt; violations = validator.validate(dto);</span>
+<span class="fc" id="L77">        Set&lt;ConstraintViolation&lt;CreateLoanRequestDTO&gt;&gt; violations = validator.validate(dto);</span>
         
-<span class="pc bpc" id="L78" title="1 of 2 branches missed.">        if (!violations.isEmpty()) {</span>
-<span class="nc" id="L79">            String errorMessage = violations.stream()</span>
-<span class="nc" id="L80">                    .map(ConstraintViolation::getMessage)</span>
-<span class="nc" id="L81">                    .reduce((a, b) -&gt; a + &quot;; &quot; + b)</span>
-<span class="nc" id="L82">                    .orElse(&quot;Errores de validación en la solicitud&quot;);</span>
+<span class="pc bpc" id="L79" title="1 of 2 branches missed.">        if (!violations.isEmpty()) {</span>
+<span class="nc" id="L80">            String errorMessage = violations.stream()</span>
+<span class="nc" id="L81">                    .map(ConstraintViolation::getMessage)</span>
+<span class="nc" id="L82">                    .reduce((a, b) -&gt; a + &quot;; &quot; + b)</span>
+<span class="nc" id="L83">                    .orElse(&quot;Errores de validación en la solicitud&quot;);</span>
             
-<span class="nc" id="L84">            log.warn(&quot;Validation failed for loan request: {}&quot;, errorMessage);</span>
-<span class="nc" id="L85">            throw new ConstraintViolationException(violations);</span>
+<span class="nc" id="L85">            log.warn(&quot;Validation failed for loan request: {}&quot;, errorMessage);</span>
+<span class="nc" id="L86">            throw new ConstraintViolationException(violations);</span>
         }
         
-<span class="fc" id="L88">        log.debug(&quot;Validation successful for loan request&quot;);</span>
-<span class="fc" id="L89">        return Mono.just(dto);</span>
+<span class="fc" id="L89">        log.debug(&quot;Validation successful for loan request&quot;);</span>
+<span class="fc" id="L90">        return Mono.just(dto);</span>
     }
 
     private Mono&lt;CreateLoanRequestDTO&gt; validateClientOwnership(AuthResponseDTO authUser, CreateLoanRequestDTO dto) {
-<span class="nc" id="L93">        String requestEmail = dto.getEmailAddress();</span>
-<span class="nc" id="L94">        log.info(&quot;Validando propiedad del cliente para email: {}&quot;, requestEmail);</span>
-<span class="nc" id="L95">        log.debug(&quot;Token del usuario autenticado: {}&quot;, authUser.getToken().substring(0, 20) + &quot;...&quot;);</span>
+<span class="fc" id="L94">        String requestEmail = dto.getEmailAddress();</span>
+<span class="fc" id="L95">        log.info(&quot;Validando propiedad del cliente para email: {}&quot;, requestEmail);</span>
+<span class="fc" id="L96">        String token = authUser.getToken();</span>
+<span class="pc bpc" id="L97" title="1 of 2 branches missed.">        String maskedToken = token.length() &gt; 20 ? token.substring(0, 20) + &quot;...&quot; : token + &quot;...&quot;;</span>
+<span class="fc" id="L98">        log.debug(&quot;Token del usuario autenticado: {}&quot;, maskedToken);</span>
         
-<span class="nc" id="L97">        return authServiceClient.getUserByEmailAddress(authUser.getToken(), requestEmail)</span>
-<span class="nc" id="L98">                .doOnNext(requestedUser -&gt; log.info(&quot;Usuario encontrado por email: {}, ID: {}&quot;, </span>
-<span class="nc" id="L99">                    requestedUser.getEmailAddress(), requestedUser.getId()))</span>
-<span class="nc" id="L100">                .flatMap(requestedUser -&gt; {</span>
-<span class="nc bnc" id="L101" title="All 2 branches missed.">                    if (!requestEmail.equals(requestedUser.getEmailAddress())) {</span>
-<span class="nc" id="L102">                        log.warn(&quot;Email solicitado {} no coincide con email del usuario {}&quot;, </span>
-<span class="nc" id="L103">                            requestEmail, requestedUser.getEmailAddress());</span>
-<span class="nc" id="L104">                        return Mono.error(new UnauthorizedException(&quot;Los clientes solo pueden crear solicitudes de préstamo para sí mismos&quot;));</span>
+<span class="fc" id="L100">        return authServiceClient.getUserByEmailAddress(authUser.getToken(), requestEmail)</span>
+<span class="fc" id="L101">                .doOnNext(requestedUser -&gt; log.info(&quot;Usuario encontrado por email: {}, ID: {}&quot;, </span>
+<span class="fc" id="L102">                    requestedUser.getEmailAddress(), requestedUser.getId()))</span>
+<span class="fc" id="L103">                .flatMap(requestedUser -&gt; {</span>
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">                    if (!requestEmail.equals(requestedUser.getEmailAddress())) {</span>
+<span class="nc" id="L105">                        log.warn(&quot;Email solicitado {} no coincide con email del usuario {}&quot;, </span>
+<span class="nc" id="L106">                            requestEmail, requestedUser.getEmailAddress());</span>
+<span class="nc" id="L107">                        return Mono.error(new UnauthorizedException(&quot;Los clientes solo pueden crear solicitudes de préstamo para sí mismos&quot;));</span>
                     }
-<span class="nc" id="L106">                    log.info(&quot;Validación de propiedad exitosa para email: {}&quot;, requestEmail);</span>
-<span class="nc" id="L107">                    return Mono.just(dto);</span>
+<span class="fc" id="L109">                    log.info(&quot;Validación de propiedad exitosa para email: {}&quot;, requestEmail);</span>
+<span class="fc" id="L110">                    return Mono.just(dto);</span>
                 })
-<span class="nc" id="L109">                .onErrorMap(ex -&gt; {</span>
-<span class="nc" id="L110">                    log.error(&quot;Error en validación de propiedad del cliente: {}&quot;, ex.getMessage(), ex);</span>
-<span class="nc bnc" id="L111" title="All 2 branches missed.">                    if (ex instanceof UnauthorizedException) {</span>
-<span class="nc" id="L112">                        return ex;</span>
+<span class="fc" id="L112">                .onErrorMap(ex -&gt; {</span>
+<span class="nc" id="L113">                    log.error(&quot;Error en validación de propiedad del cliente: {}&quot;, ex.getMessage(), ex);</span>
+<span class="nc bnc" id="L114" title="All 2 branches missed.">                    if (ex instanceof UnauthorizedException) {</span>
+<span class="nc" id="L115">                        return ex;</span>
                     }
-<span class="nc" id="L114">                    return new UnauthorizedException(&quot;Los clientes solo pueden crear solicitudes de préstamo para sí mismos&quot;);</span>
+<span class="nc" id="L117">                    return new UnauthorizedException(&quot;Los clientes solo pueden crear solicitudes de préstamo para sí mismos&quot;);</span>
                 });
     }
 
@@ -121,58 +124,76 @@ public class OrderHandler {
      * Uses TransactionalAdapter for proper transaction management
      */
     private Mono&lt;LoanRequestResponseDTO&gt; processLoanRequest(CreateLoanRequestDTO dto, UUID idUser, String traceId) {
-<span class="fc" id="L124">        return transactionalAdapter.executeInTransaction(</span>
-<span class="fc" id="L125">                ordersUseCase.createLoanRequest(</span>
-<span class="fc" id="L126">                        idUser.toString(),</span>
-<span class="fc" id="L127">                        dto.getAmount(),</span>
-<span class="fc" id="L128">                        dto.getDeadline(),</span>
-<span class="fc" id="L129">                        dto.getEmailAddress(),</span>
-<span class="fc" id="L130">                        dto.getLoanTypeId()</span>
+<span class="fc" id="L127">        return transactionalAdapter.executeInTransaction(</span>
+<span class="fc" id="L128">                ordersUseCase.createLoanRequest(</span>
+<span class="fc" id="L129">                        idUser.toString(),</span>
+<span class="fc" id="L130">                        dto.getAmount(),</span>
+<span class="fc" id="L131">                        dto.getDeadline(),</span>
+<span class="fc" id="L132">                        dto.getEmailAddress(),</span>
+<span class="fc" id="L133">                        dto.getLoanTypeId()</span>
                 )
         )
-<span class="fc" id="L133">        .map(this::mapToResponseDTO)</span>
-<span class="fc" id="L134">        .doOnNext(response -&gt; log.info(&quot;[{}] Solicitud creada con ID: {}&quot;, traceId, response.getId()));</span>
+<span class="fc" id="L136">        .map(this::mapToResponseDTO)</span>
+<span class="fc" id="L137">        .doOnNext(response -&gt; log.info(&quot;[{}] Solicitud creada con ID: {}&quot;, traceId, response.getId()));</span>
     }
 
     private Mono&lt;ServerResponse&gt; buildSuccessResponse(LoanRequestResponseDTO responseDTO) {
-<span class="fc" id="L138">        return ServerResponse.ok()</span>
-<span class="fc" id="L139">                .contentType(MediaType.APPLICATION_JSON)</span>
-<span class="fc" id="L140">                .bodyValue(responseDTO);</span>
+<span class="fc" id="L141">        return ServerResponse.ok()</span>
+<span class="fc" id="L142">                .contentType(MediaType.APPLICATION_JSON)</span>
+<span class="fc" id="L143">                .bodyValue(responseDTO);</span>
     }
 
     private LoanRequestResponseDTO mapToResponseDTO(co.com.bancolombia.model.orders.Orders order) {
-<span class="fc" id="L144">        return LoanRequestResponseDTO.builder()</span>
-<span class="fc" id="L145">                .id(order.getId())</span>
-<span class="fc" id="L146">                .amount(order.getAmount())</span>
-<span class="fc" id="L147">                .deadline(order.getDeadline())</span>
-<span class="fc" id="L148">                .emailAddress(order.getEmailAddress())</span>
-<span class="fc" id="L149">                .status(&quot;PENDING&quot;)</span>
-<span class="fc" id="L150">                .loanType(order.getIdLoanType())</span>
-<span class="fc" id="L151">                .creationDate(order.getCreationDate())</span>
-<span class="fc" id="L152">                .updateDate(order.getUpdateDate())</span>
-<span class="fc" id="L153">                .build();</span>
+<span class="fc" id="L147">        return LoanRequestResponseDTO.builder()</span>
+<span class="fc" id="L148">                .id(order.getId())</span>
+<span class="fc" id="L149">                .amount(order.getAmount())</span>
+<span class="fc" id="L150">                .deadline(order.getDeadline())</span>
+<span class="fc" id="L151">                .emailAddress(order.getEmailAddress())</span>
+<span class="fc" id="L152">                .status(&quot;PENDING&quot;)</span>
+<span class="fc" id="L153">                .loanType(order.getIdLoanType())</span>
+<span class="fc" id="L154">                .creationDate(order.getCreationDate())</span>
+<span class="fc" id="L155">                .updateDate(order.getUpdateDate())</span>
+<span class="fc" id="L156">                .build();</span>
     }
 
     private String generateTraceId() {
-<span class="fc" id="L157">        return &quot;ORDER-&quot; + System.currentTimeMillis() + &quot;-&quot; + Thread.currentThread().getId();</span>
+<span class="fc" id="L160">        return &quot;ORDER-&quot; + System.currentTimeMillis() + &quot;-&quot; + Thread.currentThread().getId();</span>
     }
 
     private Mono&lt;AuthResponseDTO&gt; validateUserToken(ServerRequest request, java.util.UUID requiredRoleId) {
-<span class="fc" id="L161">        String authHeader = request.headers().firstHeader(&quot;Authorization&quot;);</span>
+<span class="fc" id="L164">        String authHeader = request.headers().firstHeader(&quot;Authorization&quot;);</span>
         
-<span class="pc bpc" id="L163" title="2 of 4 branches missed.">        if (authHeader == null || !authHeader.startsWith(&quot;Bearer &quot;)) {</span>
-<span class="nc" id="L164">            return Mono.error(new UnauthorizedException(&quot;Authorization header missing or invalid&quot;));</span>
+<span class="pc bpc" id="L166" title="2 of 4 branches missed.">        if (authHeader == null || !authHeader.startsWith(&quot;Bearer &quot;)) {</span>
+<span class="nc" id="L167">            return Mono.error(new UnauthorizedException(&quot;Authorization header missing or invalid&quot;));</span>
         }
         
-<span class="fc" id="L167">        String token = authHeader.substring(7);</span>
+<span class="fc" id="L170">        String token = authHeader.substring(7);</span>
         
-<span class="fc" id="L169">        return authServiceClient.validateToken(token)</span>
-<span class="fc" id="L170">                .flatMap(user -&gt; {</span>
-<span class="pc bpc" id="L171" title="1 of 2 branches missed.">                    if (!user.getIdRol().equals(requiredRoleId)) {</span>
-<span class="nc" id="L172">                        return Mono.error(new UnauthorizedException(&quot;No tiene permisos para realizar esta acción&quot;));</span>
+<span class="fc" id="L172">        return authServiceClient.validateToken(token)</span>
+<span class="fc" id="L173">                .flatMap(user -&gt; {</span>
+<span class="pc bpc" id="L174" title="1 of 2 branches missed.">                    if (!user.getIdRol().equals(requiredRoleId)) {</span>
+<span class="nc" id="L175">                        return Mono.error(new UnauthorizedException(&quot;No tiene permisos para realizar esta acción&quot;));</span>
                     }
-<span class="fc" id="L174">                    return Mono.just(user);</span>
+<span class="fc" id="L177">                    return Mono.just(user);</span>
                 });
+    }
+
+    public Mono&lt;ServerResponse&gt; updateOrderDecision(ServerRequest request) {
+<span class="nc" id="L182">        String orderId = request.pathVariable(&quot;id&quot;);</span>
+<span class="nc" id="L183">        String traceId = generateTraceId();</span>
+        
+<span class="nc" id="L185">        log.info(&quot;[{}] Procesando decisión para orden ID: {}&quot;, traceId, orderId);</span>
+        
+<span class="nc" id="L187">        return validateUserToken(request, RolEnum.ASSESSOR.getId())</span>
+<span class="nc" id="L188">                .flatMap(authUser -&gt; request.bodyToMono(OrderDecisionRequestDTO.class)</span>
+<span class="nc" id="L189">                        .switchIfEmpty(Mono.error(new IllegalArgumentException(&quot;El cuerpo de la solicitud no puede estar vacío&quot;)))</span>
+<span class="nc" id="L190">                        .flatMap(dto -&gt; transactionalAdapter.executeInTransaction(</span>
+<span class="nc" id="L191">                                ordersUseCase.updateOrderDecision(orderId, dto.getDecision())</span>
+                        ))
+<span class="nc" id="L193">                        .map(this::mapToResponseDTO)</span>
+<span class="nc" id="L194">                        .flatMap(this::buildSuccessResponse))</span>
+<span class="nc" id="L195">                .doOnSuccess(response -&gt; log.info(&quot;[{}] Decisión procesada exitosamente para orden: {}&quot;, traceId, orderId))</span>
+<span class="nc" id="L196">                .doOnError(error -&gt; log.error(&quot;[{}] Error procesando decisión para orden {}: {}&quot;, traceId, orderId, error.getMessage()));</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

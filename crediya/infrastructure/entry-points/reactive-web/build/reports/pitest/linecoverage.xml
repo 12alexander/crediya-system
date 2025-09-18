@@ -25,13 +25,6 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
-<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.transaction.TransactionalAdapter' method='&lt;clinit&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
@@ -48,6 +41,10 @@
 <block classname='co.com.bancolombia.model.orders.Orders' method='getAmount()Ljava/math/BigDecimal;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='getToken()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='setup()V' number='7'><tests>
@@ -108,6 +105,10 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO' method='getId()Ljava/lang/String;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='setup()V' number='4'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
@@ -149,7 +150,23 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='7'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='getDeadline()Ljava/lang/Integer;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='3'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='2'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -157,11 +174,27 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='4'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO' method='&lt;init&gt;(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigDecimal;)V' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;clinit&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -188,11 +221,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='buildLoanRequest()Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;' number='4'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='6'><tests>
+<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='5'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -200,7 +237,7 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='5'><tests>
+<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='4'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -216,15 +253,11 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='4'><tests>
+<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='3'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='buildLoanRequest()Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;' number='3'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='3'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -250,13 +283,13 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO$CreateLoanRequestDTOBuilder' method='loanTypeId(Ljava/lang/String;)Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO$CreateLoanRequestDTOBuilder;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.model.orders.Orders' method='&lt;init&gt;(Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;)V' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO$CreateLoanRequestDTOBuilder' method='loanTypeId(Ljava/lang/String;)Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO$CreateLoanRequestDTOBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='mapToResponseDTO(Lco/com/bancolombia/model/orders/Orders;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='3'><tests>
@@ -269,13 +302,13 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='setLoanTypeId(Ljava/lang/String;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='mapToResponseDTO(Lco/com/bancolombia/model/orders/Orders;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='setLoanTypeId(Ljava/lang/String;)V' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='mapToResponseDTO(Lco/com/bancolombia/model/orders/Orders;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='0'><tests>
@@ -283,15 +316,19 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.RouterRestTest' method='buildLoanRequest()Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;' number='8'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='2'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.RouterRestTest' method='buildLoanRequest()Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;' number='8'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -304,11 +341,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;clinit&gt;()V' number='0'><tests>
+<block classname='co.com.bancolombia.api.RouterRestTest' method='buildLoanRequest()Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;' number='7'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.RouterRestTest' method='buildLoanRequest()Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;' number='7'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='14'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='13'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -316,13 +357,12 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO$UserReportResponseDTOBuilder' method='&lt;init&gt;()V' number='0'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='12'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO$AuthResponseDTOBuilder' method='idUser(Ljava/util/UUID;)Lco/com/bancolombia/api/dto/response/AuthResponseDTO$AuthResponseDTOBuilder;' number='0'><tests>
+<block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO$UserReportResponseDTOBuilder' method='&lt;init&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.model.orders.Orders' method='getId()Ljava/lang/String;' number='0'><tests>
@@ -330,11 +370,80 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO$AuthResponseDTOBuilder' method='idUser(Ljava/util/UUID;)Lco/com/bancolombia/api/dto/response/AuthResponseDTO$AuthResponseDTOBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='7'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='4'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='11'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='10'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='9'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO$UserReportResponseDTOBuilder' method='build()Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='8'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO$UserReportResponseDTOBuilder' method='build()Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='3'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='2'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateClientOwnership(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$9(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$9(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$9(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='2'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanRequest$14(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)V' number='2'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanRequest$14(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)V' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanRequest$14(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -353,13 +462,48 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.RouterRest' method='routerFunction()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='16'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.model.orders.Orders$OrdersBuilder' method='updateDate(Ljava/time/LocalDateTime;)Lco/com/bancolombia/model/orders/Orders$OrdersBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.RouterRest' method='routerFunction()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='15'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='getLoanTypeId()Ljava/lang/String;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.RouterRest' method='routerFunction()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='14'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.RouterRest' method='routerFunction()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='13'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.RouterRest' method='routerFunction()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='12'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRest' method='routerFunction()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='11'><tests>
@@ -477,12 +621,12 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO$LoanRequestResponseDTOBuilder' method='&lt;init&gt;()V' number='0'><tests>
+<block classname='co.com.bancolombia.model.orders.Orders' method='builder()Lco/com/bancolombia/model/orders/Orders$OrdersBuilder;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.Orders' method='builder()Lco/com/bancolombia/model/orders/Orders$OrdersBuilder;' number='1'><tests>
+<block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO$LoanRequestResponseDTOBuilder' method='&lt;init&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
@@ -498,6 +642,14 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$8(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$8(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.services.AuthServiceClient' method='&lt;clinit&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
@@ -506,25 +658,9 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$8(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$8(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='2'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$8(Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.model.orders.Orders$OrdersBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/orders/Orders$OrdersBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanRequest$13(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)V' number='2'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO' method='&lt;init&gt;(Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;)V' number='1'><tests>
@@ -532,24 +668,30 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanRequest$13(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)V' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanRequest$13(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO' method='getStatus()Ljava/lang/String;' number='0'><tests>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='buildSuccessResponse(Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)Lreactor/core/publisher/Mono;' number='3'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='&lt;init&gt;(Ljava/util/UUID;Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)V' number='1'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$15(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO' method='getStatus()Ljava/lang/String;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
@@ -558,13 +700,23 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='&lt;init&gt;(Ljava/util/UUID;Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)V' number='0'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$15(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='&lt;init&gt;(Ljava/util/UUID;Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)V' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='buildSuccessResponse(Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='&lt;init&gt;(Ljava/util/UUID;Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)V' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='buildSuccessResponse(Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
@@ -585,6 +737,16 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$15(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='6'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$15(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='7'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanRequest(Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Ljava/util/UUID;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='4'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
@@ -597,11 +759,16 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='getIdUser()Ljava/util/UUID;' number='0'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$15(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='2'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanRequest(Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Ljava/util/UUID;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='getIdUser()Ljava/util/UUID;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -627,6 +794,10 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='67'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.response.UserReportResponseDTO' method='getEmailAddress()Ljava/lang/String;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -678,13 +849,13 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='createLoanRequest(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='getIdRol()Ljava/util/UUID;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='createLoanRequest(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='44'><tests>
@@ -743,26 +914,26 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='createLoanRequest(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='8'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='builder()Lco/com/bancolombia/api/dto/response/AuthResponseDTO$AuthResponseDTOBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='createLoanRequest(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='8'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='52'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='createLoanRequest(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='7'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.AuthResponseDTO' method='builder()Lco/com/bancolombia/api/dto/response/AuthResponseDTO$AuthResponseDTOBuilder;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='createLoanRequest(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='7'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='59'><tests>
@@ -797,28 +968,8 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$14(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$14(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='2'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$14(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='lambda$createLoanRequestSuccess$0(Lorg/mockito/invocation/InvocationOnMock;)Ljava/lang/Object;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$14(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='7'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='lambda$createLoanRequestSuccess$0(Lorg/mockito/invocation/InvocationOnMock;)Ljava/lang/Object;' number='1'><tests>
@@ -826,11 +977,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO$LoanRequestResponseDTOBuilder' method='deadline(Ljava/lang/Integer;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO$LoanRequestResponseDTOBuilder;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateUserToken$14(Ljava/util/UUID;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;)Lreactor/core/publisher/Mono;' number='6'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
@@ -860,18 +1006,14 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO$LoanRequestResponseDTOBuilder' method='build()Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.model.orders.Orders' method='getDeadline()Ljava/lang/Integer;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='6'><tests>
+<block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO$LoanRequestResponseDTOBuilder' method='build()Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.ReportHandler' method='&lt;init&gt;(Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;Lco/com/bancolombia/api/services/AuthServiceClient;Lco/com/bancolombia/api/util/ReportBuilder;)V' number='0'><tests>
@@ -879,10 +1021,6 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='4'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='generateTraceId()Ljava/lang/String;' number='0'><tests>
@@ -897,7 +1035,7 @@
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='5'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='&lt;clinit&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -906,17 +1044,13 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='&lt;clinit&gt;()V' number='1'><tests>
+<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;init&gt;(Ljava/lang/String;ILjava/util/UUID;)V' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO' method='builder()Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO$LoanRequestResponseDTOBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.enums.RolEnum' method='&lt;init&gt;(Ljava/lang/String;ILjava/util/UUID;)V' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateLoanRequest(Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lreactor/core/publisher/Mono;' number='10'><tests>
@@ -927,7 +1061,7 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='setEmailAddress(Ljava/lang/String;)V' number='0'><tests>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='createLoanRequest(Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -940,6 +1074,10 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$7(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)V' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='setEmailAddress(Ljava/lang/String;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -961,6 +1099,10 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$processLoanCreation$7(Ljava/lang/String;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)V' number='2'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='createLoanRequest(Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1004,7 +1146,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$11(Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)V' number='3'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='buildOrdersFromRequest(Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lco/com/bancolombia/model/orders/Orders;' number='14'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$11(Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)V' number='2'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1012,7 +1162,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$11(Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)V' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='buildOrdersFromRequest(Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lco/com/bancolombia/model/orders/Orders;' number='12'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$11(Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1036,10 +1194,6 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='createLoanRequest(Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$createLoanRequest$1(Ljava/lang/String;Lorg/springframework/web/reactive/function/server/ServerResponse;)V' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
@@ -1053,10 +1207,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='buildOrdersFromRequest(Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;)Lco/com/bancolombia/model/orders/Orders;' number='7'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='createLoanRequest(Ljava/lang/String;Ljava/math/BigDecimal;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1096,7 +1246,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanCreation(Lorg/springframework/web/reactive/function/server/ServerRequest;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='8'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanCreation(Lorg/springframework/web/reactive/function/server/ServerRequest;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='7'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanCreation(Lorg/springframework/web/reactive/function/server/ServerRequest;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='6'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1105,12 +1263,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanCreation(Lorg/springframework/web/reactive/function/server/ServerRequest;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='6'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanCreation(Lorg/springframework/web/reactive/function/server/ServerRequest;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='5'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='processLoanCreation(Lorg/springframework/web/reactive/function/server/ServerRequest;Lco/com/bancolombia/api/dto/response/AuthResponseDTO;Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='5'><tests>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO' method='getLoanType()Ljava/lang/String;' number='0'><tests>
@@ -1163,13 +1324,13 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='setDeadline(Ljava/lang/Integer;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='mapToResponseDTO(Lco/com/bancolombia/model/orders/Orders;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='9'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO' method='setDeadline(Ljava/lang/Integer;)V' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='mapToResponseDTO(Lco/com/bancolombia/model/orders/Orders;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO;' number='8'><tests>
@@ -1230,22 +1391,6 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='2'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='3'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;clinit&gt;()V' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.dto.request.CreateLoanRequestDTO$CreateLoanRequestDTOBuilder' method='deadline(Ljava/lang/Integer;)Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO$CreateLoanRequestDTOBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
@@ -1259,12 +1404,12 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.Orders$OrdersBuilder' method='amount(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/orders/Orders$OrdersBuilder;' number='0'><tests>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateUserToken(Lorg/springframework/web/reactive/function/server/ServerRequest;Ljava/util/UUID;)Lreactor/core/publisher/Mono;' number='4'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateUserToken(Lorg/springframework/web/reactive/function/server/ServerRequest;Ljava/util/UUID;)Lreactor/core/publisher/Mono;' number='4'><tests>
+<block classname='co.com.bancolombia.model.orders.Orders$OrdersBuilder' method='amount(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/orders/Orders$OrdersBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
@@ -1276,6 +1421,10 @@
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateUserToken(Lorg/springframework/web/reactive/function/server/ServerRequest;Ljava/util/UUID;)Lreactor/core/publisher/Mono;' number='11'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$12(Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)Lreactor/core/publisher/Mono;' number='8'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='2'><tests>
@@ -1296,6 +1445,10 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$12(Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)Lreactor/core/publisher/Mono;' number='10'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
@@ -1303,6 +1456,10 @@
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='validateUserToken(Lorg/springframework/web/reactive/function/server/ServerRequest;Ljava/util/UUID;)Lreactor/core/publisher/Mono;' number='8'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$12(Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)Lreactor/core/publisher/Mono;' number='9'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='7'><tests>
@@ -1394,14 +1551,26 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$12(Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)Lreactor/core/publisher/Mono;' number='0'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.model.orders.Orders' method='getIdLoanType()Ljava/lang/String;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$12(Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)Lreactor/core/publisher/Mono;' number='2'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.dto.response.LoanRequestResponseDTO$LoanRequestResponseDTOBuilder' method='creationDate(Ljava/time/LocalDateTime;)Lco/com/bancolombia/api/dto/response/LoanRequestResponseDTO$LoanRequestResponseDTOBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$validateClientOwnership$12(Ljava/lang/String;Lco/com/bancolombia/api/dto/request/CreateLoanRequestDTO;Lco/com/bancolombia/api/dto/response/UserReportResponseDTO;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='31'><tests>
@@ -1465,22 +1634,8 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;init&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
-<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='41'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='&lt;init&gt;()V' number='1'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:createLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:routerRestBasicTest()]'/>
-<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='createLoanRequestSuccess()V' number='40'><tests>
@@ -1583,14 +1738,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.handler.OrderHandler' method='lambda$getLoanRequest$5(Ljava/lang/String;Ljava/lang/String;Lorg/springframework/web/reactive/function/server/ServerResponse;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
-<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$0WvP8ins' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1822,7 +1969,15 @@
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRestTest' method='getLoanRequestSuccess()V' number='29'><tests>
+<test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase$MockitoMock$mYAveEx8' method='findById(Ljava/lang/String;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.api.RouterRestTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.RouterRestTest]/[method:getLoanRequestSuccess()]'/>
 </tests>
 </block>
@@ -1918,7 +2073,15 @@
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.api.config.SecurityHeadersConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='12'><tests>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.config.SecurityHeadersConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='24'><tests>
+<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.api.config.SecurityHeadersConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='11'><tests>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
@@ -1931,14 +2094,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.config.SecurityHeadersConfig$$SpringCGLIB$$FastClass$$0' method='&lt;init&gt;(Ljava/lang/Class;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.config.SecurityHeadersConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='18'><tests>
-<test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.config.SecurityHeadersConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='17'><tests>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
@@ -2162,11 +2317,11 @@
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.RouterRest$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='14'><tests>
+<block classname='co.com.bancolombia.api.RouterRest$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='12'><tests>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.RouterRest$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='13'><tests>
+<block classname='co.com.bancolombia.api.RouterRest$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='11'><tests>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
@@ -2478,11 +2633,11 @@
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.config.CorsConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='15'><tests>
+<block classname='co.com.bancolombia.api.config.CorsConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='13'><tests>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.api.config.CorsConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='16'><tests>
+<block classname='co.com.bancolombia.api.config.CorsConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='14'><tests>
 <test name='co.com.bancolombia.api.config.ConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.config.ConfigTest]/[method:testContextLoads()]'/>
 </tests>
 </block>

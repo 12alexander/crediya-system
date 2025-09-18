@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.model.orders.OrdersTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2025-09-10T07:30:20.752Z" hostname="alex" time="0.609">
+<testsuite name="co.com.bancolombia.model.orders.OrdersTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:15:43.178Z" hostname="alex" time="0.715">
   <properties/>
-  <testcase name="Validate for creation - deadline too high" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.017"/>
-  <testcase name="Validate for creation - null email address" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.007"/>
-  <testcase name="[1] 0" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.128"/>
-  <testcase name="[2] -1000" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.007"/>
-  <testcase name="[3] -0.01" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.009"/>
+  <testcase name="Validate for creation - deadline too high" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.011"/>
+  <testcase name="Validate for creation - null email address" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.009"/>
+  <testcase name="[1] 0" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.135"/>
+  <testcase name="[2] -1000" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.008"/>
+  <testcase name="[3] -0.01" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.002"/>
   <testcase name="ToBuilder pattern works correctly" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.007"/>
-  <testcase name="Validate for creation - null deadline" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.002"/>
-  <testcase name="Validate for creation - invalid email format" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.006"/>
-  <testcase name="Validate for creation - success" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.01"/>
-  <testcase name="[1] 0" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.013"/>
-  <testcase name="[2] -1" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.002"/>
-  <testcase name="[3] -12" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.006"/>
-  <testcase name="Validate for creation - too many decimals" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.007"/>
-  <testcase name="Validate for creation - null amount" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.006"/>
-  <testcase name="Builder pattern works correctly" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.006"/>
-  <testcase name="Validate for creation - null loan type ID" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.005"/>
-  <testcase name="Create new order - success" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.008"/>
+  <testcase name="Validate for creation - null deadline" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.049"/>
+  <testcase name="Validate for creation - invalid email format" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.009"/>
+  <testcase name="Validate for creation - success" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.041"/>
+  <testcase name="[1] 0" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.016"/>
+  <testcase name="[2] -1" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.009"/>
+  <testcase name="[3] -12" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.009"/>
+  <testcase name="Validate for creation - too many decimals" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.008"/>
+  <testcase name="Validate for creation - null amount" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.007"/>
+  <testcase name="Builder pattern works correctly" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.002"/>
+  <testcase name="Validate for creation - null loan type ID" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.003"/>
+  <testcase name="Create new order - success" classname="co.com.bancolombia.model.orders.OrdersTest" time="0.016"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

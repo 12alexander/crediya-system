@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.config.UseCasesConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:43.411Z" hostname="alex" time="2.64">
+<testsuite name="co.com.bancolombia.config.UseCasesConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:22:47.319Z" hostname="alex" time="1.884">
   <properties/>
-  <testcase name="testUseCaseBeansExist()" classname="co.com.bancolombia.config.UseCasesConfigTest" time="2.64"/>
+  <testcase name="testUseCaseBeansExist()" classname="co.com.bancolombia.config.UseCasesConfigTest" time="1.884"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

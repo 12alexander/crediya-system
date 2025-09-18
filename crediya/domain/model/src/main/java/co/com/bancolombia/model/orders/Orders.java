@@ -1,4 +1,6 @@
 package co.com.bancolombia.model.orders;
+import co.com.bancolombia.model.constants.ValidationMessages;
+import co.com.bancolombia.model.constants.BusinessRules;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -43,35 +45,34 @@ public class Orders {
 
     private void validateAmount() {
         if (amount == null || amount.compareTo(BigDecimal.ZERO) <= 0) {
-            throw new IllegalArgumentException("El monto debe ser mayor que 0");
+            throw new IllegalArgumentException(ValidationMessages.AMOUNT_REQUIRED);
         }
-        if (amount.scale() > 2) {
-            throw new IllegalArgumentException("El monto no puede tener más de 2 decimales");
+        if (amount.scale() > BusinessRules.MAX_AMOUNT_DECIMALS) {
+            throw new IllegalArgumentException(ValidationMessages.AMOUNT_DECIMALS);
         }
     }
 
     private void validateDeadline() {
         if (deadline == null || deadline <= 0) {
-            throw new IllegalArgumentException("El plazo debe ser mayor que 0");
+            throw new IllegalArgumentException(ValidationMessages.DEADLINE_REQUIRED);
         }
-        if (deadline > 360) {
-            throw new IllegalArgumentException("El plazo no puede ser mayor a 360 meses");
+        if (deadline > BusinessRules.MAX_DEADLINE_MONTHS) {
+            throw new IllegalArgumentException(ValidationMessages.DEADLINE_MAX_EXCEEDED);
         }
     }
 
     private void validateEmailAddress() {
         if (emailAddress == null || emailAddress.trim().isEmpty()) {
-            throw new IllegalArgumentException("El correo electrónico es obligatorio");
+            throw new IllegalArgumentException(ValidationMessages.EMAIL_REQUIRED);
         }
-        String emailRegex = "^[A-Za-z0-9+_.-]+@([A-Za-z0-9.-]+\\.[A-Za-z]{2,})$";
-        if (!emailAddress.matches(emailRegex)) {
-            throw new IllegalArgumentException("El formato del correo electrónico no es válido");
+        if (!emailAddress.matches(BusinessRules.EMAIL_REGEX)) {
+            throw new IllegalArgumentException(ValidationMessages.EMAIL_INVALID_FORMAT);
         }
     }
 
     private void validateLoanType() {
         if (idLoanType == null || idLoanType.trim().isEmpty()) {
-            throw new IllegalArgumentException("El tipo de préstamo es obligatorio");
+            throw new IllegalArgumentException(ValidationMessages.LOAN_TYPE_REQUIRED);
         }
     }
 }

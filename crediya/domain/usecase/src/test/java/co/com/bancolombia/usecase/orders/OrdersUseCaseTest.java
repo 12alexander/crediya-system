@@ -1,8 +1,11 @@
 package co.com.bancolombia.usecase.orders;
 
+import co.com.bancolombia.model.enums.StatusEnum;
 import co.com.bancolombia.model.loantype.LoanType;
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
+import co.com.bancolombia.model.notification.gateways.NotificationGateway;
 import co.com.bancolombia.model.orders.Orders;
+import co.com.bancolombia.model.orders.PendingRequest;
 import co.com.bancolombia.model.orders.exceptions.InvalidLoanAmountException;
 import co.com.bancolombia.model.orders.exceptions.LoanTypeNotFoundException;
 import co.com.bancolombia.model.orders.exceptions.OrdersBusinessException;
@@ -19,6 +22,7 @@ import reactor.test.StepVerifier;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -37,11 +41,14 @@ class OrdersUseCaseTest {
     @Mock
     private LoanTypeRepository loanTypeRepository;
 
+    @Mock
+    private NotificationGateway notificationGateway;
+
     private OrdersUseCase ordersUseCase;
 
     @BeforeEach
     void setUp() {
-        ordersUseCase = new OrdersUseCase(ordersRepository, loanTypeRepository);
+        ordersUseCase = new OrdersUseCase(ordersRepository, loanTypeRepository, notificationGateway);
     }
 
     private LoanType buildValidLoanType() {
@@ -221,6 +228,138 @@ class OrdersUseCaseTest {
 
         StepVerifier.create(ordersUseCase.findByEmailAddress(emailAddress))
                 .verifyComplete();
+    }
+
+    @Test
+    @DisplayName("Find pending requests - success")
+    void findPendingRequestsSuccess() {
+        UUID statusId = UUID.randomUUID();
+        String email = "test@example.com";
+        int page = 0;
+        int size = 10;
+
+        PendingRequest pendingRequest = PendingRequest.builder()
+                .amount(new BigDecimal("50000"))
+                .deadline(24)
+                .emailAddress(email)
+                .name("Test User")
+                .loanType("MICROCREDITO")
+                .build();
+
+        when(ordersRepository.findPendingRequests(statusId, email, page, size))
+                .thenReturn(Flux.just(pendingRequest));
+
+        StepVerifier.create(ordersUseCase.findPendingRequests(statusId, email, page, size))
+                .expectNext(pendingRequest)
+                .verifyComplete();
+    }
+
+    @Test
+    @DisplayName("Find pending requests - empty result")
+    void findPendingRequestsEmpty() {
+        UUID statusId = UUID.randomUUID();
+        String email = "test@example.com";
+        int page = 0;
+        int size = 10;
+
+        when(ordersRepository.findPendingRequests(statusId, email, page, size))
+                .thenReturn(Flux.empty());
+
+        StepVerifier.create(ordersUseCase.findPendingRequests(statusId, email, page, size))
+                .verifyComplete();
+    }
+
+    @Test
+    @DisplayName("Update order decision - approve success")
+    void updateOrderDecisionApproveSuccess() {
+        String orderId = "order-123";
+        String decision = "APPROVED";
+
+        Orders pendingOrder = buildValidOrder().toBuilder()
+                .idStatus(StatusEnum.PENDING.getId())
+                .build();
+
+        Orders approvedOrder = pendingOrder.toBuilder()
+                .idStatus(StatusEnum.APPROVED.getId())
+                .build();
+
+        when(ordersRepository.findById(orderId)).thenReturn(Mono.just(pendingOrder));
+        when(ordersRepository.save(any(Orders.class))).thenReturn(Mono.just(approvedOrder));
+        when(notificationGateway.notifyOrderDecision(any(Orders.class))).thenReturn(Mono.empty());
+
+        StepVerifier.create(ordersUseCase.updateOrderDecision(orderId, decision))
+                .expectNext(approvedOrder)
+                .verifyComplete();
+    }
+
+    @Test
+    @DisplayName("Update order decision - reject success")
+    void updateOrderDecisionRejectSuccess() {
+        String orderId = "order-123";
+        String decision = "REJECTED";
+
+        Orders pendingOrder = buildValidOrder().toBuilder()
+                .idStatus(StatusEnum.PENDING.getId())
+                .build();
+
+        Orders rejectedOrder = pendingOrder.toBuilder()
+                .idStatus(StatusEnum.REJECTED.getId())
+                .build();
+
+        when(ordersRepository.findById(orderId)).thenReturn(Mono.just(pendingOrder));
+        when(ordersRepository.save(any(Orders.class))).thenReturn(Mono.just(rejectedOrder));
+        when(notificationGateway.notifyOrderDecision(any(Orders.class))).thenReturn(Mono.empty());
+
+        StepVerifier.create(ordersUseCase.updateOrderDecision(orderId, decision))
+                .expectNext(rejectedOrder)
+                .verifyComplete();
+    }
+
+    @Test
+    @DisplayName("Update order decision - order not found")
+    void updateOrderDecisionOrderNotFound() {
+        String orderId = "non-existing-order";
+        String decision = "APPROVED";
+
+        when(ordersRepository.findById(orderId)).thenReturn(Mono.empty());
+
+        StepVerifier.create(ordersUseCase.updateOrderDecision(orderId, decision))
+                .expectError(OrdersBusinessException.class)
+                .verify();
+    }
+
+    @Test
+    @DisplayName("Update order decision - order already processed")
+    void updateOrderDecisionOrderAlreadyProcessed() {
+        String orderId = "order-123";
+        String decision = "APPROVED";
+
+        Orders processedOrder = buildValidOrder().toBuilder()
+                .idStatus(StatusEnum.APPROVED.getId())
+                .build();
+
+        when(ordersRepository.findById(orderId)).thenReturn(Mono.just(processedOrder));
+
+        StepVerifier.create(ordersUseCase.updateOrderDecision(orderId, decision))
+                .expectError(OrdersBusinessException.class)
+                .verify();
+    }
+
+    @Test
+    @DisplayName("Update order decision - invalid decision")
+    void updateOrderDecisionInvalidDecision() {
+        String orderId = "order-123";
+        String decision = "INVALID_DECISION";
+
+        Orders pendingOrder = buildValidOrder().toBuilder()
+                .idStatus(StatusEnum.PENDING.getId())
+                .build();
+
+        when(ordersRepository.findById(orderId)).thenReturn(Mono.just(pendingOrder));
+
+        StepVerifier.create(ordersUseCase.updateOrderDecision(orderId, decision))
+                .expectError(IllegalArgumentException.class)
+                .verify();
     }
 
 }

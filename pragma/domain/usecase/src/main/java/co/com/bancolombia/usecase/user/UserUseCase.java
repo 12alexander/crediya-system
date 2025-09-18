@@ -1,5 +1,6 @@
 package co.com.bancolombia.usecase.user;
 
+import co.com.bancolombia.model.constants.ValidationMessages;
 import co.com.bancolombia.model.exception.InvalidDataException;
 import co.com.bancolombia.model.exception.UserExistsException;
 import co.com.bancolombia.model.role.gateways.RoleRepository;
@@ -55,12 +56,12 @@ public class UserUseCase implements IUserUseCase {
 
     public Mono<User> getUserByEmailAddress(String email_address) {
         return userRepository.getUserByEmailAddress(email_address)
-                .switchIfEmpty(Mono.error(new UserExistsException("Usuario no encontrado con Email: " + email_address)))
+                .switchIfEmpty(Mono.error(new UserExistsException(ValidationMessages.USER_NOT_FOUND_EMAIL + email_address)))
                 .onErrorMap(error -> {
                     if (error instanceof UserExistsException) {
                         return error;
                     }
-                    return new InvalidDataException("Error interno al obtener usuario", error);
+                    return new InvalidDataException(ValidationMessages.ERROR_GETTING_USER, error);
                 });
     }
 
@@ -68,7 +69,7 @@ public class UserUseCase implements IUserUseCase {
         return roleRepository.existsById(idRol)
                 .flatMap(exists -> {
                     if (!exists) {
-                        return Mono.error(new InvalidDataException("El rol con ID " + idRol + " no existe"));
+                        return Mono.error(new InvalidDataException(ValidationMessages.ROLE_NOT_EXISTS + idRol + ValidationMessages.ROLE_NOT_EXISTS_SUFFIX));
                     }
                     return Mono.empty();
                 });
@@ -83,25 +84,25 @@ public class UserUseCase implements IUserUseCase {
     private Mono<User> createUser(User user) {
         return userRepository.createUser(user)
                 .onErrorMap(error ->
-                        new InvalidDataException("Error interno al guardar usuario", error)
+                        new InvalidDataException(ValidationMessages.ERROR_SAVING_USER, error)
                 );
     }
 
     public Flux<User> getAllUsers() {
         return userRepository.findAll()
                 .onErrorMap(error ->
-                        new InvalidDataException("Error interno al obtener usuarios", error)
+                        new InvalidDataException(ValidationMessages.ERROR_GETTING_USERS, error)
                 );
     }
 
     public Mono<User> getUserById(String id) {
         return userRepository.getUserById(id)
-                .switchIfEmpty(Mono.error(new UserExistsException("Usuario no encontrado con ID: " + id)))
+                .switchIfEmpty(Mono.error(new UserExistsException(ValidationMessages.USER_NOT_FOUND_ID + id)))
                 .onErrorMap(error -> {
                     if (error instanceof UserExistsException) {
                         return error;
                     }
-                    return new InvalidDataException("Error interno al obtener usuario", error);
+                    return new InvalidDataException(ValidationMessages.ERROR_GETTING_USER, error);
                 });
     }
 
@@ -119,19 +120,19 @@ public class UserUseCase implements IUserUseCase {
                         if (error instanceof UserExistsException) {
                             return error;
                         }
-                        return new InvalidDataException("Error interno al eliminar usuario", error);
+                        return new InvalidDataException(ValidationMessages.ERROR_DELETING_USER, error);
                     });
         }*/
     public Mono<Void> deleteUser(String id) {
         return userRepository.getUserById(id)
-                .switchIfEmpty(Mono.error(new UserExistsException("Usuario no encontrado con ID: "
+                .switchIfEmpty(Mono.error(new UserExistsException(ValidationMessages.USER_NOT_FOUND_ID
                         + id)))
                 .flatMap(user -> userRepository.deleteById(id))
                 .onErrorMap(error -> {
                     if (error instanceof UserExistsException) {
                         return error;
                     }
-                    return new InvalidDataException("Error interno al eliminar usuario", error);
+                    return new InvalidDataException(ValidationMessages.ERROR_DELETING_USER, error);
                 });
     }
 

@@ -286,11 +286,7 @@
 <test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
-<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='9'><tests>
 <test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
 </tests>
 </block>
@@ -319,6 +315,14 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.model.user.User$UserBuilder' method='password(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.constants.BusinessRules' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.constants.BusinessRules' method='&lt;clinit&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.model.user.UserTest.[engine:junit-jupiter]/[class:co.com.bancolombia.model.user.UserTest]/[method:createUser_WithValidData_ShouldWork()]'/>
 </tests>
 </block>

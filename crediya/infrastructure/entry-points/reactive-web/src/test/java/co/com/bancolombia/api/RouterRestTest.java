@@ -51,7 +51,7 @@ class RouterRestTest {
         return CreateLoanRequestDTO.builder()
                 .amount(new BigDecimal("50000.00"))
                 .deadline(24)
-                .emailAddress("test@example.com")
+                .emailAddress("client@pragma.com")
                 .loanTypeId("550e8400-e29b-41d4-a716-446655441003")
                 .build();
     }
@@ -101,7 +101,7 @@ class RouterRestTest {
                 .id(mockClientResponse.getIdUser().toString())
                 .name("Test")
                 .lastName("User")
-                .emailAddress("test@example.com")
+                .emailAddress("client@pragma.com")
                 .baseSalary(new BigDecimal("50000"))
                 .build();
 
@@ -143,7 +143,7 @@ class RouterRestTest {
                 .id(orderId)
                 .amount(new BigDecimal("50000.00"))
                 .deadline(24)
-                .emailAddress("test@example.com")
+                .emailAddress("client@pragma.com")
                 .idLoanType("550e8400-e29b-41d4-a716-446655441003")
                 .idStatus("pending-status-id")
                 .creationDate(LocalDateTime.now())

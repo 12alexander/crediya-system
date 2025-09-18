@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.ArchitectureTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:39.982Z" hostname="alex" time="0.99">
+<testsuite name="co.com.bancolombia.ArchitectureTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:22:44.814Z" hostname="alex" time="0.5">
   <properties/>
-  <testcase name="domainClassesShouldNotBeNamedWithToolNames()" classname="co.com.bancolombia.ArchitectureTest" time="0.204"/>
-  <testcase name="domainClassesShouldNotHaveFieldsNamedWithToolNames()" classname="co.com.bancolombia.ArchitectureTest" time="0.069"/>
-  <testcase name="useCaseFinalFields()" classname="co.com.bancolombia.ArchitectureTest" time="0.013"/>
-  <testcase name="beansShouldOnlyHaveFinalFields()" classname="co.com.bancolombia.ArchitectureTest" time="0.05"/>
-  <testcase name="reactiveFlowsShouldUseAwsAsyncClients()" classname="co.com.bancolombia.ArchitectureTest" time="0.25"/>
-  <testcase name="domainClassesShouldNotBeNamedWithTechSuffixes()" classname="co.com.bancolombia.ArchitectureTest" time="0.035"/>
-  <system-out><![CDATA[04:25:31.064 [Test worker] INFO com.tngtech.archunit.core.PluginLoader -- Detected Java version 22.0.2
+  <testcase name="domainClassesShouldNotBeNamedWithToolNames()" classname="co.com.bancolombia.ArchitectureTest" time="0.164"/>
+  <testcase name="domainClassesShouldNotHaveFieldsNamedWithToolNames()" classname="co.com.bancolombia.ArchitectureTest" time="0.039"/>
+  <testcase name="useCaseFinalFields()" classname="co.com.bancolombia.ArchitectureTest" time="0.012"/>
+  <testcase name="beansShouldOnlyHaveFinalFields()" classname="co.com.bancolombia.ArchitectureTest" time="0.039"/>
+  <testcase name="reactiveFlowsShouldUseAwsAsyncClients()" classname="co.com.bancolombia.ArchitectureTest" time="0.119"/>
+  <testcase name="domainClassesShouldNotBeNamedWithTechSuffixes()" classname="co.com.bancolombia.ArchitectureTest" time="0.01"/>
+  <system-out><![CDATA[07:22:37.636 [Test worker] INFO com.tngtech.archunit.core.PluginLoader -- Detected Java version 22.0.2
 ]]></system-out>
-  <system-err><![CDATA[sept 10, 2025 4:25:39 A. M. co.com.bancolombia.Utils findFiles
-INFORMACIÓN: Range [-1, 196) out of bounds for length 196
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.Utils findFiles
-INFORMACIÓN: Range [-1, 196) out of bounds for length 196
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.Utils findFiles
-INFORMACIÓN: Range [-1, 196) out of bounds for length 196
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.Utils findFiles
-INFORMACIÓN: Range [-1, 196) out of bounds for length 196
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.ArchitectureTest checkWithWarning
+  <system-err><![CDATA[sept 17, 2025 7:22:44 A. M. co.com.bancolombia.Utils findFiles
+INFORMACIÓN: Range [-1, 211) out of bounds for length 211
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.Utils findFiles
+INFORMACIÓN: Range [-1, 211) out of bounds for length 211
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.Utils findFiles
+INFORMACIÓN: Range [-1, 211) out of bounds for length 211
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.Utils findFiles
+INFORMACIÓN: Range [-1, 211) out of bounds for length 211
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.ArchitectureTest checkWithWarning
 ADVERTENCIA: ARCHITECTURE_RULE_VIOLATED: This will cause a build error in future.
 Please review our wiki at https://bancolombia.github.io/scaffold-clean-architecture/docs/advanced/arch-unit-analysis
 java.lang.AssertionError: Architecture Violation [Priority: MEDIUM] - Rule 'Rule_2.7: Beans classes should only have final attributes (injection by constructor) to avoid concurrency issues' was violated (3 times):
@@ -112,11 +112,11 @@ Field <co.com.bancolombia.api.config.SpringDocConfig.serverPort> is not final in
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.Utils findFiles
-INFORMACIÓN: Range [-1, 196) out of bounds for length 196
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.Utils findFiles
-INFORMACIÓN: Range [-1, 196) out of bounds for length 196
-sept 10, 2025 4:25:40 A. M. co.com.bancolombia.ArchitectureTest checkWithWarning
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.Utils findFiles
+INFORMACIÓN: Range [-1, 211) out of bounds for length 211
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.Utils findFiles
+INFORMACIÓN: Range [-1, 211) out of bounds for length 211
+sept 17, 2025 7:22:45 A. M. co.com.bancolombia.ArchitectureTest checkWithWarning
 ADVERTENCIA: ARCHITECTURE_RULE_VIOLATED: This will cause a build error in future.
 Please review our wiki at https://bancolombia.github.io/scaffold-clean-architecture/docs/advanced/arch-unit-analysis
 java.lang.AssertionError: Architecture Violation [Priority: MEDIUM] - Rule 'Rule_2.2: Domain classes should not be named with technology suffixes' was violated (1 times):

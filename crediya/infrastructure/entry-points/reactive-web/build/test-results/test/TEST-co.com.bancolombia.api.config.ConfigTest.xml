@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.api.config.ConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:48.170Z" hostname="alex" time="0.037">
+<testsuite name="co.com.bancolombia.api.config.ConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:22:48.292Z" hostname="alex" time="0.025">
   <properties/>
-  <testcase name="testContextLoads()" classname="co.com.bancolombia.api.config.ConfigTest" time="0.037"/>
+  <testcase name="testContextLoads()" classname="co.com.bancolombia.api.config.ConfigTest" time="0.025"/>
   <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -12,9 +12,9 @@
 
  :: Spring Boot ::                (v3.3.4)
 
-2025-09-10T04:25:44.724-05:00  INFO 135187 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : Starting ConfigTest using Java 22.0.2 with PID 135187 (started by alex in /home/alex/Documentos/crediya/infrastructure/entry-points/reactive-web)
-2025-09-10T04:25:44.739-05:00  INFO 135187 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : No active profile set, falling back to 1 default profile: "default"
-2025-09-10T04:25:48.098-05:00  INFO 135187 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : Started ConfigTest in 5.616 seconds (process running for 24.255)
+2025-09-17T07:22:46.351-05:00  INFO 69523 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : Starting ConfigTest using Java 22.0.2 with PID 69523 (started by alex in /home/alex/Documentos/crediya-system/crediya/infrastructure/entry-points/reactive-web)
+2025-09-17T07:22:46.354-05:00  INFO 69523 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : No active profile set, falling back to 1 default profile: "default"
+2025-09-17T07:22:48.270-05:00  INFO 69523 --- [    Test worker] c.com.bancolombia.api.config.ConfigTest  : Started ConfigTest in 3.258 seconds (process running for 15.718)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

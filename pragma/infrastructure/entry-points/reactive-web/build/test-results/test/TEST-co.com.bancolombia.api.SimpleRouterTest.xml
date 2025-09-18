@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.api.SimpleRouterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:27:37.503Z" hostname="alex" time="9.086">
+<testsuite name="co.com.bancolombia.api.SimpleRouterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:25:36.299Z" hostname="alex" time="11.417">
   <properties/>
-  <testcase name="healthCheck()" classname="co.com.bancolombia.api.SimpleRouterTest" time="8.251"/>
-  <testcase name="createUser_WithError()" classname="co.com.bancolombia.api.SimpleRouterTest" time="0.7"/>
-  <testcase name="createUser()" classname="co.com.bancolombia.api.SimpleRouterTest" time="0.121"/>
-  <system-out><![CDATA[04:27:46.107 [parallel-2] INFO co.com.bancolombia.api.user.UserHandler -- Processing user registration request from IP: unknown
-04:27:46.324 [parallel-2] INFO co.com.bancolombia.api.user.UserHandler -- User registration requested - Email: duplicado@test.com, Name: Juan Perez
-04:27:46.355 [parallel-2] ERROR co.com.bancolombia.api.user.UserHandler -- Error processing user registration: Email duplicado
+  <testcase name="healthCheck()" classname="co.com.bancolombia.api.SimpleRouterTest" time="9.893"/>
+  <testcase name="createUser_WithError()" classname="co.com.bancolombia.api.SimpleRouterTest" time="1.293"/>
+  <testcase name="createUser()" classname="co.com.bancolombia.api.SimpleRouterTest" time="0.218"/>
+  <system-out><![CDATA[07:25:46.687 [parallel-2] INFO co.com.bancolombia.api.user.UserHandler -- Processing user registration request from IP: unknown
+07:25:47.157 [parallel-2] INFO co.com.bancolombia.api.user.UserHandler -- User registration requested - Email: duplicado@test.com, Name: Juan Perez
+07:25:47.297 [parallel-2] ERROR co.com.bancolombia.api.user.UserHandler -- Error processing user registration: Email duplicado
 java.lang.RuntimeException: Email duplicado
 	at co.com.bancolombia.api.SimpleRouterTest.createUser_WithError(SimpleRouterTest.java:102)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -95,7 +95,7 @@ java.lang.RuntimeException: Email duplicado
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-04:27:46.398 [parallel-2] ERROR org.springframework.web.server.adapter.HttpWebHandlerAdapter -- [4632d3c9] 500 Server Error for HTTP POST "/api/v1/users"
+07:25:47.385 [parallel-2] ERROR org.springframework.web.server.adapter.HttpWebHandlerAdapter -- [534f54fe] 500 Server Error for HTTP POST "/api/v1/users"
 java.lang.RuntimeException: Email duplicado
 	at co.com.bancolombia.api.SimpleRouterTest.createUser_WithError(SimpleRouterTest.java:102)
 	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
@@ -189,9 +189,9 @@ Original Stack Trace:
 		at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
 		at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 		at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-04:27:46.497 [parallel-4] INFO co.com.bancolombia.api.user.UserHandler -- Processing user registration request from IP: unknown
-04:27:46.515 [parallel-4] INFO co.com.bancolombia.api.user.UserHandler -- User registration requested - Email: juan@test.com, Name: Juan Perez
-04:27:46.524 [parallel-4] INFO co.com.bancolombia.api.user.UserHandler -- User registered successfully
+07:25:47.532 [parallel-4] INFO co.com.bancolombia.api.user.UserHandler -- Processing user registration request from IP: unknown
+07:25:47.562 [parallel-4] INFO co.com.bancolombia.api.user.UserHandler -- User registration requested - Email: juan@test.com, Name: Juan Perez
+07:25:47.571 [parallel-4] INFO co.com.bancolombia.api.user.UserHandler -- User registered successfully
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-10T07:46:52.338Z" hostname="alex" time="0.103">
+<testsuite name="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:15:49.479Z" hostname="alex" time="0.27">
   <properties/>
-  <testcase name="Orders validation - valid order" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.075"/>
-  <testcase name="Orders domain entity creation - success" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.007"/>
+  <testcase name="Orders validation - valid order" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.183"/>
+  <testcase name="Orders domain entity creation - success" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.021"/>
   <testcase name="Orders builder pattern - success" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.002"/>
-  <testcase name="Orders create new - success" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.005"/>
-  <testcase name="Orders validation - invalid email" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.005"/>
+  <testcase name="Orders create new - success" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.009"/>
+  <testcase name="Orders validation - invalid email" classname="co.com.bancolombia.r2dbc.orders.OrdersRepositoryAdapterTest" time="0.012"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

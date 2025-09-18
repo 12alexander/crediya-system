@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>User.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">model</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.model.user</a> &gt; <span class="el_source">User.java</span></div><h1>User.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.model.user;
 import co.com.bancolombia.model.role.Role;
+import co.com.bancolombia.model.constants.ValidationMessages;
+import co.com.bancolombia.model.constants.BusinessRules;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -25,104 +27,102 @@ public class User {
 
     public static class UserBuilder {
         public UserBuilder name(String name) {
-<span class="pc bpc" id="L28" title="1 of 4 branches missed.">            if(name == null || name.trim().isEmpty()){</span>
-<span class="fc" id="L29">                throw new IllegalArgumentException(&quot;Nombres no puede ser Nulo o Vacio&quot;);</span>
+<span class="pc bpc" id="L30" title="1 of 4 branches missed.">            if(name == null || name.trim().isEmpty()){</span>
+<span class="fc" id="L31">                throw new IllegalArgumentException(ValidationMessages.NAME_REQUIRED);</span>
             }
-<span class="fc" id="L31">            this.name = name.trim();</span>
-<span class="fc" id="L32">            return this;</span>
+<span class="fc" id="L33">            this.name = name.trim();</span>
+<span class="fc" id="L34">            return this;</span>
         }
 
         public UserBuilder lastName(String lastName) {
-<span class="pc bpc" id="L36" title="2 of 4 branches missed.">            if(lastName == null || lastName.trim().isEmpty()){</span>
-<span class="nc" id="L37">                throw new IllegalArgumentException(&quot;Apellidos no puede ser Nulo o Vacio&quot;);</span>
+<span class="pc bpc" id="L38" title="2 of 4 branches missed.">            if(lastName == null || lastName.trim().isEmpty()){</span>
+<span class="nc" id="L39">                throw new IllegalArgumentException(ValidationMessages.LASTNAME_REQUIRED);</span>
             }
-<span class="fc" id="L39">            this.lastName = lastName.trim();</span>
-<span class="fc" id="L40">            return this;</span>
+<span class="fc" id="L41">            this.lastName = lastName.trim();</span>
+<span class="fc" id="L42">            return this;</span>
         }
 
         public UserBuilder emailAddress(String emailAddress) {
-<span class="pc bpc" id="L44" title="2 of 4 branches missed.">            if(emailAddress == null || emailAddress.trim().isEmpty()){</span>
-<span class="nc" id="L45">                throw new IllegalArgumentException(&quot;Email no puede ser Nulo o Vacio&quot;);</span>
+<span class="pc bpc" id="L46" title="2 of 4 branches missed.">            if(emailAddress == null || emailAddress.trim().isEmpty()){</span>
+<span class="nc" id="L47">                throw new IllegalArgumentException(ValidationMessages.EMAIL_REQUIRED);</span>
             }
-<span class="fc" id="L47">            String emailRegex = &quot;^[A-Za-z0-9+_.-]+@([A-Za-z0-9.-]+\\.[A-Za-z]{2,})$&quot;;</span>
-<span class="pc bpc" id="L48" title="1 of 2 branches missed.">            if(!emailAddress.matches(emailRegex)){</span>
-<span class="nc" id="L49">                throw new IllegalArgumentException(&quot;Email no cumple con el formato &quot;);</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">            if(!emailAddress.matches(BusinessRules.EMAIL_REGEX)){</span>
+<span class="nc" id="L50">                throw new IllegalArgumentException(ValidationMessages.EMAIL_INVALID_FORMAT);</span>
             }
-<span class="fc" id="L51">            this.emailAddress = emailAddress;</span>
-<span class="fc" id="L52">            return this;</span>
+<span class="fc" id="L52">            this.emailAddress = emailAddress;</span>
+<span class="fc" id="L53">            return this;</span>
         }
 
         public UserBuilder baseSalary(BigDecimal baseSalary) {
-<span class="pc bpc" id="L56" title="1 of 4 branches missed.">            if(baseSalary == null || baseSalary.compareTo(BigDecimal.ZERO) &lt; 0){</span>
-<span class="fc" id="L57">                throw new IllegalArgumentException(&quot;Salario no puede ser Nulo o menor que 0&quot;);</span>
+<span class="pc bpc" id="L57" title="1 of 4 branches missed.">            if(baseSalary == null || baseSalary.compareTo(BigDecimal.ZERO) &lt; 0){</span>
+<span class="fc" id="L58">                throw new IllegalArgumentException(ValidationMessages.SALARY_NULL);</span>
             }
-<span class="pc bpc" id="L59" title="1 of 2 branches missed.">            if(baseSalary.compareTo(new BigDecimal(&quot;15000000&quot;)) &gt; 0){</span>
-<span class="nc" id="L60">                throw new IllegalArgumentException(&quot;Salario no puede ser mayor que 15000000&quot;);</span>
+<span class="pc bpc" id="L60" title="1 of 2 branches missed.">            if(baseSalary.compareTo(BusinessRules.MAX_SALARY) &gt; 0){</span>
+<span class="nc" id="L61">                throw new IllegalArgumentException(ValidationMessages.SALARY_MAX_EXCEEDED);</span>
             }
-<span class="fc" id="L62">            this.baseSalary = baseSalary;</span>
-<span class="fc" id="L63">            return this;</span>
+<span class="fc" id="L63">            this.baseSalary = baseSalary;</span>
+<span class="fc" id="L64">            return this;</span>
         }
 
         public UserBuilder idRol(String idRol) {
-<span class="pc bpc" id="L67" title="2 of 4 branches missed.">            if(idRol == null || idRol.trim().isEmpty()){</span>
-<span class="nc" id="L68">                throw new IllegalArgumentException(&quot;ID del rol no puede ser Nulo o Vacio&quot;);</span>
+<span class="pc bpc" id="L68" title="2 of 4 branches missed.">            if(idRol == null || idRol.trim().isEmpty()){</span>
+<span class="nc" id="L69">                throw new IllegalArgumentException(ValidationMessages.ROLE_ID_REQUIRED);</span>
             }
-<span class="fc" id="L70">            this.idRol = idRol.trim();</span>
-<span class="fc" id="L71">            return this;</span>
+<span class="fc" id="L71">            this.idRol = idRol.trim();</span>
+<span class="fc" id="L72">            return this;</span>
         }
 
         public UserBuilder password(String password) {
-<span class="pc bpc" id="L75" title="2 of 4 branches missed.">            if(password == null || password.trim().isEmpty()){</span>
-<span class="nc" id="L76">                throw new IllegalArgumentException(&quot;Password no puede ser Nulo o Vacio&quot;);</span>
+<span class="pc bpc" id="L76" title="2 of 4 branches missed.">            if(password == null || password.trim().isEmpty()){</span>
+<span class="nc" id="L77">                throw new IllegalArgumentException(ValidationMessages.PASSWORD_REQUIRED);</span>
             }
-<span class="pc bpc" id="L78" title="1 of 2 branches missed.">            if(password.length() &lt; 3){</span>
-<span class="nc" id="L79">                throw new IllegalArgumentException(&quot;Password debe tener al menos 3 caracteres&quot;);</span>
+<span class="pc bpc" id="L79" title="1 of 2 branches missed.">            if(password.length() &lt; BusinessRules.MIN_PASSWORD_LENGTH){</span>
+<span class="nc" id="L80">                throw new IllegalArgumentException(ValidationMessages.PASSWORD_MIN_LENGTH);</span>
             }
-<span class="fc" id="L81">            this.password = password;</span>
-<span class="fc" id="L82">            return this;</span>
+<span class="fc" id="L82">            this.password = password;</span>
+<span class="fc" id="L83">            return this;</span>
         }
     }
 
     public void  validateData(){
-<span class="nc bnc" id="L87" title="All 4 branches missed.">        if (name == null || name.trim().isEmpty()) {</span>
-<span class="nc" id="L88">            throw new IllegalArgumentException(&quot;El nombre no puede ser nulo o vacío&quot;);</span>
+<span class="nc bnc" id="L88" title="All 4 branches missed.">        if (name == null || name.trim().isEmpty()) {</span>
+<span class="nc" id="L89">            throw new IllegalArgumentException(ValidationMessages.NAME_REQUIRED);</span>
         }
 
-<span class="nc bnc" id="L91" title="All 4 branches missed.">        if (lastName == null || lastName.trim().isEmpty()) {</span>
-<span class="nc" id="L92">            throw new IllegalArgumentException(&quot;Los apellidos no pueden ser nulos o vacíos&quot;);</span>
+<span class="nc bnc" id="L92" title="All 4 branches missed.">        if (lastName == null || lastName.trim().isEmpty()) {</span>
+<span class="nc" id="L93">            throw new IllegalArgumentException(ValidationMessages.LASTNAME_REQUIRED);</span>
         }
 
-<span class="nc bnc" id="L95" title="All 4 branches missed.">        if (emailAddress == null || emailAddress.trim().isEmpty()) {</span>
-<span class="nc" id="L96">            throw new IllegalArgumentException(&quot;El correo electrónico no puede ser nulo o vacío&quot;);</span>
+<span class="nc bnc" id="L96" title="All 4 branches missed.">        if (emailAddress == null || emailAddress.trim().isEmpty()) {</span>
+<span class="nc" id="L97">            throw new IllegalArgumentException(ValidationMessages.EMAIL_REQUIRED);</span>
         }
 
-<span class="nc" id="L99">        String emailRegex = &quot;^[A-Za-z0-9+_.-]+@([A-Za-z0-9.-]+\\.[A-Za-z]{2,})$&quot;;</span>
-<span class="nc bnc" id="L100" title="All 2 branches missed.">        if (!emailAddress.matches(emailRegex)) {</span>
-<span class="nc" id="L101">            throw new IllegalArgumentException(&quot;El formato del correo electrónico no es válido&quot;);</span>
+<span class="nc bnc" id="L100" title="All 2 branches missed.">        if (!emailAddress.matches(BusinessRules.EMAIL_REGEX)) {</span>
+<span class="nc" id="L101">            throw new IllegalArgumentException(ValidationMessages.EMAIL_INVALID_FORMAT);</span>
         }
 
 <span class="nc bnc" id="L104" title="All 2 branches missed.">        if (baseSalary == null) {</span>
-<span class="nc" id="L105">            throw new IllegalArgumentException(&quot;El salario base no puede ser nulo&quot;);</span>
+<span class="nc" id="L105">            throw new IllegalArgumentException(ValidationMessages.SALARY_NULL);</span>
         }
 
 <span class="nc bnc" id="L108" title="All 2 branches missed.">        if (baseSalary.compareTo(BigDecimal.ZERO) &lt;= 0) {</span>
-<span class="nc" id="L109">            throw new IllegalArgumentException(&quot;El salario base debe ser mayor a 0&quot;);</span>
+<span class="nc" id="L109">            throw new IllegalArgumentException(ValidationMessages.SALARY_ZERO);</span>
         }
 
-<span class="nc bnc" id="L112" title="All 2 branches missed.">        if (baseSalary.compareTo(new BigDecimal(&quot;15000000&quot;)) &gt; 0) {</span>
-<span class="nc" id="L113">            throw new IllegalArgumentException(&quot;El salario base no puede ser mayor a 15,000,000&quot;);</span>
+<span class="nc bnc" id="L112" title="All 2 branches missed.">        if (baseSalary.compareTo(BusinessRules.MAX_SALARY) &gt; 0) {</span>
+<span class="nc" id="L113">            throw new IllegalArgumentException(ValidationMessages.SALARY_MAX_EXCEEDED);</span>
         }
 
 <span class="nc bnc" id="L116" title="All 4 branches missed.">        if (idRol == null || idRol.trim().isEmpty()) {</span>
-<span class="nc" id="L117">            throw new IllegalArgumentException(&quot;El ID del rol no puede ser nulo o vacío&quot;);</span>
+<span class="nc" id="L117">            throw new IllegalArgumentException(ValidationMessages.ROLE_ID_REQUIRED);</span>
         }
 
 <span class="nc bnc" id="L120" title="All 4 branches missed.">        if (password == null || password.trim().isEmpty()) {</span>
-<span class="nc" id="L121">            throw new IllegalArgumentException(&quot;El password no puede ser nulo o vacío&quot;);</span>
+<span class="nc" id="L121">            throw new IllegalArgumentException(ValidationMessages.PASSWORD_REQUIRED);</span>
         }
 
-<span class="nc bnc" id="L124" title="All 2 branches missed.">        if (password.length() &lt; 3) {</span>
-<span class="nc" id="L125">            throw new IllegalArgumentException(&quot;El password debe tener al menos 3 caracteres&quot;);</span>
+<span class="nc bnc" id="L124" title="All 2 branches missed.">        if (password.length() &lt; BusinessRules.MIN_PASSWORD_LENGTH) {</span>
+<span class="nc" id="L125">            throw new IllegalArgumentException(ValidationMessages.PASSWORD_MIN_LENGTH);</span>
         }
 
 <span class="nc" id="L128">    }</span>

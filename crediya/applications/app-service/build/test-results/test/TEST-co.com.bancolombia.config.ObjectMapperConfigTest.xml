@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.config.ObjectMapperConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-10T09:25:41.991Z" hostname="alex" time="1.416">
+<testsuite name="co.com.bancolombia.config.ObjectMapperConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:22:46.083Z" hostname="alex" time="1.233">
   <properties/>
-  <testcase name="testObjectMapperBean()" classname="co.com.bancolombia.config.ObjectMapperConfigTest" time="1.416"/>
+  <testcase name="testObjectMapperBean()" classname="co.com.bancolombia.config.ObjectMapperConfigTest" time="1.233"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

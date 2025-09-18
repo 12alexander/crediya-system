@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <coverage>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRest' method='healthRoutes()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='3'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='4'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
@@ -18,9 +34,37 @@
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.RouterRest' method='healthRoutes()Lorg/springframework/web/reactive/function/server/RouterFunction;' number='2'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='9'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='10'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='7'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;clinit&gt;()V' number='8'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
@@ -156,23 +200,9 @@
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;init&gt;()V' number='1'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.SimpleRouterTest' method='setUp()V' number='2'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
@@ -194,55 +224,19 @@
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='4'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='5'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='2'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.api.SimpleRouterTest' method='setUp()V' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;init&gt;()V' number='0'><tests>
+<block classname='co.com.bancolombia.api.RouterRest' method='lambda$healthRoutes$0(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='3'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='3'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='8'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='9'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='6'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='7'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='&lt;clinit&gt;()V' number='10'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.api.RouterRest' method='lambda$healthRoutes$0(Lorg/springframework/web/reactive/function/server/ServerRequest;)Lreactor/core/publisher/Mono;' number='3'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
@@ -275,12 +269,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.SimpleRouterTest' method='healthCheck()V' number='3'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
@@ -336,6 +324,18 @@
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;init&gt;()V' number='1'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='&lt;init&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:healthCheck()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.SimpleRouterTest' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
@@ -385,6 +385,14 @@
 </block>
 <block classname='co.com.bancolombia.api.user.dto.UserRequestDTO' method='setIdRol(Ljava/lang/String;)V' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.constants.BusinessRules' method='&lt;clinit&gt;()V' number='0'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.constants.BusinessRules' method='&lt;clinit&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>
 </block>
@@ -524,16 +532,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.user.dto.UserRequestDTO' method='setEmailAddress(Ljava/lang/String;)V' number='0'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='saveUser(Lco/com/bancolombia/model/user/User;)Lreactor/core/publisher/Mono;' number='1'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$fMgc4SZa' method='saveUser(Lco/com/bancolombia/model/user/User;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>
@@ -907,17 +905,12 @@
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='7'><tests>
+<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='9'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.api.user.mapper.UserDTOMapper' method='toDomain(Lco/com/bancolombia/api/user/dto/UserRequestDTO;)Lco/com/bancolombia/model/user/User;' number='1'><tests>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
-<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.user.User$UserBuilder' method='baseSalary(Ljava/math/BigDecimal;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='10'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>
@@ -992,6 +985,11 @@
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='saveUser(Lco/com/bancolombia/model/user/User;)Lreactor/core/publisher/Mono;' number='1'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.api.user.dto.UserRequestDTO' method='builder()Lco/com/bancolombia/api/user/dto/UserRequestDTO$UserRequestDTOBuilder;' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
@@ -1023,6 +1021,11 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.model.user.User$UserBuilder' method='emailAddress(Ljava/lang/String;)Lco/com/bancolombia/model/user/User$UserBuilder;' number='0'><tests>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
+<test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.usecase.user.interfaces.IUserUseCase$MockitoMock$ZfRYxbux' method='saveUser(Lco/com/bancolombia/model/user/User;)Lreactor/core/publisher/Mono;' number='0'><tests>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser()]'/>
 <test name='co.com.bancolombia.api.SimpleRouterTest.[engine:junit-jupiter]/[class:co.com.bancolombia.api.SimpleRouterTest]/[method:createUser_WithError()]'/>
 </tests>

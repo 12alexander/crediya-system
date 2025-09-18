@@ -1350,11 +1350,35 @@
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$reactiveFlowsShouldUseAwsAsyncClients$1(Lcom/tngtech/archunit/lang/ArchRule;)V' number='1'><tests>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$15(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='0'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$reactiveFlowsShouldUseAwsAsyncClients$1(Lcom/tngtech/archunit/lang/ArchRule;)V' number='0'><tests>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$15(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='5'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$15(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='6'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$15(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest$3' method='check(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$15(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='2'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest$3' method='check(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$15(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='3'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
@@ -1363,6 +1387,94 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.ArchitectureTest' method='areUsingAnAwsClient()Lcom/tngtech/archunit/base/DescribedPredicate;' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest$2' method='&lt;init&gt;(Lco/com/bancolombia/ArchitectureTest;Ljava/lang/String;[Ljava/lang/Object;Lco/com/bancolombia/ArchitectureTest$TestPredicate;)V' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest$2' method='&lt;init&gt;(Lco/com/bancolombia/ArchitectureTest;Ljava/lang/String;[Ljava/lang/Object;Lco/com/bancolombia/ArchitectureTest$TestPredicate;)V' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='3'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='2'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='5'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='4'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='7'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='6'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='9'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='8'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='11'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='10'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$reactiveFlowsShouldUseAwsAsyncClients$1(Lcom/tngtech/archunit/lang/ArchRule;)V' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$reactiveFlowsShouldUseAwsAsyncClients$1(Lcom/tngtech/archunit/lang/ArchRule;)V' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$17(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$17(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='2'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$17(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$17(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='4'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$17(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='3'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$17(Lcom/tngtech/archunit/core/domain/JavaClass;Lcom/tngtech/archunit/lang/ConditionEvents;)V' number='5'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
@@ -1434,11 +1546,43 @@
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.ArchitectureTest$2' method='&lt;init&gt;(Lco/com/bancolombia/ArchitectureTest;Ljava/lang/String;[Ljava/lang/Object;Lco/com/bancolombia/ArchitectureTest$TestPredicate;)V' number='0'><tests>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='10'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.ArchitectureTest$2' method='&lt;init&gt;(Lco/com/bancolombia/ArchitectureTest;Ljava/lang/String;[Ljava/lang/Object;Lco/com/bancolombia/ArchitectureTest$TestPredicate;)V' number='1'><tests>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='11'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='0'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='1'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='6'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='7'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='8'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='9'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='2'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='3'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
@@ -1446,19 +1590,15 @@
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='4'><tests>
+<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.ArchitectureTest' method='beAwsAsyncClient()Lcom/tngtech/archunit/lang/ArchCondition;' number='1'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='1'><tests>
-<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='0'><tests>
-<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='3'><tests>
+<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$beAwsAsyncClient$14(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='5'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
@@ -1466,23 +1606,7 @@
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='2'><tests>
-<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.ArchitectureTest$2' method='test(Lcom/tngtech/archunit/core/domain/JavaClass;)Z' number='0'><tests>
-<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='4'><tests>
-<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='11'><tests>
-<test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.ArchitectureTest' method='lambda$areUsingAnAwsClient$12(Lcom/tngtech/archunit/core/domain/Dependency;)Z' number='10'><tests>
 <test name='co.com.bancolombia.ArchitectureTest.[engine:junit-jupiter]/[class:co.com.bancolombia.ArchitectureTest]/[method:reactiveFlowsShouldUseAwsAsyncClients()]'/>
 </tests>
 </block>
@@ -1598,10 +1722,6 @@
 <test name='co.com.bancolombia.config.ObjectMapperConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.ObjectMapperConfigTest]/[method:testObjectMapperBean()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.ObjectMapperConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='16'><tests>
-<test name='co.com.bancolombia.config.ObjectMapperConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.ObjectMapperConfigTest]/[method:testObjectMapperBean()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.ObjectMapperConfig' method='objectMapper()Lorg/reactivecommons/utils/ObjectMapper;' number='1'><tests>
 <test name='co.com.bancolombia.config.ObjectMapperConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.ObjectMapperConfigTest]/[method:testObjectMapperBean()]'/>
 </tests>
@@ -1634,7 +1754,11 @@
 <test name='co.com.bancolombia.config.ObjectMapperConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.ObjectMapperConfigTest]/[method:testObjectMapperBean()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.ObjectMapperConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='15'><tests>
+<block classname='co.com.bancolombia.config.ObjectMapperConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='14'><tests>
+<test name='co.com.bancolombia.config.ObjectMapperConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.ObjectMapperConfigTest]/[method:testObjectMapperBean()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.ObjectMapperConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='13'><tests>
 <test name='co.com.bancolombia.config.ObjectMapperConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.ObjectMapperConfigTest]/[method:testObjectMapperBean()]'/>
 </tests>
 </block>
@@ -1962,6 +2086,10 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$STATICHOOK3()V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
@@ -1975,6 +2103,10 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$STATICHOOK3()V' number='2'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2030,23 +2162,11 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig' method='myUseCase()Lco/com/bancolombia/config/UseCasesConfigTest$MyUseCase;' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig' method='myUseCase()Lco/com/bancolombia/config/UseCasesConfigTest$MyUseCase;' number='1'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$loanTypeRepository$1()Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;' number='1'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$loanTypeRepository$1()Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2086,11 +2206,19 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;init&gt;()V' number='1'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;init&gt;()V' number='0'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='3'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='5'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='4'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2102,11 +2230,27 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='4'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='5'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='loanTypeRepository()Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='16'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='3'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2142,6 +2286,10 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='6'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$0' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
@@ -2150,11 +2298,15 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$0' method='&lt;init&gt;(Ljava/lang/Class;)V' number='1'><tests>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='7'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='CGLIB$ordersUseCase$0(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='1'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfig' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='0'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$0' method='&lt;init&gt;(Ljava/lang/Class;)V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2162,19 +2314,15 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.config.UseCasesConfig' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='1'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$0' method='&lt;init&gt;(Ljava/lang/Class;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='CGLIB$ordersUseCase$0(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$0' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='4'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2183,14 +2331,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$0' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='10'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.OrdersUseCase' method='&lt;init&gt;(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)V' number='1'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.usecase.orders.OrdersUseCase' method='&lt;init&gt;(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2278,10 +2418,6 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$myUseCase$2()Lco/com/bancolombia/config/UseCasesConfigTest$MyUseCase;' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='&lt;clinit&gt;()V' number='2'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
@@ -2290,11 +2426,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;init&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$myUseCase$2()Lco/com/bancolombia/config/UseCasesConfigTest$MyUseCase;' number='1'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$ordersRepository$1()Lco/com/bancolombia/model/orders/gateways/OrdersRepository;' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2302,7 +2434,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;init&gt;()V' number='1'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$ordersRepository$1()Lco/com/bancolombia/model/orders/gateways/OrdersRepository;' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2318,19 +2450,15 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='5'><tests>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='6'><tests>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;clinit&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='&lt;clinit&gt;()V' number='2'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='7'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2358,27 +2486,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='1'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='2'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='setBeanFactory(Lorg/springframework/beans/factory/BeanFactory;)V' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='3'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$GSVbOkJE' method='&lt;clinit&gt;()V' number='4'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2390,10 +2498,6 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='setBeanFactory(Lorg/springframework/beans/factory/BeanFactory;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
@@ -2402,11 +2506,11 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='4'><tests>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='3'><tests>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;init&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2423,10 +2527,6 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='CGLIB$STATICHOOK5()V' number='3'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='5'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2462,27 +2562,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;clinit&gt;()V' number='1'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='setBeanFactory(Lorg/springframework/beans/factory/BeanFactory;)V' number='5'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;clinit&gt;()V' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;clinit&gt;()V' number='3'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;clinit&gt;()V' number='2'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$ordersRepository$0()Lco/com/bancolombia/model/orders/gateways/OrdersRepository;' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2490,15 +2570,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$ordersRepository$0()Lco/com/bancolombia/model/orders/gateways/OrdersRepository;' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;clinit&gt;()V' number='5'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$DOHtRp50' method='&lt;clinit&gt;()V' number='4'><tests>
+<block classname='co.com.bancolombia.usecase.orders.OrdersUseCase' method='&lt;init&gt;(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2506,7 +2578,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='29'><tests>
+<block classname='co.com.bancolombia.usecase.orders.OrdersUseCase' method='&lt;init&gt;(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2514,11 +2586,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='27'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='28'><tests>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='setMockitoInterceptor(Lorg/mockito/internal/creation/bytebuddy/MockMethodInterceptor;)V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2542,6 +2610,10 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='25'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='22'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
@@ -2550,15 +2622,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='20'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='21'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
-<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='19'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2582,7 +2646,19 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='20'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest' method='testUseCaseBeansExist()V' number='5'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='19'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2590,11 +2666,19 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='invoke(ILjava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;' number='26'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='18'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest' method='testUseCaseBeansExist()V' number='3'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='23'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$loanTypeRepository$2()Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2602,7 +2686,11 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='22'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='CGLIB$ordersUseCase$0(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='0'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.orders.gateways.OrdersRepository$MockitoMock$DsL8Ay7x' method='&lt;init&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2610,7 +2698,7 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='21'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfig$$SpringCGLIB$$0' method='CGLIB$ordersUseCase$0(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;Lco/com/bancolombia/model/notification/gateways/NotificationGateway;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2627,6 +2715,10 @@
 </tests>
 </block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='1'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$loanTypeRepository$2()Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2650,6 +2742,14 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$myUseCase$0()Lco/com/bancolombia/config/UseCasesConfigTest$MyUseCase;' number='1'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='CGLIB$myUseCase$0()Lco/com/bancolombia/config/UseCasesConfigTest$MyUseCase;' number='0'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='&lt;init&gt;(Ljava/lang/Class;)V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
@@ -2658,7 +2758,11 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='1'><tests>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='11'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;clinit&gt;()V' number='0'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
@@ -2666,15 +2770,35 @@
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
-<block classname='co.com.bancolombia.config.UseCasesConfig' method='ordersUseCase(Lco/com/bancolombia/model/orders/gateways/OrdersRepository;Lco/com/bancolombia/model/loantype/gateways/LoanTypeRepository;)Lco/com/bancolombia/usecase/orders/interfaces/IOrdersUseCase;' number='0'><tests>
-<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
-</tests>
-</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='&lt;init&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='9'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;clinit&gt;()V' number='4'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
 <block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$0' method='&lt;init&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.config.UseCasesConfigTest$TestConfig$$SpringCGLIB$$FastClass$$1' method='getIndex(Lorg/springframework/cglib/core/Signature;)I' number='10'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;clinit&gt;()V' number='3'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;clinit&gt;()V' number='2'><tests>
+<test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
+</tests>
+</block>
+<block classname='co.com.bancolombia.model.loantype.gateways.LoanTypeRepository$MockitoMock$lmcVuXFp' method='&lt;clinit&gt;()V' number='1'><tests>
 <test name='co.com.bancolombia.config.UseCasesConfigTest.[engine:junit-jupiter]/[class:co.com.bancolombia.config.UseCasesConfigTest]/[method:testUseCaseBeansExist()]'/>
 </tests>
 </block>

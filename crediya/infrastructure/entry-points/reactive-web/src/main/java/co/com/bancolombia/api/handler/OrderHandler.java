@@ -69,7 +69,7 @@ public class OrderHandler {
                 .switchIfEmpty(Mono.error(new IllegalArgumentException("El cuerpo de la solicitud no puede estar vacío")))
                 .doOnNext(dto -> log.info("[{}] Datos recibidos para usuario: {} con email: {}", traceId, authUser.getIdUser(), dto.getEmailAddress()))
                 .flatMap(this::validateLoanRequest)
-                //.flatMap(dto -> this.validateClientOwnership(authUser, dto))
+                .flatMap(dto -> this.validateClientOwnership(authUser, dto))
                 .flatMap(dto -> processLoanRequest(dto, authUser.getIdUser(), traceId));
     }
 
@@ -93,7 +93,9 @@ public class OrderHandler {
     private Mono<CreateLoanRequestDTO> validateClientOwnership(AuthResponseDTO authUser, CreateLoanRequestDTO dto) {
         String requestEmail = dto.getEmailAddress();
         log.info("Validando propiedad del cliente para email: {}", requestEmail);
-        log.debug("Token del usuario autenticado: {}", authUser.getToken().substring(0, 20) + "...");
+        String token = authUser.getToken();
+        String maskedToken = token.length() > 20 ? token.substring(0, 20) + "..." : token + "...";
+        log.debug("Token del usuario autenticado: {}", maskedToken);
         
         return authServiceClient.getUserByEmailAddress(authUser.getToken(), requestEmail)
                 .doOnNext(requestedUser -> log.info("Usuario encontrado por email: {}, ID: {}", 

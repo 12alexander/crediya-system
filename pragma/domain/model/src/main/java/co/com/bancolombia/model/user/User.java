@@ -1,5 +1,7 @@
 package co.com.bancolombia.model.user;
 import co.com.bancolombia.model.role.Role;
+import co.com.bancolombia.model.constants.ValidationMessages;
+import co.com.bancolombia.model.constants.BusinessRules;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -26,7 +28,7 @@ public class User {
     public static class UserBuilder {
         public UserBuilder name(String name) {
             if(name == null || name.trim().isEmpty()){
-                throw new IllegalArgumentException("Nombres no puede ser Nulo o Vacio");
+                throw new IllegalArgumentException(ValidationMessages.NAME_REQUIRED);
             }
             this.name = name.trim();
             return this;
@@ -34,7 +36,7 @@ public class User {
 
         public UserBuilder lastName(String lastName) {
             if(lastName == null || lastName.trim().isEmpty()){
-                throw new IllegalArgumentException("Apellidos no puede ser Nulo o Vacio");
+                throw new IllegalArgumentException(ValidationMessages.LASTNAME_REQUIRED);
             }
             this.lastName = lastName.trim();
             return this;
@@ -42,11 +44,10 @@ public class User {
 
         public UserBuilder emailAddress(String emailAddress) {
             if(emailAddress == null || emailAddress.trim().isEmpty()){
-                throw new IllegalArgumentException("Email no puede ser Nulo o Vacio");
+                throw new IllegalArgumentException(ValidationMessages.EMAIL_REQUIRED);
             }
-            String emailRegex = "^[A-Za-z0-9+_.-]+@([A-Za-z0-9.-]+\\.[A-Za-z]{2,})$";
-            if(!emailAddress.matches(emailRegex)){
-                throw new IllegalArgumentException("Email no cumple con el formato ");
+            if(!emailAddress.matches(BusinessRules.EMAIL_REGEX)){
+                throw new IllegalArgumentException(ValidationMessages.EMAIL_INVALID_FORMAT);
             }
             this.emailAddress = emailAddress;
             return this;
@@ -54,10 +55,10 @@ public class User {
 
         public UserBuilder baseSalary(BigDecimal baseSalary) {
             if(baseSalary == null || baseSalary.compareTo(BigDecimal.ZERO) < 0){
-                throw new IllegalArgumentException("Salario no puede ser Nulo o menor que 0");
+                throw new IllegalArgumentException(ValidationMessages.SALARY_NULL);
             }
-            if(baseSalary.compareTo(new BigDecimal("15000000")) > 0){
-                throw new IllegalArgumentException("Salario no puede ser mayor que 15000000");
+            if(baseSalary.compareTo(BusinessRules.MAX_SALARY) > 0){
+                throw new IllegalArgumentException(ValidationMessages.SALARY_MAX_EXCEEDED);
             }
             this.baseSalary = baseSalary;
             return this;
@@ -65,7 +66,7 @@ public class User {
 
         public UserBuilder idRol(String idRol) {
             if(idRol == null || idRol.trim().isEmpty()){
-                throw new IllegalArgumentException("ID del rol no puede ser Nulo o Vacio");
+                throw new IllegalArgumentException(ValidationMessages.ROLE_ID_REQUIRED);
             }
             this.idRol = idRol.trim();
             return this;
@@ -73,10 +74,10 @@ public class User {
 
         public UserBuilder password(String password) {
             if(password == null || password.trim().isEmpty()){
-                throw new IllegalArgumentException("Password no puede ser Nulo o Vacio");
+                throw new IllegalArgumentException(ValidationMessages.PASSWORD_REQUIRED);
             }
-            if(password.length() < 3){
-                throw new IllegalArgumentException("Password debe tener al menos 3 caracteres");
+            if(password.length() < BusinessRules.MIN_PASSWORD_LENGTH){
+                throw new IllegalArgumentException(ValidationMessages.PASSWORD_MIN_LENGTH);
             }
             this.password = password;
             return this;
@@ -85,44 +86,43 @@ public class User {
 
     public void  validateData(){
         if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("El nombre no puede ser nulo o vacío");
+            throw new IllegalArgumentException(ValidationMessages.NAME_REQUIRED);
         }
 
         if (lastName == null || lastName.trim().isEmpty()) {
-            throw new IllegalArgumentException("Los apellidos no pueden ser nulos o vacíos");
+            throw new IllegalArgumentException(ValidationMessages.LASTNAME_REQUIRED);
         }
 
         if (emailAddress == null || emailAddress.trim().isEmpty()) {
-            throw new IllegalArgumentException("El correo electrónico no puede ser nulo o vacío");
+            throw new IllegalArgumentException(ValidationMessages.EMAIL_REQUIRED);
         }
 
-        String emailRegex = "^[A-Za-z0-9+_.-]+@([A-Za-z0-9.-]+\\.[A-Za-z]{2,})$";
-        if (!emailAddress.matches(emailRegex)) {
-            throw new IllegalArgumentException("El formato del correo electrónico no es válido");
+        if (!emailAddress.matches(BusinessRules.EMAIL_REGEX)) {
+            throw new IllegalArgumentException(ValidationMessages.EMAIL_INVALID_FORMAT);
         }
 
         if (baseSalary == null) {
-            throw new IllegalArgumentException("El salario base no puede ser nulo");
+            throw new IllegalArgumentException(ValidationMessages.SALARY_NULL);
         }
 
         if (baseSalary.compareTo(BigDecimal.ZERO) <= 0) {
-            throw new IllegalArgumentException("El salario base debe ser mayor a 0");
+            throw new IllegalArgumentException(ValidationMessages.SALARY_ZERO);
         }
 
-        if (baseSalary.compareTo(new BigDecimal("15000000")) > 0) {
-            throw new IllegalArgumentException("El salario base no puede ser mayor a 15,000,000");
+        if (baseSalary.compareTo(BusinessRules.MAX_SALARY) > 0) {
+            throw new IllegalArgumentException(ValidationMessages.SALARY_MAX_EXCEEDED);
         }
 
         if (idRol == null || idRol.trim().isEmpty()) {
-            throw new IllegalArgumentException("El ID del rol no puede ser nulo o vacío");
+            throw new IllegalArgumentException(ValidationMessages.ROLE_ID_REQUIRED);
         }
 
         if (password == null || password.trim().isEmpty()) {
-            throw new IllegalArgumentException("El password no puede ser nulo o vacío");
+            throw new IllegalArgumentException(ValidationMessages.PASSWORD_REQUIRED);
         }
 
-        if (password.length() < 3) {
-            throw new IllegalArgumentException("El password debe tener al menos 3 caracteres");
+        if (password.length() < BusinessRules.MIN_PASSWORD_LENGTH) {
+            throw new IllegalArgumentException(ValidationMessages.PASSWORD_MIN_LENGTH);
         }
 
     }
