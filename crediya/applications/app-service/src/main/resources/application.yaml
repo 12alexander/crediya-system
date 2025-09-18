@@ -12,3 +12,7 @@ adapter:
     region: "us-east-1"
     queueUrl: "http://localhost:4566/000000000000/sample"
     endpoint: "http://localhost:4566"
+    debt-capacity:
+      region: "${AWS_REGION:us-east-2}"
+      queueUrl: "${SQS_DEBT_CAPACITY_QUEUE_URL:https://sqs.us-east-2.amazonaws.com/013517326986/debt-capacity-requests}"
+      endpoint: "${SQS_ENDPOINT:https://sqs.us-east-2.amazonaws.com}"

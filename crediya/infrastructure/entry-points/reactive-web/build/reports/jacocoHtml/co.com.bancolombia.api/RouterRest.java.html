@@ -2,6 +2,7 @@
 
 import co.com.bancolombia.api.handler.OrderHandler;
 import co.com.bancolombia.api.handler.ReportHandler;
+import co.com.bancolombia.api.handler.DebtCapacityHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
@@ -16,28 +17,34 @@ public class RouterRest {
     
     private final OrderHandler orderHandler;
     private final ReportHandler reportHandler;
-    
-<span class="fc" id="L20">    public RouterRest(OrderHandler orderHandler, ReportHandler reportHandler) {</span>
-<span class="fc" id="L21">        this.orderHandler = orderHandler;</span>
-<span class="fc" id="L22">        this.reportHandler = reportHandler;</span>
-<span class="fc" id="L23">    }</span>
+    private final DebtCapacityHandler debtCapacityHandler;
+
+<span class="fc" id="L22">    public RouterRest(OrderHandler orderHandler, ReportHandler reportHandler, DebtCapacityHandler debtCapacityHandler) {</span>
+<span class="fc" id="L23">        this.orderHandler = orderHandler;</span>
+<span class="fc" id="L24">        this.reportHandler = reportHandler;</span>
+<span class="fc" id="L25">        this.debtCapacityHandler = debtCapacityHandler;</span>
+<span class="fc" id="L26">    }</span>
     
     private static final String API_V1 = &quot;/api/v1&quot;;
     private static final String SOLICITUD_PATH = API_V1 + &quot;/solicitud&quot;;
+    private static final String CALCULAR_CAPACIDAD_PATH = API_V1 + &quot;/calcular-capacidad&quot;;
 
 
     @Bean
     public RouterFunction&lt;ServerResponse&gt; routerFunction() {
-<span class="fc" id="L31">        return route(POST(SOLICITUD_PATH)</span>
-<span class="fc" id="L32">                        .and(accept(MediaType.APPLICATION_JSON)), </span>
-<span class="fc" id="L33">                orderHandler::createLoanRequest)</span>
-<span class="fc" id="L34">                .andRoute(GET(SOLICITUD_PATH + &quot;/{id}&quot;), </span>
-<span class="fc" id="L35">                        orderHandler::getLoanRequest)</span>
-<span class="fc" id="L36">                .andRoute(PUT(SOLICITUD_PATH + &quot;/{id}/decision&quot;)</span>
-<span class="fc" id="L37">                        .and(accept(MediaType.APPLICATION_JSON)), </span>
-<span class="fc" id="L38">                        orderHandler::updateOrderDecision)</span>
-<span class="fc" id="L39">                .andRoute(GET(API_V1 + &quot;/solicitudes-pendientes&quot;), </span>
-<span class="fc" id="L40">                        reportHandler::getPendingRequests);</span>
+<span class="fc" id="L35">        return route(POST(SOLICITUD_PATH)</span>
+<span class="fc" id="L36">                        .and(accept(MediaType.APPLICATION_JSON)), </span>
+<span class="fc" id="L37">                orderHandler::createLoanRequest)</span>
+<span class="fc" id="L38">                .andRoute(GET(SOLICITUD_PATH + &quot;/{id}&quot;), </span>
+<span class="fc" id="L39">                        orderHandler::getLoanRequest)</span>
+<span class="fc" id="L40">                .andRoute(PUT(SOLICITUD_PATH + &quot;/{id}/decision&quot;)</span>
+<span class="fc" id="L41">                        .and(accept(MediaType.APPLICATION_JSON)),</span>
+<span class="fc" id="L42">                        orderHandler::updateOrderDecision)</span>
+<span class="fc" id="L43">                .andRoute(GET(API_V1 + &quot;/solicitudes-pendientes&quot;),</span>
+<span class="fc" id="L44">                        reportHandler::getPendingRequests)</span>
+<span class="fc" id="L45">                .andRoute(POST(CALCULAR_CAPACIDAD_PATH)</span>
+<span class="fc" id="L46">                        .and(accept(MediaType.APPLICATION_JSON)),</span>
+<span class="fc" id="L47">                        debtCapacityHandler::calculateDebtCapacity);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

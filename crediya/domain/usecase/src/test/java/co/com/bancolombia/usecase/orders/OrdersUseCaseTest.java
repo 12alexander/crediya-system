@@ -1,5 +1,6 @@
 package co.com.bancolombia.usecase.orders;
 
+import co.com.bancolombia.model.debtcapacity.gateways.DebtCapacityCalculationGateway;
 import co.com.bancolombia.model.enums.StatusEnum;
 import co.com.bancolombia.model.loantype.LoanType;
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
@@ -44,11 +45,14 @@ class OrdersUseCaseTest {
     @Mock
     private NotificationGateway notificationGateway;
 
+    @Mock
+    private DebtCapacityCalculationGateway debtCapacityCalculationGateway;
+
     private OrdersUseCase ordersUseCase;
 
     @BeforeEach
     void setUp() {
-        ordersUseCase = new OrdersUseCase(ordersRepository, loanTypeRepository, notificationGateway);
+        ordersUseCase = new OrdersUseCase(ordersRepository, loanTypeRepository, notificationGateway, debtCapacityCalculationGateway);
     }
 
     private LoanType buildValidLoanType() {
@@ -92,6 +96,7 @@ class OrdersUseCaseTest {
         when(loanTypeRepository.findById(loanTypeId)).thenReturn(Mono.just(loanType));
         when(ordersRepository.findPendingStatusId()).thenReturn(Mono.just(pendingStatusId));
         when(ordersRepository.save(any(Orders.class))).thenReturn(Mono.just(expectedOrder));
+        when(debtCapacityCalculationGateway.sendCalculationRequest(any())).thenReturn(Mono.empty());
 
         StepVerifier.create(ordersUseCase.createLoanRequest(documentId, amount, deadline, emailAddress, loanTypeId))
                 .expectNext(expectedOrder)

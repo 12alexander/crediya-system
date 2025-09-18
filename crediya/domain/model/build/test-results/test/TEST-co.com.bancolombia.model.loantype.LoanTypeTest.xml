@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.model.loantype.LoanTypeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:15:42.920Z" hostname="alex" time="0.247">
+<testsuite name="co.com.bancolombia.model.loantype.LoanTypeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-09-18T08:47:36.911Z" hostname="alex" time="0.07">
   <properties/>
-  <testcase name="Amount validation - amount below minimum" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.164"/>
-  <testcase name="Create loan type - success" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.025"/>
-  <testcase name="Edge case - minimum equals maximum" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.002"/>
-  <testcase name="Builder pattern - all fields" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.002"/>
-  <testcase name="Amount validation - valid amount within range" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.005"/>
-  <testcase name="Amount validation with decimal values" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.005"/>
-  <testcase name="Amount validation - amount above maximum" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.007"/>
+  <testcase name="Amount validation - amount below minimum" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.047"/>
+  <testcase name="Create loan type - success" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.009"/>
+  <testcase name="Edge case - minimum equals maximum" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.001"/>
+  <testcase name="Builder pattern - all fields" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.001"/>
+  <testcase name="Amount validation - valid amount within range" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.001"/>
+  <testcase name="Amount validation with decimal values" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.001"/>
+  <testcase name="Amount validation - amount above maximum" classname="co.com.bancolombia.model.loantype.LoanTypeTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

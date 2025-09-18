@@ -2,6 +2,7 @@ package co.com.bancolombia.api;
 
 import co.com.bancolombia.api.handler.OrderHandler;
 import co.com.bancolombia.api.handler.ReportHandler;
+import co.com.bancolombia.api.handler.DebtCapacityHandler;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,7 +17,8 @@ class SimpleRouterTest {
     void routerRestBasicTest() {
         OrderHandler orderHandler = mock(OrderHandler.class);
         ReportHandler reportHandler = mock(ReportHandler.class);
-        RouterRest routerRest = new RouterRest(orderHandler, reportHandler);
+        DebtCapacityHandler debtCapacityHandler = mock(DebtCapacityHandler.class);
+        RouterRest routerRest = new RouterRest(orderHandler, reportHandler, debtCapacityHandler);
         assertNotNull(routerRest);
     }
 }

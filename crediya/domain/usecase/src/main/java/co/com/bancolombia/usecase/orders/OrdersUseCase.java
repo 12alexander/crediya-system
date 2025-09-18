@@ -1,6 +1,8 @@
 package co.com.bancolombia.usecase.orders;
 
 import co.com.bancolombia.model.constants.ValidationMessages;
+import co.com.bancolombia.model.debtcapacity.DebtCapacity;
+import co.com.bancolombia.model.debtcapacity.gateways.DebtCapacityCalculationGateway;
 import co.com.bancolombia.model.enums.StatusEnum;
 import co.com.bancolombia.model.loantype.LoanType;
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
@@ -21,23 +23,33 @@ import java.time.LocalDateTime;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-@RequiredArgsConstructor
 public class OrdersUseCase implements IOrdersUseCase {
-    
+
     private final OrdersRepository ordersRepository;
     private final LoanTypeRepository loanTypeRepository;
     private final NotificationGateway notificationGateway;
+    private final DebtCapacityCalculationGateway debtCapacityCalculationGateway;
+
+    public OrdersUseCase(OrdersRepository ordersRepository,
+                        LoanTypeRepository loanTypeRepository,
+                        NotificationGateway notificationGateway,
+                        DebtCapacityCalculationGateway debtCapacityCalculationGateway) {
+        this.ordersRepository = ordersRepository;
+        this.loanTypeRepository = loanTypeRepository;
+        this.notificationGateway = notificationGateway;
+        this.debtCapacityCalculationGateway = debtCapacityCalculationGateway;
+    }
 
         public Mono<Orders> createLoanRequest(String idUser, BigDecimal amount, Integer deadline,
                                         String emailAddress, String loanTypeId) {
-        
+
         return validateLoanType(loanTypeId)
                 .flatMap(loanType -> {
                     validateLoanAmountSync(amount, loanType);
                     return getPendingStatusId()
                             .flatMap(pendingStatusId -> createAndValidateOrder(
                                     idUser, amount, deadline, emailAddress, loanTypeId, pendingStatusId))
-                            .flatMap(this::saveOrder);
+                            .flatMap(order -> saveOrderAndTriggerAutomaticValidation(order, loanType));
                 });
     }
 
@@ -75,6 +87,42 @@ public class OrdersUseCase implements IOrdersUseCase {
 
     private Mono<Orders> saveOrder(Orders order) {
         return ordersRepository.save(order);
+    }
+
+    private Mono<Orders> saveOrderAndTriggerAutomaticValidation(Orders order, LoanType loanType) {
+        return saveOrder(order)
+                .flatMap(savedOrder -> triggerAutomaticValidationIfRequired(savedOrder, loanType));
+    }
+
+    private Mono<Orders> triggerAutomaticValidationIfRequired(Orders order, LoanType loanType) {
+        if (shouldTriggerAutomaticValidation(loanType)) {
+            return sendToDebtCapacityCalculation(order)
+                    .then(Mono.just(order))
+                    .onErrorResume(error -> {
+                        return Mono.just(order);
+                    });
+        }
+        return Mono.just(order);
+    }
+
+    private boolean shouldTriggerAutomaticValidation(LoanType loanType) {
+        return debtCapacityCalculationGateway != null &&
+               loanType != null &&
+               Boolean.TRUE.equals(loanType.getAutomaticValidation());
+    }
+
+    private Mono<Void> sendToDebtCapacityCalculation(Orders order) {
+        DebtCapacity debtCapacity = DebtCapacity.fromValidationRequest(
+                order.getId(),
+                order.getEmailAddress(),
+                order.getAmount(),
+                order.getDeadline(),
+                order.getEmailAddress(),
+                null,
+                null,
+                order.getIdLoanType()
+        );
+        return debtCapacityCalculationGateway.sendCalculationRequest(debtCapacity);
     }
 
     private Mono<Orders> sendDecisionNotification(Orders order) {

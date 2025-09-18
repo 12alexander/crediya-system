@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>OrdersUseCase.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">usecase</a> &gt; <a href="index.source.html" class="el_package">co.com.bancolombia.usecase.orders</a> &gt; <span class="el_source">OrdersUseCase.java</span></div><h1>OrdersUseCase.java</h1><pre class="source lang-java linenums">package co.com.bancolombia.usecase.orders;
 
 import co.com.bancolombia.model.constants.ValidationMessages;
+import co.com.bancolombia.model.debtcapacity.DebtCapacity;
+import co.com.bancolombia.model.debtcapacity.gateways.DebtCapacityCalculationGateway;
 import co.com.bancolombia.model.enums.StatusEnum;
 import co.com.bancolombia.model.loantype.LoanType;
 import co.com.bancolombia.model.loantype.gateways.LoanTypeRepository;
@@ -21,118 +23,164 @@ import java.time.LocalDateTime;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-@RequiredArgsConstructor
 public class OrdersUseCase implements IOrdersUseCase {
-    
+
     private final OrdersRepository ordersRepository;
     private final LoanTypeRepository loanTypeRepository;
     private final NotificationGateway notificationGateway;
+    private final DebtCapacityCalculationGateway debtCapacityCalculationGateway;
+
+    public OrdersUseCase(OrdersRepository ordersRepository,
+                        LoanTypeRepository loanTypeRepository,
+                        NotificationGateway notificationGateway,
+<span class="fc" id="L36">                        DebtCapacityCalculationGateway debtCapacityCalculationGateway) {</span>
+<span class="fc" id="L37">        this.ordersRepository = ordersRepository;</span>
+<span class="fc" id="L38">        this.loanTypeRepository = loanTypeRepository;</span>
+<span class="fc" id="L39">        this.notificationGateway = notificationGateway;</span>
+<span class="fc" id="L40">        this.debtCapacityCalculationGateway = debtCapacityCalculationGateway;</span>
+<span class="fc" id="L41">    }</span>
 
         public Mono&lt;Orders&gt; createLoanRequest(String idUser, BigDecimal amount, Integer deadline,
                                         String emailAddress, String loanTypeId) {
-        
-<span class="fc" id="L34">        return validateLoanType(loanTypeId)</span>
-<span class="fc" id="L35">                .flatMap(loanType -&gt; {</span>
-<span class="fc" id="L36">                    validateLoanAmountSync(amount, loanType);</span>
-<span class="fc" id="L37">                    return getPendingStatusId()</span>
-<span class="fc" id="L38">                            .flatMap(pendingStatusId -&gt; createAndValidateOrder(</span>
+
+<span class="fc" id="L46">        return validateLoanType(loanTypeId)</span>
+<span class="fc" id="L47">                .flatMap(loanType -&gt; {</span>
+<span class="fc" id="L48">                    validateLoanAmountSync(amount, loanType);</span>
+<span class="fc" id="L49">                    return getPendingStatusId()</span>
+<span class="fc" id="L50">                            .flatMap(pendingStatusId -&gt; createAndValidateOrder(</span>
                                     idUser, amount, deadline, emailAddress, loanTypeId, pendingStatusId))
-<span class="fc" id="L40">                            .flatMap(this::saveOrder);</span>
+<span class="fc" id="L52">                            .flatMap(order -&gt; saveOrderAndTriggerAutomaticValidation(order, loanType));</span>
                 });
     }
 
     private Mono&lt;LoanType&gt; validateLoanType(String loanTypeId) {
-<span class="fc" id="L45">        return loanTypeRepository.findById(loanTypeId)</span>
-<span class="fc" id="L46">                .switchIfEmpty(Mono.error(new LoanTypeNotFoundException(loanTypeId)));</span>
+<span class="fc" id="L57">        return loanTypeRepository.findById(loanTypeId)</span>
+<span class="fc" id="L58">                .switchIfEmpty(Mono.error(new LoanTypeNotFoundException(loanTypeId)));</span>
     }
 
     private Mono&lt;Void&gt; validateLoanAmount(BigDecimal amount, LoanType loanType) {
-<span class="nc" id="L50">        return Mono.fromRunnable(() -&gt; {</span>
-<span class="nc" id="L51">            validateLoanAmountSync(amount, loanType);</span>
-<span class="nc" id="L52">        });</span>
+<span class="nc" id="L62">        return Mono.fromRunnable(() -&gt; {</span>
+<span class="nc" id="L63">            validateLoanAmountSync(amount, loanType);</span>
+<span class="nc" id="L64">        });</span>
     }
 
     private void validateLoanAmountSync(BigDecimal amount, LoanType loanType) {
-<span class="fc bfc" id="L56" title="All 2 branches covered.">        if (!loanType.isAmountValid(amount)) {</span>
-<span class="fc" id="L57">            throw new InvalidLoanAmountException(amount, loanType.getMinimumAmount(), loanType.getMaximumAmount());</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        if (!loanType.isAmountValid(amount)) {</span>
+<span class="fc" id="L69">            throw new InvalidLoanAmountException(amount, loanType.getMinimumAmount(), loanType.getMaximumAmount());</span>
         }
-<span class="fc" id="L59">    }</span>
+<span class="fc" id="L71">    }</span>
 
     private Mono&lt;String&gt; getPendingStatusId() {
-<span class="fc" id="L62">        return ordersRepository.findPendingStatusId()</span>
-<span class="fc" id="L63">                .switchIfEmpty(Mono.error(new OrdersBusinessException(&quot;PENDING_STATUS_NOT_FOUND&quot;,</span>
+<span class="fc" id="L74">        return ordersRepository.findPendingStatusId()</span>
+<span class="fc" id="L75">                .switchIfEmpty(Mono.error(new OrdersBusinessException(&quot;PENDING_STATUS_NOT_FOUND&quot;,</span>
                                                                      ValidationMessages.PENDING_STATUS_NOT_FOUND)));
     }
 
     private Mono&lt;Orders&gt; createAndValidateOrder(String idUser, BigDecimal amount, Integer deadline,
                                               String emailAddress, String loanTypeId, String pendingStatusId) {
-<span class="fc" id="L69">        return Mono.fromCallable(() -&gt; {</span>
-<span class="fc" id="L70">            Orders order = Orders.createNew(amount, deadline, emailAddress, loanTypeId, pendingStatusId);</span>
-<span class="fc" id="L71">            order.validateForCreation();</span>
-<span class="fc" id="L72">            return order;</span>
+<span class="fc" id="L81">        return Mono.fromCallable(() -&gt; {</span>
+<span class="fc" id="L82">            Orders order = Orders.createNew(amount, deadline, emailAddress, loanTypeId, pendingStatusId);</span>
+<span class="fc" id="L83">            order.validateForCreation();</span>
+<span class="fc" id="L84">            return order;</span>
         });
     }
 
     private Mono&lt;Orders&gt; saveOrder(Orders order) {
-<span class="fc" id="L77">        return ordersRepository.save(order);</span>
+<span class="fc" id="L89">        return ordersRepository.save(order);</span>
+    }
+
+    private Mono&lt;Orders&gt; saveOrderAndTriggerAutomaticValidation(Orders order, LoanType loanType) {
+<span class="fc" id="L93">        return saveOrder(order)</span>
+<span class="fc" id="L94">                .flatMap(savedOrder -&gt; triggerAutomaticValidationIfRequired(savedOrder, loanType));</span>
+    }
+
+    private Mono&lt;Orders&gt; triggerAutomaticValidationIfRequired(Orders order, LoanType loanType) {
+<span class="pc bpc" id="L98" title="1 of 2 branches missed.">        if (shouldTriggerAutomaticValidation(loanType)) {</span>
+<span class="fc" id="L99">            return sendToDebtCapacityCalculation(order)</span>
+<span class="fc" id="L100">                    .then(Mono.just(order))</span>
+<span class="fc" id="L101">                    .onErrorResume(error -&gt; {</span>
+<span class="nc" id="L102">                        return Mono.just(order);</span>
+                    });
+        }
+<span class="nc" id="L105">        return Mono.just(order);</span>
+    }
+
+    private boolean shouldTriggerAutomaticValidation(LoanType loanType) {
+<span class="pc bpc" id="L109" title="2 of 4 branches missed.">        return debtCapacityCalculationGateway != null &amp;&amp;</span>
+               loanType != null &amp;&amp;
+<span class="pc bpc" id="L111" title="1 of 2 branches missed.">               Boolean.TRUE.equals(loanType.getAutomaticValidation());</span>
+    }
+
+    private Mono&lt;Void&gt; sendToDebtCapacityCalculation(Orders order) {
+<span class="fc" id="L115">        DebtCapacity debtCapacity = DebtCapacity.fromValidationRequest(</span>
+<span class="fc" id="L116">                order.getId(),</span>
+<span class="fc" id="L117">                order.getEmailAddress(),</span>
+<span class="fc" id="L118">                order.getAmount(),</span>
+<span class="fc" id="L119">                order.getDeadline(),</span>
+<span class="fc" id="L120">                order.getEmailAddress(),</span>
+                null,
+                null,
+<span class="fc" id="L123">                order.getIdLoanType()</span>
+        );
+<span class="fc" id="L125">        return debtCapacityCalculationGateway.sendCalculationRequest(debtCapacity);</span>
     }
 
     private Mono&lt;Orders&gt; sendDecisionNotification(Orders order) {
-<span class="fc" id="L81">        return notificationGateway.notifyOrderDecision(order)</span>
-<span class="fc" id="L82">                .then(Mono.just(order))</span>
-<span class="fc" id="L83">                .onErrorReturn(order);</span>
+<span class="fc" id="L129">        return notificationGateway.notifyOrderDecision(order)</span>
+<span class="fc" id="L130">                .then(Mono.just(order))</span>
+<span class="fc" id="L131">                .onErrorReturn(order);</span>
     }
 
     public Mono&lt;Orders&gt; findById(String orderId) {
-<span class="fc" id="L87">        return ordersRepository.findById(orderId)</span>
-<span class="fc" id="L88">                .switchIfEmpty(Mono.error(new OrdersBusinessException(&quot;ORDER_NOT_FOUND&quot;,</span>
+<span class="fc" id="L135">        return ordersRepository.findById(orderId)</span>
+<span class="fc" id="L136">                .switchIfEmpty(Mono.error(new OrdersBusinessException(&quot;ORDER_NOT_FOUND&quot;,</span>
                                                                      ValidationMessages.ORDER_NOT_FOUND + orderId)));
     }
 
     @Override
     public Flux&lt;Orders&gt; findByEmailAddress(String emailAddress) {
-<span class="fc" id="L94">        return ordersRepository.findByEmailAddress(emailAddress);</span>
+<span class="fc" id="L142">        return ordersRepository.findByEmailAddress(emailAddress);</span>
     }
 
     @Override
     public Flux&lt;PendingRequest&gt; findPendingRequests(UUID statusId, String email, int page, int size) {
-<span class="fc" id="L99">        return ordersRepository.findPendingRequests(statusId, email, page, size);</span>
+<span class="fc" id="L147">        return ordersRepository.findPendingRequests(statusId, email, page, size);</span>
     }
 
     @Override
     public Mono&lt;Orders&gt; updateOrderDecision(String orderId, String decision) {
-<span class="fc" id="L104">        return findById(orderId)</span>
-<span class="fc" id="L105">                .flatMap(order -&gt; validateOrderCanBeUpdated(order))</span>
-<span class="fc" id="L106">                .flatMap(order -&gt; getNewStatusId(decision)</span>
-<span class="fc" id="L107">                        .flatMap(newStatusId -&gt; updateOrderWithNewStatus(order, newStatusId)))</span>
-<span class="fc" id="L108">                .flatMap(this::saveOrder)</span>
-<span class="fc" id="L109">                .flatMap(this::sendDecisionNotification);</span>
+<span class="fc" id="L152">        return findById(orderId)</span>
+<span class="fc" id="L153">                .flatMap(order -&gt; validateOrderCanBeUpdated(order))</span>
+<span class="fc" id="L154">                .flatMap(order -&gt; getNewStatusId(decision)</span>
+<span class="fc" id="L155">                        .flatMap(newStatusId -&gt; updateOrderWithNewStatus(order, newStatusId)))</span>
+<span class="fc" id="L156">                .flatMap(this::saveOrder)</span>
+<span class="fc" id="L157">                .flatMap(this::sendDecisionNotification);</span>
     }
 
     private Mono&lt;Orders&gt; validateOrderCanBeUpdated(Orders order) {
-<span class="fc" id="L113">        String pendingStatusId = StatusEnum.PENDING.getId();</span>
-<span class="fc bfc" id="L114" title="All 2 branches covered.">        if (!pendingStatusId.equals(order.getIdStatus())) {</span>
-<span class="fc" id="L115">            return Mono.error(new OrdersBusinessException(&quot;ORDER_ALREADY_PROCESSED&quot;,</span>
+<span class="fc" id="L161">        String pendingStatusId = StatusEnum.PENDING.getId();</span>
+<span class="fc bfc" id="L162" title="All 2 branches covered.">        if (!pendingStatusId.equals(order.getIdStatus())) {</span>
+<span class="fc" id="L163">            return Mono.error(new OrdersBusinessException(&quot;ORDER_ALREADY_PROCESSED&quot;,</span>
                     ValidationMessages.ORDER_ALREADY_PROCESSED));
         }
-<span class="fc" id="L118">        return Mono.just(order);</span>
+<span class="fc" id="L166">        return Mono.just(order);</span>
     }
 
     private Mono&lt;String&gt; getNewStatusId(String decision) {
-<span class="fc" id="L122">        return Mono.fromCallable(() -&gt; {</span>
-<span class="fc bfc" id="L123" title="All 3 branches covered.">            return switch (decision) {</span>
-<span class="fc" id="L124">                case &quot;APPROVED&quot; -&gt; StatusEnum.APPROVED.getId();</span>
-<span class="fc" id="L125">                case &quot;REJECTED&quot; -&gt; StatusEnum.REJECTED.getId();</span>
-<span class="fc" id="L126">                default -&gt; throw new IllegalArgumentException(ValidationMessages.INVALID_DECISION + decision);</span>
+<span class="fc" id="L170">        return Mono.fromCallable(() -&gt; {</span>
+<span class="fc bfc" id="L171" title="All 3 branches covered.">            return switch (decision) {</span>
+<span class="fc" id="L172">                case &quot;APPROVED&quot; -&gt; StatusEnum.APPROVED.getId();</span>
+<span class="fc" id="L173">                case &quot;REJECTED&quot; -&gt; StatusEnum.REJECTED.getId();</span>
+<span class="fc" id="L174">                default -&gt; throw new IllegalArgumentException(ValidationMessages.INVALID_DECISION + decision);</span>
             };
         });
     }
 
     private Mono&lt;Orders&gt; updateOrderWithNewStatus(Orders order, String newStatusId) {
-<span class="fc" id="L132">        return Mono.fromCallable(() -&gt; order.toBuilder()</span>
-<span class="fc" id="L133">                .idStatus(newStatusId)</span>
-<span class="fc" id="L134">                .updateDate(LocalDateTime.now())</span>
-<span class="fc" id="L135">                .build());</span>
+<span class="fc" id="L180">        return Mono.fromCallable(() -&gt; order.toBuilder()</span>
+<span class="fc" id="L181">                .idStatus(newStatusId)</span>
+<span class="fc" id="L182">                .updateDate(LocalDateTime.now())</span>
+<span class="fc" id="L183">                .build());</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

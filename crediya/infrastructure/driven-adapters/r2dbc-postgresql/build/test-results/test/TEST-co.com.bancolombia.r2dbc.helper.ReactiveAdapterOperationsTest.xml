@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-17T12:15:40.339Z" hostname="alex" time="9.106">
+<testsuite name="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-09-18T09:04:38.161Z" hostname="alex" time="5.164">
   <properties/>
-  <testcase name="findAll()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="8.656"/>
-  <testcase name="findById()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.327"/>
-  <testcase name="saveAllEntities()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.029"/>
-  <testcase name="findByExample()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.05"/>
-  <testcase name="save()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.013"/>
+  <testcase name="findAll()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="4.906"/>
+  <testcase name="findById()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.159"/>
+  <testcase name="saveAllEntities()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.023"/>
+  <testcase name="findByExample()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.037"/>
+  <testcase name="save()" classname="co.com.bancolombia.r2dbc.helper.ReactiveAdapterOperationsTest" time="0.02"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

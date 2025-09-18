@@ -6,6 +6,7 @@ import co.com.bancolombia.api.dto.response.UserReportResponseDTO;
 import co.com.bancolombia.api.util.ReportBuilder;
 import co.com.bancolombia.api.handler.OrderHandler;
 import co.com.bancolombia.api.handler.ReportHandler;
+import co.com.bancolombia.api.handler.DebtCapacityHandler;
 import co.com.bancolombia.api.services.AuthServiceClient;
 import co.com.bancolombia.model.orders.Orders;
 import co.com.bancolombia.transaction.TransactionalAdapter;
@@ -79,7 +80,8 @@ class RouterRestTest {
 
         OrderHandler orderHandler = new OrderHandler(ordersUseCase, validator, authServiceClient, transactionalAdapter);
         ReportHandler reportHandler = new ReportHandler(ordersUseCase, authServiceClient, reportBuilder);
-        RouterRest routerRest = new RouterRest(orderHandler, reportHandler);
+        DebtCapacityHandler debtCapacityHandler = mock(DebtCapacityHandler.class);
+        RouterRest routerRest = new RouterRest(orderHandler, reportHandler, debtCapacityHandler);
         RouterFunction<ServerResponse> router = routerRest.routerFunction();
 
         this.webTestClient = WebTestClient.bindToRouterFunction(router).build();
@@ -179,7 +181,8 @@ class RouterRestTest {
     void routerRestBasicTest() {
         OrderHandler orderHandler = mock(OrderHandler.class);
         ReportHandler reportHandler = mock(ReportHandler.class);
-        RouterRest routerRest = new RouterRest(orderHandler, reportHandler);
+        DebtCapacityHandler debtCapacityHandler = mock(DebtCapacityHandler.class);
+        RouterRest routerRest = new RouterRest(orderHandler, reportHandler, debtCapacityHandler);
         assertNotNull(routerRest);
     }
 }

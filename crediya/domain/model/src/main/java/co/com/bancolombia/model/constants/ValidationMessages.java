@@ -21,4 +21,17 @@ public final class ValidationMessages {
     public static final String INVALID_DECISION = "Decisión inválida: ";
     public static final String LOAN_TYPE_NOT_FOUND = "Tipo de préstamo no encontrado: ";
     public static final String INVALID_LOAN_AMOUNT = "El monto solicitado no está dentro del rango permitido para este tipo de préstamo";
+
+    public static final String CAPACITY_CALCULATION_FAILED = "Error al calcular la capacidad de endeudamiento";
+    public static final String INSUFFICIENT_CAPACITY = "Capacidad de endeudamiento insuficiente";
+    public static final String MONTHLY_INCOME_REQUIRED = "Los ingresos mensuales son obligatorios";
+    public static final String BASE_SALARY_REQUIRED = "El salario base es obligatorio";
+    public static final String DEBT_CAPACITY_NOT_FOUND = "No se encontró la solicitud de capacidad con ID: ";
+    public static final String INVALID_DEBT_CAPACITY_STATUS = "Estado de capacidad de endeudamiento inválido: ";
+
+    public static final String CAPACITY_SUFFICIENT = "Capacidad de endeudamiento suficiente";
+    public static final String CAPACITY_INSUFFICIENT = "Capacidad de endeudamiento insuficiente";
+    public static final String MANUAL_REVIEW_REQUIRED = "Préstamo requiere revisión manual: monto superior a 5 salarios";
+    public static final String DEBT_CAPACITY_PROCESSED = "Solicitud de capacidad de endeudamiento procesada correctamente";
+    public static final String DEBT_CAPACITY_RESULT_UPDATED = "Resultado de capacidad de endeudamiento actualizado";
 }

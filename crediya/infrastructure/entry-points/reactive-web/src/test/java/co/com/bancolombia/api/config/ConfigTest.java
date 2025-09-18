@@ -3,10 +3,12 @@ package co.com.bancolombia.api.config;
 import co.com.bancolombia.api.RouterRest;
 import co.com.bancolombia.api.handler.OrderHandler;
 import co.com.bancolombia.api.handler.ReportHandler;
+import co.com.bancolombia.api.handler.DebtCapacityHandler;
 import co.com.bancolombia.api.services.AuthServiceClient;
 import co.com.bancolombia.api.util.ReportBuilder;
 import co.com.bancolombia.transaction.TransactionalAdapter;
 import co.com.bancolombia.usecase.orders.interfaces.IOrdersUseCase;
+import co.com.bancolombia.usecase.debtcapacity.interfaces.IDebtCapacityUseCase;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
@@ -16,7 +18,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.reactive.server.WebTestClient;
 import jakarta.validation.Validator;
 
-@ContextConfiguration(classes = {RouterRest.class, OrderHandler.class, ReportHandler.class})
+@ContextConfiguration(classes = {RouterRest.class, OrderHandler.class, ReportHandler.class, DebtCapacityHandler.class})
 @WebFluxTest
 @Import({CorsConfig.class, SecurityHeadersConfig.class, ValidationConfig.class})
 class ConfigTest {
@@ -38,6 +40,9 @@ class ConfigTest {
     
     @MockBean
     private TransactionalAdapter transactionalAdapter;
+
+    @MockBean
+    private IDebtCapacityUseCase debtCapacityUseCase;
 
     @Test
     void testContextLoads() {
